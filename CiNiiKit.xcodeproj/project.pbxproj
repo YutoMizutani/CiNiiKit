@@ -10,6 +10,7 @@
 		999C51D02134313200611308 /* CiNiiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C51C72134313100611308 /* CiNiiKit.framework */; };
 		999C51E32134318C00611308 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51E22134318B00611308 /* CiNiiKit.swift */; };
 		999C51F4213431A000611308 /* CiNiiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51F1213431A000611308 /* CiNiiKitTests.swift */; };
+		999C5236213436D300611308 /* CiNiiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5235213436D300611308 /* CiNiiResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		999C51E22134318B00611308 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
 		999C51F1213431A000611308 /* CiNiiKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitTests.swift; sourceTree = "<group>"; };
 		999C51F92134326400611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
+		999C5235213436D300611308 /* CiNiiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiResponse.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,17 +56,10 @@
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				999C51E12134318B00611308 /* CiNiiKit */,
+				999C51E22134318B00611308 /* CiNiiKit.swift */,
+				999C5235213436D300611308 /* CiNiiResponse.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		999C51E12134318B00611308 /* CiNiiKit */ = {
-			isa = PBXGroup;
-			children = (
-				999C51E22134318B00611308 /* CiNiiKit.swift */,
-			);
-			path = CiNiiKit;
 			sourceTree = "<group>";
 		};
 		999C51EF213431A000611308 /* Tests */ = {
@@ -232,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				999C51E32134318C00611308 /* CiNiiKit.swift in Sources */,
+				999C5236213436D300611308 /* CiNiiResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
