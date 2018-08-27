@@ -18,6 +18,6 @@ fi
 
 
 jazzy \
-	--github-file-prefix https://github.com/YutoMizutani/OperantKit/tree/${LIBRARY_VERSION} \
+	--github-file-prefix https://github.com/YutoMizutani/CiNiiKit/tree/${LIBRARY_VERSION} \
 	--module-version ${LIBRARY_VERSION}
 
