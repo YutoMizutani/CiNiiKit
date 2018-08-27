@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "999C51C62134313100611308"
+               BlueprintIdentifier = "999C523C2134AFF500611308"
                BuildableName = "CiNiiKit_iOS.framework"
-               BlueprintName = "CiNiiKit-iOS"
+               BlueprintName = "CiNiiKit iOS"
                ReferencedContainer = "container:CiNiiKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "999C51CE2134313200611308"
-               BuildableName = "CiNiiKit-iOSTests.xctest"
-               BlueprintName = "CiNiiKit-iOSTests"
+               BlueprintIdentifier = "999C52442134AFF500611308"
+               BuildableName = "CiNiiKit iOSTests.xctest"
+               BlueprintName = "CiNiiKit iOSTests"
                ReferencedContainer = "container:CiNiiKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "999C51C62134313100611308"
+            BlueprintIdentifier = "999C523C2134AFF500611308"
             BuildableName = "CiNiiKit_iOS.framework"
-            BlueprintName = "CiNiiKit-iOS"
+            BlueprintName = "CiNiiKit iOS"
             ReferencedContainer = "container:CiNiiKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "999C51C62134313100611308"
+            BlueprintIdentifier = "999C523C2134AFF500611308"
             BuildableName = "CiNiiKit_iOS.framework"
-            BlueprintName = "CiNiiKit-iOS"
+            BlueprintName = "CiNiiKit iOS"
             ReferencedContainer = "container:CiNiiKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "999C51C62134313100611308"
+            BlueprintIdentifier = "999C523C2134AFF500611308"
             BuildableName = "CiNiiKit_iOS.framework"
-            BlueprintName = "CiNiiKit-iOS"
+            BlueprintName = "CiNiiKit iOS"
             ReferencedContainer = "container:CiNiiKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
