@@ -1,0 +1,19 @@
+language: objective-c
+osx_image: xcode9
+xcode_project: CiNiiKit.xcodeproj
+xcode_sdk: iphonesimulator11.0
+env:
+  matrix:
+  - TARGET=iOS
+notifications:
+  email: false
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_script:
+- carthage checkout
+- travis_retry carthage build --platform "${TARGET}"
+script:
+    ./scripts/all-tests.sh "${TARGET}"
+after_success:
+- sleep 5 # https://github.com/travis-ci/travis-ci/issues/4725
