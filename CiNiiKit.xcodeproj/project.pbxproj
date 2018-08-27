@@ -112,9 +112,9 @@
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				999C51F7213431B200611308 /* Supporting Files */,
 				OBJ_6 /* Package.swift */,
 				999C51E02134318B00611308 /* Sources */,
+				999C51F7213431B200611308 /* Supporting Files */,
 				999C51EF213431A000611308 /* Tests */,
 				OBJ_14 /* Products */,
 			);
