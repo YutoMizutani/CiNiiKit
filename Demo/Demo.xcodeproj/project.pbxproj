@@ -13,6 +13,10 @@
 		999C52122134341000611308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999C52102134341000611308 /* LaunchScreen.storyboard */; };
 		999C521D2134341000611308 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C521C2134341000611308 /* DemoTests.swift */; };
 		999C52282134341100611308 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C52272134341100611308 /* DemoUITests.swift */; };
+		999C52592134D6DC00611308 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C52582134D6DC00611308 /* ScrollView.swift */; };
+		999C525E2134D9DF00611308 /* CopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C525D2134D9DF00611308 /* CopyrightView.swift */; };
+		999C52602134D9EC00611308 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C525F2134D9EC00611308 /* SearchView.swift */; };
+		999C52632134E48900611308 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C52622134E48900611308 /* ScreenSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		999C52232134341100611308 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		999C52272134341100611308 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		999C52292134341100611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999C52582134D6DC00611308 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		999C525D2134D9DF00611308 /* CopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightView.swift; sourceTree = "<group>"; };
+		999C525F2134D9EC00611308 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		999C52622134E48900611308 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				999C52072134340E00611308 /* AppDelegate.swift */,
-				999C52092134340E00611308 /* ViewController.swift */,
+				999C52612134E46E00611308 /* Extensions */,
+				999C525A2134D91B00611308 /* App */,
 				999C520E2134341000611308 /* Assets.xcassets */,
 				999C52102134341000611308 /* LaunchScreen.storyboard */,
 				999C52132134341000611308 /* Info.plist */,
@@ -120,6 +129,41 @@
 				999C52292134341100611308 /* Info.plist */,
 			);
 			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		999C525A2134D91B00611308 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				999C525B2134D92500611308 /* ViewController */,
+				999C525C2134D92D00611308 /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		999C525B2134D92500611308 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				999C52092134340E00611308 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		999C525C2134D92D00611308 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				999C52582134D6DC00611308 /* ScrollView.swift */,
+				999C525F2134D9EC00611308 /* SearchView.swift */,
+				999C525D2134D9DF00611308 /* CopyrightView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		999C52612134E46E00611308 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				999C52622134E48900611308 /* ScreenSize.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999C52632134E48900611308 /* ScreenSize.swift in Sources */,
+				999C52602134D9EC00611308 /* SearchView.swift in Sources */,
 				999C520A2134340E00611308 /* ViewController.swift in Sources */,
+				999C52592134D6DC00611308 /* ScrollView.swift in Sources */,
+				999C525E2134D9DF00611308 /* CopyrightView.swift in Sources */,
 				999C52082134340E00611308 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
