@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        configureView()
+        layoutView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +22,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
 
+        layoutView()
+
+        self.view.layoutIfNeeded()
+    }
+
+    override func viewSafeAreaInsetsDidChange() {
+        super.viewSafeAreaInsetsDidChange()
+
+        layoutView()
+    }
 }
 
+// MARK:- Private methods about settings
+extension ViewController {
+    /// Viewの構成を行う。
+    private func configureView() {
+
+    }
+
+    /// Viewの更新を行う。
+    private func layoutView() {
+
+    }
+}
