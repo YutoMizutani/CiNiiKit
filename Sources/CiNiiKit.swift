@@ -29,14 +29,6 @@ public class CiNiiKit {
     /// Failure handler
     public typealias FailureHandler = (_ error: Error) -> Void
 
-    private enum API {
-        static let opensearchURL = "http://ci.nii.ac.jp/opensearch"
-    }
-
-    enum HTTPMethod: String {
-        case get = "GET"
-    }
-
     // MARK: - Initializers
 
     /// Returns a shared instance of CiNiiKit.

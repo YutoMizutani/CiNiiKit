@@ -20,6 +20,8 @@
 		99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7D21364AE80052391A /* SortOrderType.swift */; };
 		99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */; };
 		99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A83213679BA0052391A /* ErrorHandring.swift */; };
+		99F97AA12136CFD70052391A /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA02136CFD70052391A /* Operator+.swift */; };
+		99F97AA32136D2300052391A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA22136D2300052391A /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		99F97A8D213685F30052391A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		99F97A8E213685F30052391A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
 		99F97A8F213685F30052391A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		99F97AA02136CFD70052391A /* Operator+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
+		99F97AA22136D2300052391A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,7 @@
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				99F97A9F2136CFAB0052391A /* Extension */,
 				99F97A82213679A90052391A /* Error */,
 				99F97A7C21364A890052391A /* Enum */,
 				999C51E22134318B00611308 /* CiNiiKit.swift */,
@@ -186,6 +191,7 @@
 			children = (
 				99F97A7A213615530052391A /* LanguageType.swift */,
 				99F97A7D21364AE80052391A /* SortOrderType.swift */,
+				99F97AA22136D2300052391A /* API.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -204,6 +210,14 @@
 				99F97A83213679BA0052391A /* ErrorHandring.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		99F97A9F2136CFAB0052391A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				99F97AA02136CFD70052391A /* Operator+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		OBJ_14 /* Products */ = {
@@ -358,8 +372,10 @@
 				99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */,
 				999C52552134B14400611308 /* CiNiiKit.swift in Sources */,
 				99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */,
+				99F97AA32136D2300052391A /* API.swift in Sources */,
 				99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */,
 				999C52562134B14400611308 /* CiNiiResponse.swift in Sources */,
+				99F97AA12136CFD70052391A /* Operator+.swift in Sources */,
 				99F97A7B213615530052391A /* LanguageType.swift in Sources */,
 				99F97A76213610050052391A /* SearchType.swift in Sources */,
 			);

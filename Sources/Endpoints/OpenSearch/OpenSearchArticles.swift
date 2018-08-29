@@ -5,6 +5,7 @@
 //  Created by Yuto Mizutani on 2018/08/29.
 //
 
+import Alamofire
 import Foundation
 
 public extension CiNiiKitArticles {
@@ -39,7 +40,7 @@ public extension CiNiiKitArticles {
          - success:
          - failure:
      */
-    func search(keyword q: String?,
+    func search(_ q: String?,
                 count: Int? = nil,
                 lang: LanguageType? = nil,
                 start: Int? = nil,
@@ -64,6 +65,29 @@ public extension CiNiiKitArticles {
         guard oprionalParams.filter({ $0 != nil }).isEmpty else {
             throw QueryError.noSpecifiedKeywordError
         }
+
+        var parameters: Parameters = Parameters()
+        parameters["q"] ?= q
+        parameters["count"] ?= count
+        parameters["lang"] ?= lang?.rawValue
+        parameters["start"] ?= start
+        parameters["format"] ?= format
+        parameters["title"] ?= title
+        parameters["author"] ?= author
+        parameters["authorid"] ?= authorid
+        parameters["issn"] ?= issn
+        parameters["publisher"] ?= publisher
+        parameters["affiliation"] ?= affiliation
+        parameters["journal"] ?= journal
+        parameters["volume"] ?= volume
+        parameters["page"] ?= page
+        parameters["references"] ?= references
+        parameters["year_from"] ?= year_from
+        parameters["year_to"] ?= year_to
+        parameters["range"] ?= range
+        parameters["sortorder"] ?= sortorder?.rawValue
+
+        Alamofire.request(API.OpenSearch.article, parameters: parameters, encoding: URLEncoding.default)
     }
 
     /**
@@ -115,6 +139,27 @@ public extension CiNiiKitArticles {
                 sortorder: SortOrderType.Search? = nil,
                 success: CiNiiKit.SuccessHandler<[Any]>?,
                 failure: CiNiiKit.FailureHandler?) {
+        try? self.search(q,
+                         count: count,
+                         lang: lang,
+                         start: start,
+                         format: format,
+                         title: title,
+                         author: author,
+                         authorid: authorid,
+                         issn: issn,
+                         publisher: publisher,
+                         affiliation: affiliation,
+                         journal: journal,
+                         volume: volume,
+                         page: page,
+                         references: references,
+                         year_from: year_from,
+                         year_to: year_to,
+                         range: range,
+                         sortorder: sortorder,
+                         success: success,
+                         failure: failure)
     }
 
     /**
@@ -139,6 +184,16 @@ public extension CiNiiKitArticles {
                 sortorder: SortOrderType.Author? = nil,
                 success: CiNiiKit.SuccessHandler<[Any]>?,
                 failure: CiNiiKit.FailureHandler?) {
+
+        var parameters: Parameters = Parameters()
+        parameters["q"] = q
+        parameters["count"] ?= count
+        parameters["lang"] ?= lang?.rawValue
+        parameters["start"] ?= start
+        parameters["format"] ?= format
+        parameters["sortorder"] ?= sortorder?.rawValue
+
+        Alamofire.request(API.OpenSearch.article, parameters: parameters, encoding: URLEncoding.default)
     }
 
     /**
@@ -163,5 +218,15 @@ public extension CiNiiKitArticles {
                   sortorder: SortOrderType.FullText? = nil,
                   success: CiNiiKit.SuccessHandler<[Any]>?,
                   failure: CiNiiKit.FailureHandler?) {
+
+        var parameters: Parameters = Parameters()
+        parameters["q"] = q
+        parameters["count"] ?= count
+        parameters["lang"] ?= lang?.rawValue
+        parameters["start"] ?= start
+        parameters["format"] ?= format
+        parameters["sortorder"] ?= sortorder?.rawValue
+
+        Alamofire.request(API.OpenSearch.article, parameters: parameters, encoding: URLEncoding.default)
     }
 }
