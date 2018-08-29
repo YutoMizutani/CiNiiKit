@@ -24,6 +24,7 @@
 		99F97A7B213615530052391A /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7A213615530052391A /* LanguageType.swift */; };
 		99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7D21364AE80052391A /* SortOrderType.swift */; };
 		99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */; };
+		99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A83213679BA0052391A /* ErrorHandring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		99F97A7A213615530052391A /* LanguageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		99F97A7D21364AE80052391A /* SortOrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
 		99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitArticles.swift; sourceTree = "<group>"; };
+		99F97A83213679BA0052391A /* ErrorHandring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandring.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				99F97A82213679A90052391A /* Error */,
 				99F97A7C21364A890052391A /* Enum */,
 				999C51E22134318B00611308 /* CiNiiKit.swift */,
 				99F97A81213655370052391A /* Common */,
@@ -203,6 +206,14 @@
 				99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		99F97A82213679A90052391A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				99F97A83213679BA0052391A /* ErrorHandring.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		OBJ_14 /* Products */ = {
@@ -356,6 +367,7 @@
 				99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */,
 				99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */,
 				999C52552134B14400611308 /* CiNiiKit.swift in Sources */,
+				99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */,
 				99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */,
 				999C52562134B14400611308 /* CiNiiResponse.swift in Sources */,
 				99F97A7B213615530052391A /* LanguageType.swift in Sources */,
