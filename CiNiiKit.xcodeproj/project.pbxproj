@@ -14,11 +14,6 @@
 		999C5278213581DF00611308 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5275213581DF00611308 /* Alamofire.framework */; };
 		999C5279213581DF00611308 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5276213581DF00611308 /* KeychainAccess.framework */; };
 		999C527A213581DF00611308 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5277213581DF00611308 /* SwiftyJSON.framework */; };
-		99F97A692135828E0052391A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F97A642135828E0052391A /* Quick.framework */; };
-		99F97A6A2135828E0052391A /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F97A652135828E0052391A /* KeychainAccess.framework */; };
-		99F97A6B2135828E0052391A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F97A662135828E0052391A /* Alamofire.framework */; };
-		99F97A6C2135828E0052391A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F97A672135828E0052391A /* Nimble.framework */; };
-		99F97A6D2135828E0052391A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F97A682135828E0052391A /* SwiftyJSON.framework */; };
 		99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7321360ED40052391A /* OpenSearchArticles.swift */; };
 		99F97A76213610050052391A /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A75213610050052391A /* SearchType.swift */; };
 		99F97A7B213615530052391A /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7A213615530052391A /* LanguageType.swift */; };
@@ -48,17 +43,17 @@
 		999C5275213581DF00611308 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		999C5276213581DF00611308 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		999C5277213581DF00611308 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		99F97A642135828E0052391A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
-		99F97A652135828E0052391A /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = SOURCE_ROOT; };
-		99F97A662135828E0052391A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		99F97A672135828E0052391A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
-		99F97A682135828E0052391A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		99F97A7321360ED40052391A /* OpenSearchArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchArticles.swift; sourceTree = "<group>"; };
 		99F97A75213610050052391A /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
 		99F97A7A213615530052391A /* LanguageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		99F97A7D21364AE80052391A /* SortOrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
 		99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitArticles.swift; sourceTree = "<group>"; };
 		99F97A83213679BA0052391A /* ErrorHandring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandring.swift; sourceTree = "<group>"; };
+		99F97A8B213685F30052391A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
+		99F97A8C213685F30052391A /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = SOURCE_ROOT; };
+		99F97A8D213685F30052391A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		99F97A8E213685F30052391A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
+		99F97A8F213685F30052391A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,12 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F97A6C2135828E0052391A /* Nimble.framework in Frameworks */,
-				99F97A6A2135828E0052391A /* KeychainAccess.framework in Frameworks */,
-				99F97A6D2135828E0052391A /* SwiftyJSON.framework in Frameworks */,
-				99F97A692135828E0052391A /* Quick.framework in Frameworks */,
 				999C52462134AFF600611308 /* CiNiiKit.framework in Frameworks */,
-				99F97A6B2135828E0052391A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,11 +156,11 @@
 		99F97A63213582730052391A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				99F97A662135828E0052391A /* Alamofire.framework */,
-				99F97A652135828E0052391A /* KeychainAccess.framework */,
-				99F97A672135828E0052391A /* Nimble.framework */,
-				99F97A642135828E0052391A /* Quick.framework */,
-				99F97A682135828E0052391A /* SwiftyJSON.framework */,
+				99F97A8D213685F30052391A /* Alamofire.framework */,
+				99F97A8C213685F30052391A /* KeychainAccess.framework */,
+				99F97A8E213685F30052391A /* Nimble.framework */,
+				99F97A8B213685F30052391A /* Quick.framework */,
+				99F97A8F213685F30052391A /* SwiftyJSON.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -456,7 +446,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-iOS";
 				PRODUCT_NAME = CiNiiKit;
@@ -531,7 +521,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-iOS";
 				PRODUCT_NAME = CiNiiKit;
