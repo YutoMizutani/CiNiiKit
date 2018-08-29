@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension CiNiiKitArticles {
+public extension CiNiiKitArticles {
 
     // MARK: - User Endpoints
 
@@ -39,27 +39,27 @@ extension CiNiiKitArticles {
          - success:
          - failure:
      */
-    public func search(keyword q: String,
-                       count: Int? = nil,
-                       lang: LanguageType? = nil,
-                       start: Int? = nil,
-                       format: Int? = nil,
-                       title: String? = nil,
-                       author: String? = nil,
-                       authorid: String? = nil,
-                       issn: String? = nil,
-                       publisher: String? = nil,
-                       affiliation: String? = nil,
-                       journal: String? = nil,
-                       volume: Int? = nil,
-                       page: Int? = nil,
-                       references: String? = nil,
-                       year_from: Int? = nil,
-                       year_to: Int? = nil,
-                       range: Int? = nil,
-                       sortorder: SortOrderType.Search? = nil,
-                       success: CiNiiKit.SuccessHandler<[Any]>?,
-                       failure: CiNiiKit.FailureHandler?) {
+    func search(keyword q: String,
+                count: Int? = nil,
+                lang: LanguageType? = nil,
+                start: Int? = nil,
+                format: Int? = nil,
+                title: String? = nil,
+                author: String? = nil,
+                authorid: String? = nil,
+                issn: String? = nil,
+                publisher: String? = nil,
+                affiliation: String? = nil,
+                journal: String? = nil,
+                volume: Int? = nil,
+                page: Int? = nil,
+                references: String? = nil,
+                year_from: Int? = nil,
+                year_to: Int? = nil,
+                range: Int? = nil,
+                sortorder: SortOrderType.Search? = nil,
+                success: CiNiiKit.SuccessHandler<[Any]>?,
+                failure: CiNiiKit.FailureHandler?) {
     }
 
     /**
@@ -76,14 +76,14 @@ extension CiNiiKitArticles {
          - success:
          - failure:
      */
-    public func author(author q: String,
-                       count: Int? = nil,
-                       lang: LanguageType? = nil,
-                       start: Int? = nil,
-                       format: Int? = nil,
-                       sortorder: SortOrderType.Author? = nil,
-                       success: CiNiiKit.SuccessHandler<[Any]>?,
-                       failure: CiNiiKit.FailureHandler?) {
+    func author(author q: String,
+                count: Int? = nil,
+                lang: LanguageType? = nil,
+                start: Int? = nil,
+                format: Int? = nil,
+                sortorder: SortOrderType.Author? = nil,
+                success: CiNiiKit.SuccessHandler<[Any]>?,
+                failure: CiNiiKit.FailureHandler?) {
     }
 
     /**
@@ -100,13 +100,13 @@ extension CiNiiKitArticles {
          - success:
          - failure:
      */
-    public func fulltext(keyword q: String,
-                         count: Int? = nil,
-                         lang: LanguageType? = nil,
-                         start: Int? = nil,
-                         format: Int? = nil,
-                         sortorder: SortOrderType.FullText? = nil,
-                         success: CiNiiKit.SuccessHandler<[Any]>?,
-                         failure: CiNiiKit.FailureHandler?) {
+    func fulltext(keyword q: String,
+                  count: Int? = nil,
+                  lang: LanguageType? = nil,
+                  start: Int? = nil,
+                  format: Int? = nil,
+                  sortorder: SortOrderType.FullText? = nil,
+                  success: CiNiiKit.SuccessHandler<[Any]>?,
+                  failure: CiNiiKit.FailureHandler?) {
     }
 }

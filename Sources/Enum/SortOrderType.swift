@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension CiNiiKitArticles {
-    public struct SortOrderType {
+public extension CiNiiKitArticles {
+    struct SortOrderType {
         /// Specifies the sorting condition. The default is 1. - https://support.nii.ac.jp/en/cia/api/a_opensearch
         public enum Search: Int {
 
