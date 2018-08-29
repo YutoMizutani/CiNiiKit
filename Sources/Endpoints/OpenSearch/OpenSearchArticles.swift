@@ -1,5 +1,5 @@
 //
-//  Articles.swift
+//  OpenSearchArticles.swift
 //  CiNiiKit
 //
 //  Created by Yuto Mizutani on 2018/08/29.
@@ -57,7 +57,7 @@ extension CiNiiKitArticles {
                        year_from: Int? = nil,
                        year_to: Int? = nil,
                        range: Int? = nil,
-                       sortorder: SearchSortOrderType? = nil,
+                       sortorder: SortOrderType.Search? = nil,
                        success: CiNiiKit.SuccessHandler<[Any]>?,
                        failure: CiNiiKit.FailureHandler?) {
     }
@@ -81,11 +81,10 @@ extension CiNiiKitArticles {
                        lang: LanguageType? = nil,
                        start: Int? = nil,
                        format: Int? = nil,
-                       sortorder: SearchSortOrderType? = nil,
+                       sortorder: SortOrderType.Author? = nil,
                        success: CiNiiKit.SuccessHandler<[Any]>?,
                        failure: CiNiiKit.FailureHandler?) {
     }
-
 
     /**
 
@@ -106,7 +105,7 @@ extension CiNiiKitArticles {
                          lang: LanguageType? = nil,
                          start: Int? = nil,
                          format: Int? = nil,
-                         sortorder: FullTextSortOrderType? = nil,
+                         sortorder: SortOrderType.FullText? = nil,
                          success: CiNiiKit.SuccessHandler<[Any]>?,
                          failure: CiNiiKit.FailureHandler?) {
     }
