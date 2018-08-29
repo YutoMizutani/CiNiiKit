@@ -4,6 +4,8 @@ disabled_rules:
   - file_length
   - file_header
   - identifier_name
+  - file_name
+  - nesting
 opt_in_rules:
   - array_init
   - attributes
