@@ -16,7 +16,7 @@ public extension CiNiiKitArticles {
      https://support.nii.ac.jp/en/cia/api/a_opensearch
 
      - Parameters:
-     - keyword: Specifies keyword to be searched (necessary when items are not specified; items: title, author, authorid, issn, publisher, affilication, journal, volume, issue, page, references, year_to).
+        - keyword: Specifies keyword to be searched (necessary when items are not specified; items: title, author, authorid, issn, publisher, affilication, journal, volume, issue, page, references, year_to).
          - count: Specifies the number of search results per page (optional)
          - lang: Specifies the language the search results are displayed in (optional)
          - start: Start number for the acquired search result list (optional)
