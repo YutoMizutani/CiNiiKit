@@ -6,8 +6,6 @@ target 'Demo' do
   use_frameworks!
 
   # Pods for Demo
-pod 'Alamofire'
-pod ''
 
   target 'DemoTests' do
     inherit! :search_paths

@@ -6,7 +6,25 @@
 //
 
 struct CiNiiResponse<T: Decodable>: Decodable {
+
+    // MARK: - Properties
+
+    let data: T?
+    let meta: Meta
+    let pagination: Pagination?
+
+    // MARK: - Types
+
+    struct Meta: Decodable {
+        let code: Int
+        let errorType: String?
+        let errorMessage: String?
+    }
+
+    struct Pagination: Decodable {
+        let nextUrl: String?
+        let nextMaxId: String?
+    }
 }
 
-/// Dummy struct used for empty Instagram API data responses
 public struct CiNiiEmptyResponse: Decodable { }

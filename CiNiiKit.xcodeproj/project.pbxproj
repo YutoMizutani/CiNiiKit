@@ -21,6 +21,7 @@
 		99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A83213679BA0052391A /* ErrorHandring.swift */; };
 		99F97AA12136CFD70052391A /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA02136CFD70052391A /* Operator+.swift */; };
 		99F97AA32136D2300052391A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA22136D2300052391A /* API.swift */; };
+		99F97AA82137A47B0052391A /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA72137A47B0052391A /* ArticlesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		99F97A8F213685F30052391A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		99F97AA02136CFD70052391A /* Operator+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
 		99F97AA22136D2300052391A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		99F97AA72137A47B0052391A /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,10 +86,11 @@
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				999C51E22134318B00611308 /* CiNiiKit.swift */,
 				99F97A9F2136CFAB0052391A /* Extension */,
 				99F97A82213679A90052391A /* Error */,
+				99F97AA62137A4440052391A /* Model */,
 				99F97A7C21364A890052391A /* Enum */,
-				999C51E22134318B00611308 /* CiNiiKit.swift */,
 				99F97A81213655370052391A /* Common */,
 				99F97A7021360E6B0052391A /* Endpoints */,
 				999C5235213436D300611308 /* CiNiiResponse.swift */,
@@ -215,6 +218,14 @@
 				99F97AA02136CFD70052391A /* Operator+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		99F97AA62137A4440052391A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99F97AA72137A47B0052391A /* ArticlesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		OBJ_14 /* Products */ = {
@@ -373,6 +384,7 @@
 				99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */,
 				999C52562134B14400611308 /* CiNiiResponse.swift in Sources */,
 				99F97AA12136CFD70052391A /* Operator+.swift in Sources */,
+				99F97AA82137A47B0052391A /* ArticlesModel.swift in Sources */,
 				99F97A7B213615530052391A /* LanguageType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -182,7 +182,7 @@ public extension CiNiiKitArticles {
                 start: Int? = nil,
                 format: Int? = nil,
                 sortorder: SortOrderType.Author? = nil,
-                success: CiNiiKit.SuccessHandler<[Any]>?,
+                success: CiNiiKit.EmptySuccessHandler?,
                 failure: CiNiiKit.FailureHandler?) {
 
         var parameters: Parameters = Parameters()
@@ -193,7 +193,10 @@ public extension CiNiiKitArticles {
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortorder?.rawValue
 
-        Alamofire.request(API.Articles.OpenSearch.author, parameters: parameters, encoding: URLEncoding.default)
+        try? CiNiiKit.shared.request(API.Articles.OpenSearch.author,
+                                     parameters: parameters,
+                                     success: { (_: CiNiiEmptyResponse!) in success?() },
+                                     failure: failure)
     }
 
     /**

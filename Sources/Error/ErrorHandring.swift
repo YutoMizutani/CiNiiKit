@@ -9,4 +9,5 @@ import Foundation
 
 enum QueryError: Error {
     case noSpecifiedKeywordError
+    case noAppID
 }
