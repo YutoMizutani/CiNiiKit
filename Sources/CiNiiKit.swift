@@ -7,7 +7,6 @@
 
 import Alamofire
 import KeychainAccess
-import SwiftyJSON
 import UIKit
 
 /// A set of helper functions to make the Instagram API easier to use.
@@ -25,7 +24,7 @@ public class CiNiiKit {
     public typealias EmptySuccessHandler = () -> Void
 
     /// Success handler
-    public typealias SuccessHandler<T> = (_ data: T) -> Void
+    public typealias SuccessHandler<T> = (_ model: T) -> Void
 
     /// Failure handler
     public typealias FailureHandler = (_ error: Error) -> Void
@@ -52,25 +51,24 @@ public class CiNiiKit {
 
     // MARK: - Requests
 
-    func request<T: Decodable>(_ url: String,
-                               method: HTTPMethod = .get,
-                               parameters: Parameters? = nil,
-                               success: ((_ data: T?) -> Void)?,
-                               failure: FailureHandler?) throws {
+    func request(_ url: String,
+                 method: HTTPMethod = .get,
+                 parameters: Parameters? = nil,
+                 success: ((_ data: Data) -> Void)?,
+                 failure: FailureHandler?) throws {
 
         guard let appid: String = try self.keychain.get(self.accessTokenKey) else {
             throw QueryError.noAppID
         }
 
         var parameters = parameters ?? Parameters()
+        parameters["format"] = "json"
         parameters["appid"] = appid
 
-        let headers: HTTPHeaders = HTTPHeaders()
-
-        Alamofire.request(url, method: method, parameters: parameters, encoding: URLEncoding.default, headers: headers)
-            .responseJSON { response in
-                guard let object = response.result.value else { return }
-                let json = JSON(object)
-        }
+        Alamofire.request(url, method: method, parameters: parameters, encoding: URLEncoding.default)
+            .response { response in
+                guard let data = response.data else { return }
+                success?(data)
+            }
     }
 }

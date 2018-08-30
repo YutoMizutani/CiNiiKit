@@ -6,7 +6,6 @@
 //
 
 import Alamofire
-import Foundation
 
 public extension CiNiiKitArticles {
 
@@ -59,10 +58,10 @@ public extension CiNiiKitArticles {
                 year_to: Int? = nil,
                 range: Int? = nil,
                 sortorder: SortOrderType.Search? = nil,
-                success: CiNiiKit.SuccessHandler<[Any]>?,
+                success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) throws {
         let oprionalParams: [Any?] = [q, title, author, authorid, issn, publisher, affiliation, journal, volume, page, references, year_from, year_to]
-        guard oprionalParams.filter({ $0 != nil }).isEmpty else {
+        guard !oprionalParams.filter({ $0 != nil }).isEmpty else {
             throw QueryError.noSpecifiedKeywordError
         }
 
@@ -87,7 +86,16 @@ public extension CiNiiKitArticles {
         parameters["range"] ?= range
         parameters["sortorder"] ?= sortorder?.rawValue
 
-        Alamofire.request(API.Articles.OpenSearch.search, parameters: parameters, encoding: URLEncoding.default)
+        try? CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+                                     parameters: parameters,
+                                     success: { data in
+                                        let decoder: JSONDecoder = JSONDecoder()
+                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                        success?(model)
+                                     },
+                                     failure: { error in
+                                        failure?(error)
+                                     })
     }
 
     /**
@@ -137,7 +145,7 @@ public extension CiNiiKitArticles {
                 year_to: Int? = nil,
                 range: Int? = nil,
                 sortorder: SortOrderType.Search? = nil,
-                success: CiNiiKit.SuccessHandler<[Any]>?,
+                success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) {
         try? self.search(q,
                          count: count,
@@ -192,11 +200,6 @@ public extension CiNiiKitArticles {
         parameters["start"] ?= start
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortorder?.rawValue
-
-        try? CiNiiKit.shared.request(API.Articles.OpenSearch.author,
-                                     parameters: parameters,
-                                     success: { (_: CiNiiEmptyResponse!) in success?() },
-                                     failure: failure)
     }
 
     /**
@@ -219,7 +222,7 @@ public extension CiNiiKitArticles {
                   start: Int? = nil,
                   format: Int? = nil,
                   sortorder: SortOrderType.FullText? = nil,
-                  success: CiNiiKit.SuccessHandler<[Any]>?,
+                  success: CiNiiKit.EmptySuccessHandler?,
                   failure: CiNiiKit.FailureHandler?) {
 
         var parameters: Parameters = Parameters()
@@ -229,7 +232,5 @@ public extension CiNiiKitArticles {
         parameters["start"] ?= start
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortorder?.rawValue
-
-        Alamofire.request(API.Articles.OpenSearch.fullText, parameters: parameters, encoding: URLEncoding.default)
     }
 }
