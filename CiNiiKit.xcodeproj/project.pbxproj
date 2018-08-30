@@ -12,7 +12,6 @@
 		999C52572134B14800611308 /* CiNiiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51F1213431A000611308 /* CiNiiKitTests.swift */; };
 		999C5278213581DF00611308 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5275213581DF00611308 /* Alamofire.framework */; };
 		999C5279213581DF00611308 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5276213581DF00611308 /* KeychainAccess.framework */; };
-		999C527A213581DF00611308 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5277213581DF00611308 /* SwiftyJSON.framework */; };
 		99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7321360ED40052391A /* OpenSearchArticles.swift */; };
 		99F97A7B213615530052391A /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7A213615530052391A /* LanguageType.swift */; };
 		99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7D21364AE80052391A /* SortOrderType.swift */; };
@@ -42,7 +41,6 @@
 		999C52452134AFF600611308 /* CiNiiKit iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CiNiiKit iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		999C5275213581DF00611308 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		999C5276213581DF00611308 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
-		999C5277213581DF00611308 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		99F97A7321360ED40052391A /* OpenSearchArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchArticles.swift; sourceTree = "<group>"; };
 		99F97A7A213615530052391A /* LanguageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		99F97A7D21364AE80052391A /* SortOrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
@@ -52,7 +50,6 @@
 		99F97A8C213685F30052391A /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = SOURCE_ROOT; };
 		99F97A8D213685F30052391A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		99F97A8E213685F30052391A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
-		99F97A8F213685F30052391A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		99F97AA02136CFD70052391A /* Operator+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
 		99F97AA22136D2300052391A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		99F97AA72137A47B0052391A /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
@@ -66,7 +63,6 @@
 			files = (
 				999C5279213581DF00611308 /* KeychainAccess.framework in Frameworks */,
 				999C5278213581DF00611308 /* Alamofire.framework in Frameworks */,
-				999C527A213581DF00611308 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +138,6 @@
 			children = (
 				999C5275213581DF00611308 /* Alamofire.framework */,
 				999C5276213581DF00611308 /* KeychainAccess.framework */,
-				999C5277213581DF00611308 /* SwiftyJSON.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -162,7 +157,6 @@
 				99F97A8C213685F30052391A /* KeychainAccess.framework */,
 				99F97A8E213685F30052391A /* Nimble.framework */,
 				99F97A8B213685F30052391A /* Quick.framework */,
-				99F97A8F213685F30052391A /* SwiftyJSON.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
