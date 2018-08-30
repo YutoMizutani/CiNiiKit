@@ -15,7 +15,6 @@
 		999C5279213581DF00611308 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5276213581DF00611308 /* KeychainAccess.framework */; };
 		999C527A213581DF00611308 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5277213581DF00611308 /* SwiftyJSON.framework */; };
 		99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7321360ED40052391A /* OpenSearchArticles.swift */; };
-		99F97A76213610050052391A /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A75213610050052391A /* SearchType.swift */; };
 		99F97A7B213615530052391A /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7A213615530052391A /* LanguageType.swift */; };
 		99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7D21364AE80052391A /* SortOrderType.swift */; };
 		99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */; };
@@ -46,7 +45,6 @@
 		999C5276213581DF00611308 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		999C5277213581DF00611308 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		99F97A7321360ED40052391A /* OpenSearchArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchArticles.swift; sourceTree = "<group>"; };
-		99F97A75213610050052391A /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
 		99F97A7A213615530052391A /* LanguageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		99F97A7D21364AE80052391A /* SortOrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
 		99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitArticles.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				99F97A7C21364A890052391A /* Enum */,
 				999C51E22134318B00611308 /* CiNiiKit.swift */,
 				99F97A81213655370052391A /* Common */,
-				99F97A75213610050052391A /* SearchType.swift */,
 				99F97A7021360E6B0052391A /* Endpoints */,
 				999C5235213436D300611308 /* CiNiiResponse.swift */,
 			);
@@ -377,7 +374,6 @@
 				999C52562134B14400611308 /* CiNiiResponse.swift in Sources */,
 				99F97AA12136CFD70052391A /* Operator+.swift in Sources */,
 				99F97A7B213615530052391A /* LanguageType.swift in Sources */,
-				99F97A76213610050052391A /* SearchType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

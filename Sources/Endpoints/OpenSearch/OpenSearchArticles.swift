@@ -87,7 +87,7 @@ public extension CiNiiKitArticles {
         parameters["range"] ?= range
         parameters["sortorder"] ?= sortorder?.rawValue
 
-        Alamofire.request(API.OpenSearch.article, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request(API.Articles.OpenSearch.search, parameters: parameters, encoding: URLEncoding.default)
     }
 
     /**
@@ -193,7 +193,7 @@ public extension CiNiiKitArticles {
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortorder?.rawValue
 
-        Alamofire.request(API.OpenSearch.article, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request(API.Articles.OpenSearch.author, parameters: parameters, encoding: URLEncoding.default)
     }
 
     /**
@@ -227,6 +227,6 @@ public extension CiNiiKitArticles {
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortorder?.rawValue
 
-        Alamofire.request(API.OpenSearch.article, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request(API.Articles.OpenSearch.fullText, parameters: parameters, encoding: URLEncoding.default)
     }
 }
