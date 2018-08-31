@@ -52,7 +52,7 @@ public extension CiNiiKitDissertations {
                 sortorder: SortOrderType? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
-                success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                success: CiNiiKit.SuccessHandler<DissertationsModel>?,
                 failure: CiNiiKit.FailureHandler?) throws {
         let oprionalParams: [Any?] = [q, title, description, author, grantor, grantorId, grantId, degreeName, yearFrom, yearTo, fulltext]
         guard !oprionalParams.filter({ $0 != nil }).isEmpty else {
@@ -80,7 +80,7 @@ public extension CiNiiKitDissertations {
                                      parameters: parameters,
                                      success: { data in
                                         let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                        guard let model: DissertationsModel = try? decoder.decode(DissertationsModel.self, from: data) else { return }
                                         success?(model)
                                      },
                                      failure: { error in
@@ -129,7 +129,7 @@ public extension CiNiiKitDissertations {
                 sortorder: SortOrderType? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
-                success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                success: CiNiiKit.SuccessHandler<DissertationsModel>?,
                 failure: CiNiiKit.FailureHandler?) {
         try? self.search(q,
                          title: title,
