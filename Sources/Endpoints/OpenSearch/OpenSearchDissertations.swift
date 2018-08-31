@@ -13,7 +13,7 @@ public extension CiNiiKitDissertations {
 
     /**
 
-     Get a result of a search Dissertations from CiNii Dissertations.
+     Get a result of search dissertations from CiNii Dissertations.
 
      - Parameters:
          - q: Free Keyword
@@ -90,7 +90,7 @@ public extension CiNiiKitDissertations {
 
     /**
 
-     Get a result of a search Dissertations from CiNii Dissertations.
+     Get a result of search dissertations from CiNii Dissertations.
 
      - Parameters:
          - keyword: Free Keyword

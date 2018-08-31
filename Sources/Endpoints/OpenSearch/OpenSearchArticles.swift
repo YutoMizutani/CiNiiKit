@@ -13,7 +13,7 @@ public extension CiNiiKitArticles {
 
     /**
 
-     Get a result of a search article from CiNii Articles.
+     Get a result of search articles from CiNii Articles.
 
      - Parameters:
          - q: Specifies keyword to be searched (necessary when items are not specified; items: title, author, authorId, issn, publisher, affilication, journal, volume, issue, page, references, yearTo).
@@ -103,7 +103,7 @@ public extension CiNiiKitArticles {
 
     /**
 
-     Get a result of a search article from CiNii Articles.
+     Get a result of search articles from CiNii Articles.
 
      - Parameters:
          - keyword: Specifies keyword to be searched.
@@ -178,7 +178,7 @@ public extension CiNiiKitArticles {
 
     /**
 
-     Get a result of a search authors from CiNii Articles.
+     Get a result of search authors from CiNii Articles.
 
      - Parameters:
          - author: Specifies keyword to be searched.
@@ -224,7 +224,7 @@ public extension CiNiiKitArticles {
 
     /**
 
-     Get a result of a search full text from CiNii Articles.
+     Get a result of search full text from CiNii Articles.
 
      - Parameters:
          - keyword: Specifies keyword to be searched.
