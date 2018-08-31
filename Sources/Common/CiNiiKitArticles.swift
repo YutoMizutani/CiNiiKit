@@ -9,4 +9,6 @@ import Foundation
 
 public class CiNiiKitArticles {
     public static let shared = CiNiiKitArticles()
+
+    private init() {}
 }

@@ -56,7 +56,7 @@ type_body_length:
   - 300 # warning
   - 400 # error
 function_body_length:
-  warning: 50
+  warning: 60
   error: 100
 file_length:
   warning: 500

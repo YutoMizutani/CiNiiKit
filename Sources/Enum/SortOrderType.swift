@@ -117,3 +117,29 @@ public extension CiNiiKitDissertations {
         case relevanceDescending = 5
     }
 }
+
+public extension CiNiiKitBooks {
+    /**
+     Sort Order
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cib/api/b_opensearch
+     */
+    enum SortOrderType: Int {
+
+        /// Sorts by relevance in descending order(default)
+        case relevanceDescending = 1
+
+        /// Sorts results with the oldest year at the top
+        case oldestYearAtTheTop = 2
+
+        /// Sorts results with the newest year at the top
+        case newestYearAtTheTop = 3
+
+        /// Sorts by number of holding libraries with the lowest number at the top
+        case lowestNumberAtTheTop = 4
+
+        /// Sorts by number of holding libraries with the highest number at the top
+        case highestNumberAtTheTop = 5
+    }
+}

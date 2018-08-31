@@ -9,4 +9,6 @@ import Foundation
 
 public class CiNiiKitDissertations {
     public static let shared = CiNiiKitDissertations()
+
+    private init() {}
 }

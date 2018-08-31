@@ -16,7 +16,9 @@ public class CiNiiKit {
     /// CiNii Articles - https://ci.nii.ac.jp/
     public let articles = CiNiiKitArticles.shared
     /// CiNii Books - https://ci.nii.ac.jp/books/
+    public let books = CiNiiKitBooks.shared
     /// CiNii Dissertations - https://ci.nii.ac.jp/d/
+    public let dissertations = CiNiiKitDissertations.shared
 
     // MARK: - Types
 
