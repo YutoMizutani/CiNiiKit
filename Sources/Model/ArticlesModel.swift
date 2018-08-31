@@ -148,12 +148,12 @@ public struct ArticlesModel: Codable {
          - Remark:
          W3CDTF format
          */
-        let dc_date: String
+        let dcDate: String
 
         /**
          Total search results
          */
-        let opensearch_totalResults: String
+        let opensearchTotalResults: String
 
         /**
          Start number
@@ -161,7 +161,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          Indicates from which record number among the search results the data is being described.
          */
-        let opensearch_startIndex: String?
+        let opensearchStartIndex: String?
 
         /**
          Results per page
@@ -169,7 +169,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          Indicates how many search results are included in the response.
          */
-        let opensearch_itemsPerPage: String?
+        let opensearchItemsPerPage: String?
 
         let items: [Item]?
 
@@ -182,14 +182,14 @@ public struct ArticlesModel: Codable {
         private enum CodingKeys: String, CodingKey {
             case id = "@id"
             case type = "@type"
-            case dc_date = "dc:date"
+            case dcDate = "dc:date"
             case description
             case items
             case title
             case link
-            case opensearch_itemsPerPage = "opensearch:itemsPerPage"
-            case opensearch_startIndex = "opensearch:startIndex"
-            case opensearch_totalResults = "opensearch:totalResults"
+            case opensearchItemsPerPage = "opensearch:itemsPerPage"
+            case opensearchStartIndex = "opensearch:startIndex"
+            case opensearchTotalResults = "opensearch:totalResults"
         }
     }
 
@@ -230,7 +230,7 @@ public struct ArticlesModel: Codable {
          Indicates the URI of Bibliography JSON-LD (except parameter of appid)
          "rdfs:seeAlso":{@id:"http://ci.nii.ac.jp/naid/1234567890.json"},
          */
-        let rdfs_seeAlso: ObjectiveID?
+        let rdfsSeeAlso: ObjectiveID?
 
         /**
          Author name
@@ -238,17 +238,17 @@ public struct ArticlesModel: Codable {
          - Remark:
          Repeated if there are multiple items
          */
-        let dc_creator: [ObjectiveValue]?
+        let dcCreator: [ObjectiveValue]?
 
         /**
          Publisher
          */
-        let dc_publisher: String?
+        let dcPublisher: String?
 
         /**
          Publication name
          */
-        let prism_publicationName: String?
+        let prismPublicationName: String?
 
         /**
          Date of publication
@@ -256,37 +256,37 @@ public struct ArticlesModel: Codable {
          - Remark:
          W3CDTF format
          */
-        let prism_publicationDate: String?
+        let prismPublicationDate: String?
 
         /**
          ISSN
          */
-        let prism_issn: String?
+        let prismIssn: String?
 
         /**
          Volume
          */
-        let prism_volume: String?
+        let prismVolume: String?
 
         /**
          Number
          */
-        let prism_number: String?
+        let prismNumber: String?
 
         /**
          Start page
          */
-        let prism_startingPage: String?
+        let prismStartingPage: String?
 
         /**
          End page
          */
-        let prism_endingPage: String?
+        let prismEndingPage: String?
 
         /**
          Page range
          */
-        let prism_pageRange: String?
+        let prismPageRange: String?
 
         /**
          Abstract
@@ -302,7 +302,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          The same as prism:publicationDate
          */
-        let dc_date: String?
+        let dcDate: String?
 
         /**
          CodingKeys
@@ -313,20 +313,20 @@ public struct ArticlesModel: Codable {
         private enum CodingKeys: String, CodingKey {
             case id = "@id"
             case type = "@type"
-            case dc_creator = "dc:creator"
-            case dc_date = "dc:date"
-            case dc_publisher = "dc:publisher"
+            case dcCreator = "dc:creator"
+            case dcDate = "dc:date"
+            case dcPublisher = "dc:publisher"
             case description
             case link
-            case prism_endingPage = "prism:endingPage"
-            case prism_issn = "prism:issn"
-            case prism_number = "prism:number"
-            case prism_pageRange = "prism:pageRange"
-            case prism_publicationDate = "prism:publicationDate"
-            case prism_publicationName = "prism:publicationName"
-            case prism_startingPage = "prism:startingPage"
-            case prism_volume = "prism:volume"
-            case rdfs_seeAlso = "rdfs:seeAlso"
+            case prismEndingPage = "prism:endingPage"
+            case prismIssn = "prism:issn"
+            case prismNumber = "prism:number"
+            case prismPageRange = "prism:pageRange"
+            case prismPublicationDate = "prism:publicationDate"
+            case prismPublicationName = "prism:publicationName"
+            case prismStartingPage = "prism:startingPage"
+            case prismVolume = "prism:volume"
+            case rdfsSeeAlso = "rdfs:seeAlso"
             case title
         }
     }
