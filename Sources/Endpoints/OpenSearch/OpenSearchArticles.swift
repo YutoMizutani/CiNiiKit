@@ -190,7 +190,7 @@ public extension CiNiiKitArticles {
                 start: Int? = nil,
                 format: Int? = nil,
                 sortorder: SortOrderType.Author? = nil,
-                success: CiNiiKit.EmptySuccessHandler?,
+                success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) {
 
         var parameters: Parameters = Parameters()
@@ -200,6 +200,17 @@ public extension CiNiiKitArticles {
         parameters["start"] ?= start
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortorder?.rawValue
+
+        try? CiNiiKit.shared.request(API.Articles.OpenSearch.author,
+                                     parameters: parameters,
+                                     success: { data in
+                                        let decoder: JSONDecoder = JSONDecoder()
+                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                        success?(model)
+                                     },
+                                     failure: { error in
+                                        failure?(error)
+                                     })
     }
 
     /**
@@ -222,7 +233,7 @@ public extension CiNiiKitArticles {
                   start: Int? = nil,
                   format: Int? = nil,
                   sortorder: SortOrderType.FullText? = nil,
-                  success: CiNiiKit.EmptySuccessHandler?,
+                  success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                   failure: CiNiiKit.FailureHandler?) {
 
         var parameters: Parameters = Parameters()
@@ -232,5 +243,16 @@ public extension CiNiiKitArticles {
         parameters["start"] ?= start
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortorder?.rawValue
+
+        try? CiNiiKit.shared.request(API.Articles.OpenSearch.fullText,
+                                     parameters: parameters,
+                                     success: { data in
+                                        let decoder: JSONDecoder = JSONDecoder()
+                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                        success?(model)
+                                     },
+                                     failure: { error in
+                                        failure?(error)
+                                     })
     }
 }
