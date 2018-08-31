@@ -9,7 +9,12 @@ import Foundation
 
 public extension CiNiiKitArticles {
     struct SortOrderType {
-        /// Specifies the sorting condition. The default is 1. - https://support.nii.ac.jp/en/cia/api/a_opensearch
+        /**
+         Specifies the sorting condition. The default is 1.
+
+         - SeeAlso:
+         https://support.nii.ac.jp/en/cia/api/a_opensearch
+         */
         public enum Search: Int {
 
             /// Year of publication: descending order
@@ -34,7 +39,12 @@ public extension CiNiiKitArticles {
             case numOfCitedDescending = 7
         }
 
-        /// Specifies the sorting condition. The default is 1. - https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
+        /**
+         Specifies the sorting condition. The default is 1.
+
+         - SeeAlso:
+         https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
+         */
         public enum Author: Int {
 
             /// author name: descending order
@@ -47,7 +57,12 @@ public extension CiNiiKitArticles {
             case numOfArticlesDescending = 3
         }
 
-        /// Specifies the sorting condition. The default is 1. - https://support.nii.ac.jp/en/cia/api/a_opensearch_full
+        /**
+         Specifies the sorting condition. The default is 1.
+
+         - SeeAlso:
+         https://support.nii.ac.jp/en/cia/api/a_opensearch_full
+         */
         public enum FullText: Int {
 
             /// Year of publication: descending order
@@ -74,5 +89,31 @@ public extension CiNiiKitArticles {
             /// Relevance: descending order
             case relevanceDescending = 8
         }
+    }
+}
+
+public extension CiNiiKitDissertations {
+    /**
+     Sort Order
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cid/api/d_opensearch
+     */
+    enum SortOrderType: Int {
+
+        /// Sorts results with the newest year at the top(default)
+        case newestYearAtTheTop = 1
+
+        /// Sorts results with the oldest year at the top
+        case oldestYearAtTheTop = 2
+
+        /// Sorts results with the title(A-Z)
+        case titleAscending = 3
+
+        /// Sorts results with the title(Z-A)
+        case titleDescending = 4
+
+        /// Sorts by relevance in descending order
+        case relevanceDescending = 5
     }
 }

@@ -9,7 +9,7 @@ import Alamofire
 
 public extension CiNiiKitArticles {
 
-    // MARK: - User Endpoints
+    // MARK: - Search Endpoints
 
     /**
 
@@ -42,7 +42,7 @@ public extension CiNiiKitArticles {
      - SeeAlso:
      https://support.nii.ac.jp/en/cia/api/a_opensearch
      */
-    func search(_ q: String?,
+    func search(_ q: String? = nil,
                 count: Int? = nil,
                 lang: LanguageType? = nil,
                 start: Int? = nil,
@@ -191,7 +191,7 @@ public extension CiNiiKitArticles {
          - failure:
 
      - SeeAlso:
-     https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
+      https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
      */
     func author(author q: String,
                 count: Int? = nil,
