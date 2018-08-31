@@ -16,14 +16,14 @@ public extension CiNiiKitArticles {
      Get a result of a search article from CiNii Articles.
 
      - Parameters:
-         - q: Specifies keyword to be searched (necessary when items are not specified; items: title, author, authorid, issn, publisher, affilication, journal, volume, issue, page, references, year_to).
+         - q: Specifies keyword to be searched (necessary when items are not specified; items: title, author, authorId, issn, publisher, affilication, journal, volume, issue, page, references, yearTo).
          - count: Specifies the number of search results per page (optional)
          - lang: Specifies the language the search results are displayed in (optional)
          - start: Start number for the acquired search result list (optional)
          - format: Specifies the format of the response (optional)
          - title: earches by article name.
          - author: Searches by author name.
-         - authorid: Searches by author id (NRID).
+         - authorId: Searches by author id (NRID).
          - issn: Searches by ISSN.
          - publisher: Searches by publisher name. It is necessary to encode the URL.
          - affiliation: Searches by author affiliation. It is necessary to encode the URL.
@@ -32,8 +32,8 @@ public extension CiNiiKitArticles {
          - issue: Searches by issue.
          - page: Searches by page.
          - references: Searches by references. It is necessary to encode the URL.
-         - year_from: Searches by year of publication (From).
-         - year_to: Searches by year of publication (To).
+         - yearFrom: Searches by year of publication (From).
+         - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
          - sortorder: Specifies the sorting condition.
          - success:
@@ -49,7 +49,7 @@ public extension CiNiiKitArticles {
                 format: Int? = nil,
                 title: String? = nil,
                 author: String? = nil,
-                authorid: String? = nil,
+                authorId: String? = nil,
                 issn: String? = nil,
                 publisher: String? = nil,
                 affiliation: String? = nil,
@@ -57,13 +57,13 @@ public extension CiNiiKitArticles {
                 volume: Int? = nil,
                 page: Int? = nil,
                 references: String? = nil,
-                year_from: Int? = nil,
-                year_to: Int? = nil,
+                yearFrom: Int? = nil,
+                yearTo: Int? = nil,
                 range: Int? = nil,
                 sortorder: SortOrderType.Search? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) throws {
-        let oprionalParams: [Any?] = [q, title, author, authorid, issn, publisher, affiliation, journal, volume, page, references, year_from, year_to]
+        let oprionalParams: [Any?] = [q, title, author, authorId, issn, publisher, affiliation, journal, volume, page, references, yearFrom, yearTo]
         guard !oprionalParams.filter({ $0 != nil }).isEmpty else {
             throw QueryError.noSpecifiedKeywordError
         }
@@ -76,7 +76,7 @@ public extension CiNiiKitArticles {
         parameters["format"] ?= format
         parameters["title"] ?= title
         parameters["author"] ?= author
-        parameters["authorid"] ?= authorid
+        parameters["authorid"] ?= authorId
         parameters["issn"] ?= issn
         parameters["publisher"] ?= publisher
         parameters["affiliation"] ?= affiliation
@@ -84,8 +84,8 @@ public extension CiNiiKitArticles {
         parameters["volume"] ?= volume
         parameters["page"] ?= page
         parameters["references"] ?= references
-        parameters["year_from"] ?= year_from
-        parameters["year_to"] ?= year_to
+        parameters["year_from"] ?= yearFrom
+        parameters["year_to"] ?= yearTo
         parameters["range"] ?= range
         parameters["sortorder"] ?= sortorder?.rawValue
 
@@ -113,7 +113,7 @@ public extension CiNiiKitArticles {
          - format: Specifies the format of the response (optional)
          - title: earches by article name.
          - author: Searches by author name.
-         - authorid: Searches by author id (NRID).
+         - authorId: Searches by author id (NRID).
          - issn: Searches by ISSN.
          - publisher: Searches by publisher name. It is necessary to encode the URL.
          - affiliation: Searches by author affiliation. It is necessary to encode the URL.
@@ -122,8 +122,8 @@ public extension CiNiiKitArticles {
          - issue: Searches by issue.
          - page: Searches by page.
          - references: Searches by references. It is necessary to encode the URL.
-         - year_from: Searches by year of publication (From).
-         - year_to: Searches by year of publication (To).
+         - yearFrom: Searches by year of publication (From).
+         - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
          - sortorder: Specifies the sorting condition.
          - success:
@@ -139,7 +139,7 @@ public extension CiNiiKitArticles {
                 format: Int? = nil,
                 title: String? = nil,
                 author: String? = nil,
-                authorid: String? = nil,
+                authorId: String? = nil,
                 issn: String? = nil,
                 publisher: String? = nil,
                 affiliation: String? = nil,
@@ -147,8 +147,8 @@ public extension CiNiiKitArticles {
                 volume: Int? = nil,
                 page: Int? = nil,
                 references: String? = nil,
-                year_from: Int? = nil,
-                year_to: Int? = nil,
+                yearFrom: Int? = nil,
+                yearTo: Int? = nil,
                 range: Int? = nil,
                 sortorder: SortOrderType.Search? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
@@ -160,7 +160,7 @@ public extension CiNiiKitArticles {
                          format: format,
                          title: title,
                          author: author,
-                         authorid: authorid,
+                         authorId: authorId,
                          issn: issn,
                          publisher: publisher,
                          affiliation: affiliation,
@@ -168,8 +168,8 @@ public extension CiNiiKitArticles {
                          volume: volume,
                          page: page,
                          references: references,
-                         year_from: year_from,
-                         year_to: year_to,
+                         yearFrom: yearFrom,
+                         yearTo: yearTo,
                          range: range,
                          sortorder: sortorder,
                          success: success,

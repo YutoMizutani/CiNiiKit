@@ -21,11 +21,11 @@ public extension CiNiiKitDissertations {
          - description: Note and Description
          - author: Author
          - grantor: University
-         - grantorid: Grantor ID
-         - grantid: Grant ID
-         - degreename: Types of degree
-         - year_from: Degree year(from); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
-         - year_to: Degree year(to); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
+         - grantorId: Grantor ID
+         - grantId: Grant ID
+         - degreeName: Types of degree
+         - yearFrom: Degree year(from); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
+         - yearTo: Degree year(to); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
          - fulltext: Fulltext
          - range: Range
          - sortorder: Sort Order
@@ -42,11 +42,11 @@ public extension CiNiiKitDissertations {
                 description: String? = nil,
                 author: String? = nil,
                 grantor: String? = nil,
-                grantorid: String? = nil,
-                grantid: String? = nil,
-                degreename: String? = nil,
-                year_from: String? = nil,
-                year_to: String? = nil,
+                grantorId: String? = nil,
+                grantId: String? = nil,
+                degreeName: String? = nil,
+                yearFrom: String? = nil,
+                yearTo: String? = nil,
                 fulltext: String? = nil,
                 range: RangeType? = nil,
                 sortorder: SortOrderType? = nil,
@@ -54,7 +54,7 @@ public extension CiNiiKitDissertations {
                 count: Int? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) throws {
-        let oprionalParams: [Any?] = [q, title, description, author, grantor, grantorid, grantid, degreename, year_from, year_to, fulltext]
+        let oprionalParams: [Any?] = [q, title, description, author, grantor, grantorId, grantId, degreeName, yearFrom, yearTo, fulltext]
         guard !oprionalParams.filter({ $0 != nil }).isEmpty else {
             throw QueryError.noSpecifiedKeywordError
         }
@@ -65,11 +65,11 @@ public extension CiNiiKitDissertations {
         parameters["description"] ?= description
         parameters["author"] ?= author
         parameters["grantor"] ?= grantor
-        parameters["grantorid"] ?= grantorid
-        parameters["grantid"] ?= grantid
-        parameters["degreename"] ?= degreename
-        parameters["year_from"] ?= year_from
-        parameters["year_to"] ?= year_to
+        parameters["grantorid"] ?= grantorId
+        parameters["grantid"] ?= grantId
+        parameters["degreename"] ?= degreeName
+        parameters["year_from"] ?= yearFrom
+        parameters["year_to"] ?= yearTo
         parameters["fulltext"] ?= fulltext
         parameters["range"] ?= range?.rawValue
         parameters["sortorder"] ?= sortorder?.rawValue
@@ -98,11 +98,11 @@ public extension CiNiiKitDissertations {
          - description: Note and Description
          - author: Author
          - grantor: University
-         - grantorid: Grantor ID
-         - grantid: Grant ID
-         - degreename: Types of degree
-         - year_from: Degree year(from); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
-         - year_to: Degree year(to); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
+         - grantorId: Grantor ID
+         - grantId: Grant ID
+         - degreeName: Types of degree
+         - yearFrom: Degree year(from); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
+         - yearTo: Degree year(to); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
          - fulltext: Fulltext
          - range: Range
          - sortorder: Sort Order
@@ -119,11 +119,11 @@ public extension CiNiiKitDissertations {
                 description: String? = nil,
                 author: String? = nil,
                 grantor: String? = nil,
-                grantorid: String? = nil,
-                grantid: String? = nil,
-                degreename: String? = nil,
-                year_from: String? = nil,
-                year_to: String? = nil,
+                grantorId: String? = nil,
+                grantId: String? = nil,
+                degreeName: String? = nil,
+                yearFrom: String? = nil,
+                yearTo: String? = nil,
                 fulltext: String? = nil,
                 range: RangeType? = nil,
                 sortorder: SortOrderType? = nil,
@@ -136,11 +136,11 @@ public extension CiNiiKitDissertations {
                          description: description,
                          author: author,
                          grantor: grantor,
-                         grantorid: grantorid,
-                         grantid: grantid,
-                         degreename: degreename,
-                         year_from: year_from,
-                         year_to: year_to,
+                         grantorId: grantorId,
+                         grantId: grantId,
+                         degreeName: degreeName,
+                         yearFrom: yearFrom,
+                         yearTo: yearTo,
                          fulltext: fulltext,
                          range: range,
                          sortorder: sortorder,
