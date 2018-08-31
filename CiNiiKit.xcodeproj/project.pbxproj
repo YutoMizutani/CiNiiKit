@@ -23,6 +23,7 @@
 		99F97ACF2138D3900052391A /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */; };
 		99F97AD12138D3B30052391A /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD02138D3B30052391A /* CiNiiKitDissertations.swift */; };
 		99F97AD32138E3F30052391A /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD22138E3F30052391A /* RangeType.swift */; };
+		99F97AD52138E9700052391A /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD42138E9700052391A /* DissertationsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchDissertations.swift; sourceTree = "<group>"; };
 		99F97AD02138D3B30052391A /* CiNiiKitDissertations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitDissertations.swift; sourceTree = "<group>"; };
 		99F97AD22138E3F30052391A /* RangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeType.swift; sourceTree = "<group>"; };
+		99F97AD42138E9700052391A /* DissertationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationsModel.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				99F97AA72137A47B0052391A /* ArticlesModel.swift */,
+				99F97AD42138E9700052391A /* DissertationsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */,
 				99F97AD12138D3B30052391A /* CiNiiKitDissertations.swift in Sources */,
 				99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */,
+				99F97AD52138E9700052391A /* DissertationsModel.swift in Sources */,
 				99F97ACF2138D3900052391A /* OpenSearchDissertations.swift in Sources */,
 				999C52552134B14400611308 /* CiNiiKit.swift in Sources */,
 				99F97AD32138E3F30052391A /* RangeType.swift in Sources */,
