@@ -13,10 +13,10 @@ public extension CiNiiKitArticles {
 
     /**
 
-     https://support.nii.ac.jp/en/cia/api/a_opensearch
+     Get a result of a search article from CiNii Articles.
 
      - Parameters:
-         - keyword: Specifies keyword to be searched (necessary when items are not specified; items: title, author, authorid, issn, publisher, affilication, journal, volume, issue, page, references, year_to).
+         - q: Specifies keyword to be searched (necessary when items are not specified; items: title, author, authorid, issn, publisher, affilication, journal, volume, issue, page, references, year_to).
          - count: Specifies the number of search results per page (optional)
          - lang: Specifies the language the search results are displayed in (optional)
          - start: Start number for the acquired search result list (optional)
@@ -38,6 +38,9 @@ public extension CiNiiKitArticles {
          - sortorder: Specifies the sorting condition.
          - success:
          - failure:
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cia/api/a_opensearch
      */
     func search(_ q: String?,
                 count: Int? = nil,
@@ -100,7 +103,7 @@ public extension CiNiiKitArticles {
 
     /**
 
-     https://support.nii.ac.jp/en/cia/api/a_opensearch
+     Get a result of a search article from CiNii Articles.
 
      - Parameters:
          - keyword: Specifies keyword to be searched.
@@ -125,6 +128,9 @@ public extension CiNiiKitArticles {
          - sortorder: Specifies the sorting condition.
          - success:
          - failure:
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cia/api/a_opensearch
      */
     func search(keyword q: String,
                 count: Int? = nil,
@@ -172,7 +178,7 @@ public extension CiNiiKitArticles {
 
     /**
 
-     https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
+     Get a result of a search authors from CiNii Articles.
 
      - Parameters:
          - author: Specifies keyword to be searched.
@@ -183,6 +189,9 @@ public extension CiNiiKitArticles {
          - sortorder: Specifies the sorting condition.
          - success:
          - failure:
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
      */
     func author(author q: String,
                 count: Int? = nil,
@@ -215,7 +224,7 @@ public extension CiNiiKitArticles {
 
     /**
 
-     https://support.nii.ac.jp/en/cia/api/a_opensearch_full
+     Get a result of a search full text from CiNii Articles.
 
      - Parameters:
          - keyword: Specifies keyword to be searched.
@@ -226,6 +235,9 @@ public extension CiNiiKitArticles {
          - sortorder: Specifies the sorting condition.
          - success:
          - failure:
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cia/api/a_opensearch_full
      */
     func fulltext(keyword q: String,
                   count: Int? = nil,
