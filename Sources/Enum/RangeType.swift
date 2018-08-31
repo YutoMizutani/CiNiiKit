@@ -1,6 +1,6 @@
 //
 //  RangeType.swift
-//  CiNiiKit iOS
+//  CiNiiKit
 //
 //  Created by Yuto Mizutani on 2018/08/31.
 //

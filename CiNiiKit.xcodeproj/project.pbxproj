@@ -27,6 +27,7 @@
 		99F97AD7213978800052391A /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD62139787F0052391A /* OpenSearchBooks.swift */; };
 		99F97AD921397B8D0052391A /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD821397B8C0052391A /* CiNiiKitBooks.swift */; };
 		99F97ADB213991FC0052391A /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97ADA213991FC0052391A /* MaterialType.swift */; };
+		99F97ADD2139987E0052391A /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97ADC2139987E0052391A /* BooksModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		99F97AD62139787F0052391A /* OpenSearchBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchBooks.swift; sourceTree = "<group>"; };
 		99F97AD821397B8C0052391A /* CiNiiKitBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitBooks.swift; sourceTree = "<group>"; };
 		99F97ADA213991FC0052391A /* MaterialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialType.swift; sourceTree = "<group>"; };
+		99F97ADC2139987E0052391A /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				99F97A7321360ED40052391A /* OpenSearchArticles.swift */,
-				99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */,
 				99F97AD62139787F0052391A /* OpenSearchBooks.swift */,
+				99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */,
 			);
 			path = OpenSearch;
 			sourceTree = "<group>";
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				99F97AA72137A47B0052391A /* ArticlesModel.swift */,
+				99F97ADC2139987E0052391A /* BooksModel.swift */,
 				99F97AD42138E9700052391A /* DissertationsModel.swift */,
 			);
 			path = Model;
@@ -399,6 +402,7 @@
 				99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */,
 				99F97AA32136D2300052391A /* API.swift in Sources */,
 				99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */,
+				99F97ADD2139987E0052391A /* BooksModel.swift in Sources */,
 				99F97AA12136CFD70052391A /* Operator+.swift in Sources */,
 				99F97AA82137A47B0052391A /* ArticlesModel.swift in Sources */,
 				99F97AD921397B8D0052391A /* CiNiiKitBooks.swift in Sources */,

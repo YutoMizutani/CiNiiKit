@@ -1,6 +1,6 @@
 //
 //  MaterialType.swift
-//  CiNiiKit iOS
+//  CiNiiKit
 //
 //  Created by Yuto Mizutani on 2018/09/01.
 //
