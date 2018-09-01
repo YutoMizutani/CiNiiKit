@@ -35,7 +35,7 @@ public extension CiNiiKitArticles {
          - yearFrom: Searches by year of publication (From).
          - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
-         - sortorder: Specifies the sorting condition.
+         - sortOrder: Specifies the sorting condition.
          - success:
          - failure:
 
@@ -60,7 +60,7 @@ public extension CiNiiKitArticles {
                 yearFrom: Int? = nil,
                 yearTo: Int? = nil,
                 range: Int? = nil,
-                sortorder: SortOrderType.Search? = nil,
+                sortOrder: SortOrderType.Search? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) throws {
         let oprionalParams: [Any?] = [q, title, author, authorId, issn, publisher, affiliation, journal, volume, page, references, yearFrom, yearTo]
@@ -87,7 +87,7 @@ public extension CiNiiKitArticles {
         parameters["year_from"] ?= yearFrom
         parameters["year_to"] ?= yearTo
         parameters["range"] ?= range
-        parameters["sortorder"] ?= sortorder?.rawValue
+        parameters["sortorder"] ?= sortOrder?.rawValue
 
         try? CiNiiKit.shared.request(API.Articles.OpenSearch.search,
                                      parameters: parameters,
@@ -125,7 +125,7 @@ public extension CiNiiKitArticles {
          - yearFrom: Searches by year of publication (From).
          - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
-         - sortorder: Specifies the sorting condition.
+         - sortOrder: Specifies the sorting condition.
          - success:
          - failure:
 
@@ -150,7 +150,7 @@ public extension CiNiiKitArticles {
                 yearFrom: Int? = nil,
                 yearTo: Int? = nil,
                 range: Int? = nil,
-                sortorder: SortOrderType.Search? = nil,
+                sortOrder: SortOrderType.Search? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) {
         try? self.search(q,
@@ -171,7 +171,7 @@ public extension CiNiiKitArticles {
                          yearFrom: yearFrom,
                          yearTo: yearTo,
                          range: range,
-                         sortorder: sortorder,
+                         sortOrder: sortOrder,
                          success: success,
                          failure: failure)
     }
@@ -186,7 +186,7 @@ public extension CiNiiKitArticles {
          - lang: Specifies the language the search results are displayed in (optional)
          - start: Start number for the acquired search result list (optional)
          - format: Specifies the format of the response (optional)
-         - sortorder: Specifies the sorting condition.
+         - sortOrder: Specifies the sorting condition.
          - success:
          - failure:
 
@@ -198,7 +198,7 @@ public extension CiNiiKitArticles {
                 lang: LanguageType? = nil,
                 start: Int? = nil,
                 format: Int? = nil,
-                sortorder: SortOrderType.Author? = nil,
+                sortOrder: SortOrderType.Author? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                 failure: CiNiiKit.FailureHandler?) {
 
@@ -208,7 +208,7 @@ public extension CiNiiKitArticles {
         parameters["lang"] ?= lang?.rawValue
         parameters["start"] ?= start
         parameters["format"] ?= format
-        parameters["sortorder"] ?= sortorder?.rawValue
+        parameters["sortorder"] ?= sortOrder?.rawValue
 
         try? CiNiiKit.shared.request(API.Articles.OpenSearch.author,
                                      parameters: parameters,
@@ -232,7 +232,7 @@ public extension CiNiiKitArticles {
          - lang: Specifies the language the search results are displayed in (optional)
          - start: Start number for the acquired search result list (optional)
          - format: Specifies the format of the response (optional)
-         - sortorder: Specifies the sorting condition.
+         - sortOrder: Specifies the sorting condition.
          - success:
          - failure:
 
@@ -244,7 +244,7 @@ public extension CiNiiKitArticles {
                   lang: LanguageType? = nil,
                   start: Int? = nil,
                   format: Int? = nil,
-                  sortorder: SortOrderType.FullText? = nil,
+                  sortOrder: SortOrderType.FullText? = nil,
                   success: CiNiiKit.SuccessHandler<ArticlesModel>?,
                   failure: CiNiiKit.FailureHandler?) {
 
@@ -254,7 +254,7 @@ public extension CiNiiKitArticles {
         parameters["lang"] ?= lang?.rawValue
         parameters["start"] ?= start
         parameters["format"] ?= format
-        parameters["sortorder"] ?= sortorder?.rawValue
+        parameters["sortorder"] ?= sortOrder?.rawValue
 
         try? CiNiiKit.shared.request(API.Articles.OpenSearch.fullText,
                                      parameters: parameters,

@@ -28,7 +28,7 @@ public extension CiNiiKitDissertations {
          - yearTo: Degree year(to); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
          - fulltext: Fulltext
          - range: Range
-         - sortorder: Sort Order
+         - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
          - success:
@@ -49,7 +49,7 @@ public extension CiNiiKitDissertations {
                 yearTo: String? = nil,
                 fulltext: String? = nil,
                 range: RangeType? = nil,
-                sortorder: SortOrderType? = nil,
+                sortOrder: SortOrderType? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
                 success: CiNiiKit.SuccessHandler<DissertationsModel>?,
@@ -72,7 +72,7 @@ public extension CiNiiKitDissertations {
         parameters["year_to"] ?= yearTo
         parameters["fulltext"] ?= fulltext
         parameters["range"] ?= range?.rawValue
-        parameters["sortorder"] ?= sortorder?.rawValue
+        parameters["sortorder"] ?= sortOrder?.rawValue
         parameters["p"] ?= p
         parameters["count"] ?= count
 
@@ -105,7 +105,7 @@ public extension CiNiiKitDissertations {
          - yearTo: Degree year(to); Western year.Only either one is also possible. (Even in that case, dissertation whose publication year is unknown can not be searched.)
          - fulltext: Fulltext
          - range: Range
-         - sortorder: Sort Order
+         - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
          - success:
@@ -126,7 +126,7 @@ public extension CiNiiKitDissertations {
                 yearTo: String? = nil,
                 fulltext: String? = nil,
                 range: RangeType? = nil,
-                sortorder: SortOrderType? = nil,
+                sortOrder: SortOrderType? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
                 success: CiNiiKit.SuccessHandler<DissertationsModel>?,
@@ -143,7 +143,7 @@ public extension CiNiiKitDissertations {
                          yearTo: yearTo,
                          fulltext: fulltext,
                          range: range,
-                         sortorder: sortorder,
+                         sortOrder: sortOrder,
                          p: p,
                          count: count,
                          success: success,

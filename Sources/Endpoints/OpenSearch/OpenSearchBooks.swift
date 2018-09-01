@@ -39,7 +39,7 @@ public extension CiNiiKitBooks {
          - year_from: Publication year(from); Western year including the specified year.
          - year_to: Publication year(to); Western year including the specified year.
          - type: Material type
-         - sortorder: Sort Order
+         - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
          - success:
@@ -71,7 +71,7 @@ public extension CiNiiKitBooks {
                 yearFrom: String? = nil,
                 yearTo: String? = nil,
                 type: MaterialType? = nil,
-                sortorder: SortOrderType? = nil,
+                sortOrder: SortOrderType.Search? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
@@ -127,7 +127,7 @@ public extension CiNiiKitBooks {
         parameters["year_from"] ?= yearFrom
         parameters["year_to"] ?= yearTo
         parameters["type"] ?= type?.rawValue
-        parameters["sortorder"] ?= sortorder?.rawValue
+        parameters["sortorder"] ?= sortOrder?.rawValue
         parameters["p"] ?= p
         parameters["count"] ?= count
 
@@ -171,7 +171,7 @@ public extension CiNiiKitBooks {
          - year_from: Publication year(from); Western year including the specified year.
          - year_to: Publication year(to); Western year including the specified year.
          - type: Material type
-         - sortorder: Sort Order
+         - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
          - success:
@@ -203,7 +203,7 @@ public extension CiNiiKitBooks {
                 yearFrom: String? = nil,
                 yearTo: String? = nil,
                 type: MaterialType? = nil,
-                sortorder: SortOrderType? = nil,
+                sortOrder: SortOrderType.Search? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
                 success: CiNiiKit.SuccessHandler<ArticlesModel>?,
@@ -231,7 +231,7 @@ public extension CiNiiKitBooks {
                          yearFrom: yearFrom,
                          yearTo: yearTo,
                          type: type,
-                         sortorder: sortorder,
+                         sortOrder: sortOrder,
                          p: p,
                          count: count,
                          success: success,
