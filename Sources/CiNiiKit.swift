@@ -6,7 +6,7 @@
 //
 
 import Alamofire
-import KeychainAccess
+//import KeychainAccess
 import UIKit
 
 /// A set of helper functions to make the Instagram API easier to use.
@@ -41,14 +41,23 @@ public class CiNiiKit {
     // MARK: - Keychain
 
     private let accessTokenKey = "accesstoken"
-    private var keychain = Keychain(service: "com.ym.cinii-kit")
+//    private var keychain = Keychain(service: "com.ym.cinii-kit")
+    private var appid: String?
+
+//    public func register(key value: String) {
+//        self.keychain[self.accessTokenKey] = value
+//    }
+//
+//    public func remove() throws {
+//        try self.keychain.remove(self.accessTokenKey)
+//    }
 
     public func register(key value: String) {
-        self.keychain[self.accessTokenKey] = value
+        self.appid = value
     }
 
-    public func remove() throws {
-        try self.keychain.remove(self.accessTokenKey)
+    public func remove() {
+        self.appid = nil
     }
 
     // MARK: - Requests
@@ -59,9 +68,11 @@ public class CiNiiKit {
                  success: ((_ data: Data) -> Void)?,
                  failure: FailureHandler?) throws {
 
-        guard let appid: String = try self.keychain.get(self.accessTokenKey) else {
-            throw QueryError.noAppID
-        }
+//        guard let appid: String = try self.keychain.get(self.accessTokenKey) else {
+//            throw QueryError.noAppID
+//        }
+
+        guard let appid: String = appid else { return }
 
         var parameters = parameters ?? Parameters()
         parameters["format"] = "json"
