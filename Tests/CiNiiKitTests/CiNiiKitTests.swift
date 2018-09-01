@@ -6,9 +6,9 @@ final class CiNiiKitTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(CiNiiKit().text, "Hello, World!")
+        let cinii = CiNiiKit.shared
+        XCTAssertEqual(cinii.text, "Hello, World!")
     }
-
 
     static var allTests = [
         ("testExample", testExample),
