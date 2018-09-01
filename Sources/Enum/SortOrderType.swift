@@ -119,27 +119,77 @@ public extension CiNiiKitDissertations {
 }
 
 public extension CiNiiKitBooks {
-    /**
-     Sort Order
+    struct SortOrderType {
+        /**
+         Sort Order
 
-     - SeeAlso:
-     https://support.nii.ac.jp/en/cib/api/b_opensearch
-     */
-    enum SortOrderType: Int {
+         - SeeAlso:
+         https://support.nii.ac.jp/en/cib/api/b_opensearch
+         */
+        public enum Search: Int {
 
-        /// Sorts by relevance in descending order(default)
-        case relevanceDescending = 1
+            /// Sorts by relevance in descending order(default)
+            case relevanceDescending = 1
 
-        /// Sorts results with the oldest year at the top
-        case oldestYearAtTheTop = 2
+            /// Sorts results with the oldest year at the top
+            case oldestYearAtTheTop = 2
 
-        /// Sorts results with the newest year at the top
-        case newestYearAtTheTop = 3
+            /// Sorts results with the newest year at the top
+            case newestYearAtTheTop = 3
 
-        /// Sorts by number of holding libraries with the lowest number at the top
-        case lowestNumberAtTheTop = 4
+            /// Sorts by number of holding libraries with the lowest number at the top
+            case lowestNumberAtTheTop = 4
 
-        /// Sorts by number of holding libraries with the highest number at the top
-        case highestNumberAtTheTop = 5
+            /// Sorts by number of holding libraries with the highest number at the top
+            case highestNumberAtTheTop = 5
+        }
+
+        /**
+         Specifies the sorting condition. The default is 1.
+
+         - SeeAlso:
+         https://support.nii.ac.jp/en/cib/api/b_opensearch_auth
+         */
+        public enum Author: Int {
+
+            /// Sorts by relevance in descending order(default)
+            case relevanceDescending = 1
+
+            /// Sorts by name in ascending order of character code (A to Z)
+            case authorNameAscending = 2
+
+            /// Sorts by name in descending order of character code (Z to A)
+            case authorNameDescending = 3
+
+            /// Sorts by number of books with the lowest number at the top
+            case lowestNumberAtTheTop = 4
+
+            /// Sorts by number of books　with the highest number at the top
+            case highestNumberAtTheTop = 5
+        }
+
+        /**
+         Specifies the sorting condition. The default is 1.
+
+         - SeeAlso:
+         https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
+         */
+        public enum Library: Int {
+
+            /// Sorts by relevance in descending order(default)
+            case relevanceDescending = 1
+
+            /// Sorts by name in ascending order of character code (A to Z)
+            case authorNameAscending = 2
+
+            /// Sorts by name in descending order of character code (Z to A)
+            case authorNameDescending = 3
+
+            /// Sorts by number of books with the lowest number at the top
+            case lowestNumberAtTheTop = 4
+
+            /// Sorts by number of books　with the highest number at the top
+            case highestNumberAtTheTop = 5
+        }
     }
 }

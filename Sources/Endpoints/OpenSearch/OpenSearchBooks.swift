@@ -74,7 +74,7 @@ public extension CiNiiKitBooks {
                 sortOrder: SortOrderType.Search? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
-                success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                success: CiNiiKit.SuccessHandler<BooksModel>?,
                 failure: CiNiiKit.FailureHandler?) throws {
         let oprionalParams: [Any?] = [q,
                                       title,
@@ -135,7 +135,7 @@ public extension CiNiiKitBooks {
                                      parameters: parameters,
                                      success: { data in
                                         let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
                                         success?(model)
                                      },
                                      failure: { error in
@@ -206,7 +206,7 @@ public extension CiNiiKitBooks {
                 sortOrder: SortOrderType.Search? = nil,
                 p: Int? = nil,
                 count: Int? = nil,
-                success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                success: CiNiiKit.SuccessHandler<BooksModel>?,
                 failure: CiNiiKit.FailureHandler?) {
         try? self.search(q,
                          title: title,
@@ -236,5 +236,155 @@ public extension CiNiiKitBooks {
                          count: count,
                          success: success,
                          failure: failure)
+    }
+
+    /**
+
+     Get a result of search for authors from CiNii Books.
+
+     - Parameters:
+         - name: Author Name; Partial match or exact match of Author Name ID.
+         - sortOrder: Sort Order
+         - p: Search Page Number
+         - count: Number of outcome per one page
+         - success:
+         - failure:
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
+     */
+    func author(name: String,
+                sortOrder: SortOrderType.Author? = nil,
+                p: Int? = nil,
+                count: Int? = nil,
+                success: CiNiiKit.SuccessHandler<BooksModel>?,
+                failure: CiNiiKit.FailureHandler?) {
+
+        var parameters: Parameters = Parameters()
+        parameters["name"] ?= name
+        parameters["sortorder"] ?= sortOrder?.rawValue
+        parameters["p"] ?= p
+        parameters["count"] ?= count
+
+        try? CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+                                     parameters: parameters,
+                                     success: { data in
+                                        let decoder: JSONDecoder = JSONDecoder()
+                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                        success?(model)
+                                     },
+                                     failure: { error in
+                                        failure?(error)
+                                     })
+    }
+
+    /**
+
+     Get a result of search for libraries from CiNii Books.
+
+     - Parameters:
+         - name: Library name; Partial match or exact match of Library ID.
+         - sortOrder: Sort Order
+         - p: Page Number
+         - count: Number of outcome per one page
+         - success:
+         - failure:
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
+     */
+    func library(name: String,
+                 sortOrder: SortOrderType.Library? = nil,
+                 p: Int? = nil,
+                 count: Int? = nil,
+                 success: CiNiiKit.SuccessHandler<BooksModel>?,
+                 failure: CiNiiKit.FailureHandler?) {
+
+        var parameters: Parameters = Parameters()
+        parameters["name"] ?= name
+        parameters["sortorder"] ?= sortOrder?.rawValue
+        parameters["p"] ?= p
+        parameters["count"] ?= count
+
+        try? CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+                                     parameters: parameters,
+                                     success: { data in
+                                        let decoder: JSONDecoder = JSONDecoder()
+                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                        success?(model)
+                                     },
+                                     failure: { error in
+                                        failure?(error)
+                                     })
+    }
+
+    /**
+
+     Get a result of search for holdings from CiNii Books.
+
+     - Parameters:
+         - ncid: NCID
+         - ill: Library - ILL Membership
+         - illStat: Library - ILL Status
+         - illCopys: Library - Copy Service Status
+         - illLoans: Library - Loan Service Status
+         - illFaxs: Library - FAX Service Status
+         - illOclc: Library - Membership of Japan and US ILL
+         - illKeris: Library - Membership of Japan and Korea ILL
+         - illOffset: Library - Membership of ILL Offset
+         - fano: Library - Library ID
+         - year: Journal Holding - Year
+         - vol: Journal Holding - Volume
+         - issue: Journal Holding - Number
+         - cont: Journal Holding - Continuing
+         - success:
+         - failure:
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
+     */
+    func holding(ncid: String,
+                 ill: ParticipantType? = nil,
+                 illStat: ILLStatusType? = nil,
+                 illCopys: ServiceStatusType? = nil,
+                 illLoans: ServiceStatusType? = nil,
+                 illFaxs: ServiceStatusType? = nil,
+                 illOclc: ParticipantType? = nil,
+                 illKeris: ParticipantType? = nil,
+                 illOffset: ParticipantType? = nil,
+                 fano: String? = nil,
+                 year: String? = nil,
+                 vol: String? = nil,
+                 issue: String? = nil,
+                 cont: Bool? = nil,
+                 success: CiNiiKit.SuccessHandler<BooksModel>?,
+                 failure: CiNiiKit.FailureHandler?) {
+
+        var parameters: Parameters = Parameters()
+        parameters["ncid"] ?= ncid
+        parameters["ill"] ?= ill?.rawValue
+        parameters["ill_stat"] ?= illStat?.rawValue
+        parameters["ill_copys"] ?= illCopys?.rawValue
+        parameters["ill_loans"] ?= illLoans?.rawValue
+        parameters["ill_faxs"] ?= illFaxs?.rawValue
+        parameters["ill_oclc"] ?= illOclc?.rawValue
+        parameters["ill_keris"] ?= illKeris?.rawValue
+        parameters["ill_offset"] ?= illOffset?.rawValue
+        parameters["fano"] ?= fano
+        parameters["year"] ?= year
+        parameters["vol"] ?= vol
+        parameters["issue"] ?= issue
+        parameters["cont"] = cont != nil ? cont! ? 0 : 1 : nil
+
+        try? CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+                                     parameters: parameters,
+                                     success: { data in
+                                        let decoder: JSONDecoder = JSONDecoder()
+                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                        success?(model)
+                                     },
+                                     failure: { error in
+                                        failure?(error)
+                                     })
     }
 }
