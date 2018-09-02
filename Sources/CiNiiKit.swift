@@ -72,7 +72,9 @@ public class CiNiiKit {
 //            throw QueryError.noAppID
 //        }
 
-        guard let appid: String = appid else { return }
+        guard let appid: String = appid else {
+            throw QueryError.noAppID
+        }
 
         var parameters = parameters ?? Parameters()
         parameters["format"] = "json"
