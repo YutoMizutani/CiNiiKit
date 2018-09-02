@@ -99,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		990270D2213B8BF500B91499 /* OpenSearch */ = {
+			isa = PBXGroup;
+			children = (
+				99F97A7321360ED40052391A /* OpenSearchArticles.swift */,
+				99F97AD62139787F0052391A /* OpenSearchBooks.swift */,
+				99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */,
+			);
+			name = OpenSearch;
+			sourceTree = "<group>";
+		};
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,19 +196,9 @@
 		99F97A7021360E6B0052391A /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				99F97A79213614B30052391A /* OpenSearch */,
+				990270D2213B8BF500B91499 /* OpenSearch */,
 			);
 			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		99F97A79213614B30052391A /* OpenSearch */ = {
-			isa = PBXGroup;
-			children = (
-				99F97A7321360ED40052391A /* OpenSearchArticles.swift */,
-				99F97AD62139787F0052391A /* OpenSearchBooks.swift */,
-				99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */,
-			);
-			path = OpenSearch;
 			sourceTree = "<group>";
 		};
 		99F97A7C21364A890052391A /* Enum */ = {
