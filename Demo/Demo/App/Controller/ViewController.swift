@@ -6,13 +6,16 @@
 //  Copyright © 2018 Yuto Mizutani. All rights reserved.
 //
 
-import UIKit
+import CiNiiKit
 import SafariServices
+import UIKit
 
 class ViewController: UIViewController {
-    var searchView: UIView!
-    var copyrightView: UIView!
+    var searchView: SearchView!
+    var copyrightView: CopyrightView!
     var scrollView: UIScrollView!
+
+    var model: SearchModel!
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
@@ -21,6 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
+        self.configureModel()
+        self.configureAction()
         self.layoutView()
     }
 
@@ -49,6 +54,8 @@ extension ViewController {
         }
         searchView: do {
             let searchView = SearchView()
+            searchView.apiKeyTextField.delegate = self
+            searchView.searchWordTextField.delegate = self
             self.searchView = searchView
         }
         copyrightView: do {
@@ -63,6 +70,17 @@ extension ViewController {
         }
     }
 
+    private func configureModel() {
+        self.model = SearchModel()
+        self.searchView.apiKeyTextField.text = self.model.getAPIKey()
+    }
+
+    private func configureAction() {
+        searchButton: do {
+            self.searchView.searchButton.addTarget(self, action: #selector(self.searchAction), for: .touchUpInside)
+        }
+    }
+
     private func layoutView() {
         searchView: do {
             self.searchView.frame = self.view.bounds
@@ -72,8 +90,52 @@ extension ViewController {
         }
         scrollView: do {
             self.scrollView.frame = self.view.bounds
-            self.scrollView.contentSize = CGSize(width: self.width, height: self.searchView.height + self.copyrightView.height)//self.scrollView.subviews.map { $0.height }.reduce(0) { $0 + $1 })
+            self.scrollView.contentSize = CGSize(width: self.width, height: self.searchView.height + self.copyrightView.height)
         }
+    }
+}
+
+// MARK: - Private configure methods
+extension ViewController {
+    private func search() {
+        guard let key = self.searchView.apiKeyTextField.text, let searchWord = self.searchView.searchWordTextField.text else { return }
+        self.model.register(key)
+        self.model.search(searchWord, success: { model in
+            dump(model)
+        }, failure: { error in
+            dump(error)
+        })
+    }
+}
+
+// MARK: - Actions
+extension ViewController {
+    @IBAction private func searchAction() {
+        self.search()
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+        if textField == self.searchView.apiKeyTextField {
+            self.searchView.searchWordTextField.becomeFirstResponder()
+        }else if textField == self.searchView.searchWordTextField {
+
+        }else{
+            textField.resignFirstResponder()
+        }
+
+        return true
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.scrollView?.isScrollEnabled = false
+    }
+
+    func textFieldDidEndEditing(_ textField:UITextField) {
+        self.scrollView?.isScrollEnabled = true
     }
 }
 
