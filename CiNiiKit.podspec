@@ -14,10 +14,9 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/EXPENSIVE_MAN'
 
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.10'
 
   s.requires_arc = true
 
   s.dependency 'Alamofire'
-  s.source_files = 'CiNiiKit/**/*.swift'
+  s.source_files = 'Sources//**/*.swift'
 end

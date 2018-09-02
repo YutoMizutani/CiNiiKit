@@ -112,12 +112,11 @@
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				999C51E22134318B00611308 /* CiNiiKit.swift */,
 				99F97A9F2136CFAB0052391A /* Extension */,
 				99F97A82213679A90052391A /* Error */,
-				99F97AA62137A4440052391A /* Model */,
 				99F97A7C21364A890052391A /* Enum */,
-				99F97A81213655370052391A /* Common */,
+				99F97A81213655370052391A /* Core */,
+				99F97AA62137A4440052391A /* Model */,
 				99F97A7021360E6B0052391A /* Endpoints */,
 			);
 			path = Sources;
@@ -216,14 +215,15 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		99F97A81213655370052391A /* Common */ = {
+		99F97A81213655370052391A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				999C51E22134318B00611308 /* CiNiiKit.swift */,
 				99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */,
 				99F97AD821397B8C0052391A /* CiNiiKitBooks.swift */,
 				99F97AD02138D3B30052391A /* CiNiiKitDissertations.swift */,
 			);
-			path = Common;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		99F97A82213679A90052391A /* Error */ = {
