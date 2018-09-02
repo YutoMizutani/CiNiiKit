@@ -42,7 +42,7 @@ public class CiNiiKit {
 
     private let accessTokenKey = "accesstoken"
 //    private var keychain = Keychain(service: "com.ym.cinii-kit")
-    private var appid: String?
+    private(set) var appid: String?
 
 //    public func register(key value: String) {
 //        self.keychain[self.accessTokenKey] = value
