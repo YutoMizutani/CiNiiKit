@@ -25,6 +25,10 @@ public struct API {
         /// CiNii Books OpenSearch API
         public enum OpenSearch {
             private static let base = "http://ci.nii.ac.jp/books/opensearch"
+            static let search = "\(API.Books.OpenSearch.base)/search"
+            static let author = "\(API.Books.OpenSearch.base)/author"
+            static let library = "\(API.Books.OpenSearch.base)/library"
+            static let holder = "\(API.Books.OpenSearch.base)/holder"
         }
     }
 
