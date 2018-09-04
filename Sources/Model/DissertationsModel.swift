@@ -21,7 +21,7 @@ public struct DissertationsModel: Codable {
      "opensearch": "http://a9.com/-/spec/opensearch/1.1/"
      },
      */
-    let context: Context
+    public let context: Context
 
     /**
      Requested URI
@@ -29,13 +29,13 @@ public struct DissertationsModel: Codable {
      - Remark:
      This is a search request URI. URL-encorded query is output with "variable identifier=value" format. "appid" will be removed from parameter.
      */
-    let id: String
+    public let id: String
 
     /**
      - Remark:
      Element count of array is 1
      */
-    let graph: [Graph]
+    public let graph: [Graph]
 
     /**
      CodingKeys
@@ -50,42 +50,42 @@ public struct DissertationsModel: Codable {
     }
 
     /// @context Object
-    struct Context: Codable {
+    public struct Context: Codable {
         /**
          - Remark:
          http://purl.org/rss/1.0/
          */
-        let vocab: String
+        public let vocab: String
 
         /**
          - Remark:
          http://www.w3.org/1999/02/22-rdf-syntax-ns#
          */
-        let rdf: String
+        public let rdf: String
 
         /**
          - Remark:
          http://www.w3.org/2000/01/rdf-schema#
          */
-        let rdfs: String
+        public let rdfs: String
 
         /**
          - Remark:
          http://purl.org/dc/elements/1.1/
          */
-        let dc: String
+        public let dc: String
 
         /**
          - Remark:
          http://prismstandard.org/namespaces/basic/2.0/
          */
-        let prism: String
+        public let prism: String
 
         /**
          - Remark:
          http://a9.com/-/spec/opensearch/1.1/
          */
-        let opensearch: String
+        public let opensearch: String
 
         /**
          CodingKeys
@@ -103,20 +103,20 @@ public struct DissertationsModel: Codable {
         }
     }
 
-    struct Graph: Codable {
+    public struct Graph: Codable {
         /**
          Requested URI
 
          - Remark:
          This is a search request URI. URL-encorded query is output with "variable identifier=value" format. "appid" will be removed from parameter.
          */
-        let id: String
+        public let id: String
 
         /**
          - Remark:
          Fixed: "channel"
          */
-        let type: String
+        public let type: String
 
         /**
          Title
@@ -124,7 +124,7 @@ public struct DissertationsModel: Codable {
          - Remark:
          Concatenation with query to "CiNii Dissertations OpenSearch"
          */
-        let title: String
+        public let title: String
 
         /**
          Title
@@ -132,7 +132,7 @@ public struct DissertationsModel: Codable {
          - Remark:
          Same as the above
          */
-        let description: String
+        public let description: String
 
         /**
          Requested URI
@@ -140,7 +140,7 @@ public struct DissertationsModel: Codable {
          - Remark:
          This is a search request URI. URL-encorded query is output with "variable identifier=value" format. "appid" will be removed from parameter.
          */
-        let link: ObjectiveID
+        public let link: ObjectiveID
 
         /**
          Date when search was executed
@@ -148,12 +148,12 @@ public struct DissertationsModel: Codable {
          - Remark:
          W3CDTF format
          */
-        let dcDate: String
+        public let dcDate: String
 
         /**
          Total search results
          */
-        let opensearchTotalResults: String
+        public let opensearchTotalResults: String
 
         /**
          Start number
@@ -161,7 +161,7 @@ public struct DissertationsModel: Codable {
          - Remark:
          Indicates from which record number among the search results the data is being described.
          */
-        let opensearchStartIndex: String?
+        public let opensearchStartIndex: String?
 
         /**
          Results per page
@@ -169,9 +169,9 @@ public struct DissertationsModel: Codable {
          - Remark:
          Indicates how many search results are included in the response.
          */
-        let opensearchItemsPerPage: String?
+        public let opensearchItemsPerPage: String?
 
-        let items: [Item]?
+        public let items: [Item]?
 
         /**
          CodingKeys
@@ -194,25 +194,25 @@ public struct DissertationsModel: Codable {
     }
 
     /// items Object
-    struct Item: Codable {
+    public struct Item: Codable {
         /**
          URI of the Bibliography Details Page
 
          - Remark:
          Permalink to articles in the response.
          */
-        let id: String?
+        public let id: String?
 
         /**
          - Remark:
          Fixed: "item"
          */
-        let type: String?
+        public let type: String?
 
         /**
          Title
          */
-        let title: String?
+        public let title: String?
 
         /**
          URI of Bibliography Details Page
@@ -221,7 +221,7 @@ public struct DissertationsModel: Codable {
          Indicates the permalink in Bibliography Details Page.
          "link": {@id:"http://ci.nii.ac.jp/d/500000000000"},
          */
-        let link: ObjectiveID?
+        public let link: ObjectiveID?
 
         /**
          URI of Bibliography JSON-LD
@@ -230,27 +230,27 @@ public struct DissertationsModel: Codable {
          Indicates the URI of Bibliography JSON-LD (except parameter of appid)
          "rdfs:seeAlso":{@id:"http://ci.nii.ac.jp/d/500000000000.json"},
          */
-        let rdfsSeeAlso: ObjectiveID?
+        public let rdfsSeeAlso: ObjectiveID?
 
         /**
          Author name
          */
-        let dcCreator: [ObjectiveValue]?
+        public let dcCreator: [ObjectiveValue]?
 
         /**
          University
          */
-        let dcPublisher: String?
+        public let dcPublisher: String?
 
         /**
          Types of degree
          */
-        let ndlDegreeName: String?
+        public let ndlDegreeName: String?
 
         /**
          Grant ID
          */
-        let ndlDissertationNumber: String?
+        public let ndlDissertationNumber: String?
 
         /**
          Degree year
@@ -258,9 +258,9 @@ public struct DissertationsModel: Codable {
          - Remark:
          W3CDTF format
          */
-        let dcDate: String?
+        public let dcDate: String?
 
-        let dcSource: [Source]?
+        public let dcSource: [Source]?
 
         /**
          CodingKeys
@@ -284,16 +284,16 @@ public struct DissertationsModel: Codable {
     }
 
     /// Source object
-    struct Source: Codable {
+    public struct Source: Codable {
         /**
          URL of full text
          */
-        let id: String
+        public let id: String
 
         /**
          Data source name
          */
-        let dcTitle: String
+        public let dcTitle: String
 
         /// CodingKeys
         private enum CodingKeys: String, CodingKey {
@@ -303,9 +303,9 @@ public struct DissertationsModel: Codable {
     }
 
     /// @id Object
-    struct ObjectiveID: Codable {
+    public struct ObjectiveID: Codable {
         /// @id
-        let id: String?
+        public let id: String?
 
         /// CodingKeys
         private enum CodingKeys: String, CodingKey {
@@ -314,9 +314,9 @@ public struct DissertationsModel: Codable {
     }
 
     /// @value Object
-    struct ObjectiveValue: Codable {
+    public struct ObjectiveValue: Codable {
         /// @value
-        let value: String?
+        public let value: String?
 
         /// CodingKeys
         private enum CodingKeys: String, CodingKey {

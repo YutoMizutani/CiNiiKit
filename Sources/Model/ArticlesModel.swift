@@ -21,7 +21,7 @@ public struct ArticlesModel: Codable {
      "@vocab": "http://purl.org/rss/1.0/"
      },
      */
-    let context: Context
+    public let context: Context
 
     /**
      Requested URI
@@ -29,13 +29,13 @@ public struct ArticlesModel: Codable {
      - Remark:
      This is a search request URI. URL-encorded query is output with "variable identifier=value" format. "appid" will be removed from parameter.
     */
-    let id: String
+    public let id: String
 
     /**
      - Remark:
      Element count of array is 1
      */
-    let graph: [Graph]
+    public let graph: [Graph]
 
     /**
      CodingKeys
@@ -50,42 +50,42 @@ public struct ArticlesModel: Codable {
     }
 
     /// @context Object
-    struct Context: Codable {
+    public struct Context: Codable {
         /**
          - Remark:
          http://purl.org/rss/1.0/
          */
-        let vocab: String
+        public let vocab: String
 
         /**
          - Remark:
          http://purl.org/dc/elements/1.1/
          */
-        let dc: String
+        public let dc: String
 
         /**
          - Remark:
          http://www.w3.org/1999/02/22-rdf-syntax-ns#
          */
-        let rdf: String
+        public let rdf: String
 
         /**
          - Remark:
          http://a9.com/-/spec/opensearch/1.1/
          */
-        let opensearch: String
+        public let opensearch: String
 
         /**
          - Remark:
          http://www.w3.org/2000/01/rdf-schema#
          */
-        let rdfs: String
+        public let rdfs: String
 
         /**
          - Remark:
          http://prismstandard.org/namespaces/basic/2.0/
          */
-        let prism: String
+        public let prism: String
 
         /**
          CodingKeys
@@ -103,20 +103,20 @@ public struct ArticlesModel: Codable {
         }
     }
 
-    struct Graph: Codable {
+    public struct Graph: Codable {
         /**
          Requested URI
 
          - Remark:
          This is a search request URI. URL-encorded query is output with "variable identifier=value" format. "appid" will be removed from parameter.
          */
-        let id: String
+        public let id: String
 
         /**
          - Remark:
          Fixed: "channel"
          */
-        let type: String
+        public let type: String
 
         /**
          Title
@@ -124,7 +124,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          Concatenation with query to "CiNii OpenSearch", Example: "title":"CiNii OpenSearch - 検索エンジン 順位",
          */
-        let title: String
+        public let title: String
 
         /**
          Title
@@ -132,7 +132,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          Same as the above
          */
-        let description: String
+        public let description: String
 
         /**
          Requested URI
@@ -140,7 +140,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          This is a search request URI. URL-encorded query is output with "variable identifier=value" format. "appid" will be removed from parameter.
          */
-        let link: ObjectiveID
+        public let link: ObjectiveID
 
         /**
          Date when search was executed
@@ -148,12 +148,12 @@ public struct ArticlesModel: Codable {
          - Remark:
          W3CDTF format
          */
-        let dcDate: String
+        public let dcDate: String
 
         /**
          Total search results
          */
-        let opensearchTotalResults: String
+        public let opensearchTotalResults: String
 
         /**
          Start number
@@ -161,7 +161,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          Indicates from which record number among the search results the data is being described.
          */
-        let opensearchStartIndex: String?
+        public let opensearchStartIndex: String?
 
         /**
          Results per page
@@ -169,9 +169,9 @@ public struct ArticlesModel: Codable {
          - Remark:
          Indicates how many search results are included in the response.
          */
-        let opensearchItemsPerPage: String?
+        public let opensearchItemsPerPage: String?
 
-        let items: [Item]?
+        public let items: [Item]?
 
         /**
          CodingKeys
@@ -194,25 +194,25 @@ public struct ArticlesModel: Codable {
     }
 
     /// items Object
-    struct Item: Codable {
+    public struct Item: Codable {
         /**
          URI of the Bibliography Details Page
 
          - Remark:
          Permalink to articles in the response.
          */
-        let id: String?
+        public let id: String?
 
         /**
          - Remark:
          Fixed: "item"
          */
-        let type: String?
+        public let type: String?
 
         /**
          Title
          */
-        let title: String?
+        public let title: String?
 
         /**
          URI of Bibliography Details Page
@@ -221,7 +221,7 @@ public struct ArticlesModel: Codable {
          Indicates the permalink in Bibliography Details Page.
          "link": {@id:"http://ci.nii.ac.jp/naid/1234567890"},
          */
-        let link: ObjectiveID?
+        public let link: ObjectiveID?
 
         /**
          URI of Bibliography JSON-LD
@@ -230,7 +230,7 @@ public struct ArticlesModel: Codable {
          Indicates the URI of Bibliography JSON-LD (except parameter of appid)
          "rdfs:seeAlso":{@id:"http://ci.nii.ac.jp/naid/1234567890.json"},
          */
-        let rdfsSeeAlso: ObjectiveID?
+        public let rdfsSeeAlso: ObjectiveID?
 
         /**
          Author name
@@ -238,17 +238,17 @@ public struct ArticlesModel: Codable {
          - Remark:
          Repeated if there are multiple items
          */
-        let dcCreator: [ObjectiveValue]?
+        public let dcCreator: [ObjectiveValue]?
 
         /**
          Publisher
          */
-        let dcPublisher: String?
+        public let dcPublisher: String?
 
         /**
          Publication name
          */
-        let prismPublicationName: String?
+        public let prismPublicationName: String?
 
         /**
          Date of publication
@@ -256,37 +256,37 @@ public struct ArticlesModel: Codable {
          - Remark:
          W3CDTF format
          */
-        let prismPublicationDate: String?
+        public let prismPublicationDate: String?
 
         /**
          ISSN
          */
-        let prismIssn: String?
+        public let prismIssn: String?
 
         /**
          Volume
          */
-        let prismVolume: String?
+        public let prismVolume: String?
 
         /**
          Number
          */
-        let prismNumber: String?
+        public let prismNumber: String?
 
         /**
          Start page
          */
-        let prismStartingPage: String?
+        public let prismStartingPage: String?
 
         /**
          End page
          */
-        let prismEndingPage: String?
+        public let prismEndingPage: String?
 
         /**
          Page range
          */
-        let prismPageRange: String?
+        public let prismPageRange: String?
 
         /**
          Abstract
@@ -294,7 +294,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          A displayed content is assumed to be that which is displayed when an user is not logged in.
          */
-        let description: String?
+        public let description: String?
 
         /**
          Date of publication
@@ -302,7 +302,7 @@ public struct ArticlesModel: Codable {
          - Remark:
          The same as prism:publicationDate
          */
-        let dcDate: String?
+        public let dcDate: String?
 
         /**
          CodingKeys
@@ -332,9 +332,9 @@ public struct ArticlesModel: Codable {
     }
 
     /// @id Object
-    struct ObjectiveID: Codable {
+    public struct ObjectiveID: Codable {
         /// @id
-        let id: String?
+        public let id: String?
 
         /// CodingKeys
         private enum CodingKeys: String, CodingKey {
@@ -343,9 +343,9 @@ public struct ArticlesModel: Codable {
     }
 
     /// @value Object
-    struct ObjectiveValue: Codable {
+    public struct ObjectiveValue: Codable {
         /// @value
-        let value: String?
+        public let value: String?
 
         /// CodingKeys
         private enum CodingKeys: String, CodingKey {
