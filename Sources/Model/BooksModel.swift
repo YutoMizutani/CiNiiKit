@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Response Model for CiNii Books
 public struct BooksModel: Codable {
     /**
      Document route element

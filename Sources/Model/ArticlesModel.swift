@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Response Model for CiNii Articles
 public struct ArticlesModel: Codable {
     /**
      Document route element

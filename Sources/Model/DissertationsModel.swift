@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Response Model for CiNii Dissertations
 public struct DissertationsModel: Codable {
     /**
      Document route element
