@@ -89,16 +89,16 @@ public extension CiNiiKitArticles {
         parameters["range"] ?= range
         parameters["sortorder"] ?= sortOrder?.rawValue
 
-        try? CiNiiKit.shared.request(API.Articles.OpenSearch.search,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 
     /**
@@ -210,16 +210,16 @@ public extension CiNiiKitArticles {
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortOrder?.rawValue
 
-        try? CiNiiKit.shared.request(API.Articles.OpenSearch.author,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Articles.OpenSearch.author,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 
     /**
@@ -256,15 +256,15 @@ public extension CiNiiKitArticles {
         parameters["format"] ?= format
         parameters["sortorder"] ?= sortOrder?.rawValue
 
-        try? CiNiiKit.shared.request(API.Articles.OpenSearch.fullText,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Articles.OpenSearch.fullText,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 }

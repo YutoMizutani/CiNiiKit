@@ -65,16 +65,12 @@ public class CiNiiKit {
     func request(_ url: String,
                  method: HTTPMethod = .get,
                  parameters: Parameters? = nil,
-                 failure: FailureHandler?) throws {
                  success: SuccessHandler<Data>?,
+                 failure: FailureHandler?) {
 
 //        guard let appid: String = try self.keychain.get(self.accessTokenKey) else {
 //            throw QueryError.noAppID
 //        }
-
-        guard let appid: String = appid else {
-            throw QueryError.noAppID
-        }
 
         var parameters = parameters ?? Parameters()
         parameters["format"] = "json"
