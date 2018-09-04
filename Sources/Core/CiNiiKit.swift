@@ -40,17 +40,7 @@ public class CiNiiKit {
 
     // MARK: - Keychain
 
-    private let accessTokenKey = "accesstoken"
-//    private var keychain = Keychain(service: "com.ym.cinii-kit")
     private(set) var appid: String?
-
-//    public func register(key value: String) {
-//        self.keychain[self.accessTokenKey] = value
-//    }
-//
-//    public func remove() throws {
-//        try self.keychain.remove(self.accessTokenKey)
-//    }
 
     public func register(key value: String) {
         self.appid = value
@@ -67,10 +57,6 @@ public class CiNiiKit {
                  parameters: Parameters? = nil,
                  success: SuccessHandler<Data>?,
                  failure: FailureHandler?) {
-
-//        guard let appid: String = try self.keychain.get(self.accessTokenKey) else {
-//            throw QueryError.noAppID
-//        }
 
         var parameters = parameters ?? Parameters()
         parameters["format"] = "json"
