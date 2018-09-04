@@ -65,8 +65,8 @@ public class CiNiiKit {
     func request(_ url: String,
                  method: HTTPMethod = .get,
                  parameters: Parameters? = nil,
-                 success: ((_ data: Data) -> Void)?,
                  failure: FailureHandler?) throws {
+                 success: SuccessHandler<Data>?,
 
 //        guard let appid: String = try self.keychain.get(self.accessTokenKey) else {
 //            throw QueryError.noAppID
@@ -81,9 +81,14 @@ public class CiNiiKit {
         parameters["appid"] = appid
 
         Alamofire.request(url, method: method, parameters: parameters, encoding: URLEncoding.default)
-            .response { response in
-                guard let data = response.data else { return }
-                success?(data)
+            .responseData { response in
+                switch response.result {
+                case .success:
+                    guard let data = response.data else { return }
+                    success?(data)
+                case .failure(let error):
+                    failure?(error)
+                }
             }
     }
 }
