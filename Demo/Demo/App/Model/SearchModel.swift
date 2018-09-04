@@ -9,7 +9,7 @@
 import CiNiiKit
 import UIKit
 
-class SearchModel {
+struct SearchModel {
     private let cinii: CiNiiKit
     private let ciNiiKitAPIKeyID = "CiNiiKitAPIKey"
 
