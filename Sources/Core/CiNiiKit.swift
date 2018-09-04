@@ -33,25 +33,30 @@ public class CiNiiKit {
 
     // MARK: - Initializers
 
-    /// Returns a shared instance of CiNiiKit.
+    /// Returns a shared instance of CiNiiKit
     public static let shared = CiNiiKit()
 
+    /// Use of Singleton pattern with private access
     private init() {}
 
-    // MARK: - Keychain
+    // MARK: - API key
 
+    /// CiNii API key; See https://support.nii.ac.jp/en/cinii/api/developer if you don't already get the key or want to know more information
     private(set) var appid: String?
 
+    /// Register API key
     public func register(key value: String) {
         self.appid = value
     }
 
+    /// Remove API key
     public func remove() {
         self.appid = nil
     }
 
     // MARK: - Requests
 
+    /// Request
     func request(_ url: String,
                  method: HTTPMethod = .get,
                  parameters: Parameters? = nil,

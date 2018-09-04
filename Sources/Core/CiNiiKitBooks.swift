@@ -8,7 +8,9 @@
 import Foundation
 
 public class CiNiiKitBooks {
+    /// Returns a shared instance of CiNiiKit Books
     public static let shared = CiNiiKitBooks()
 
+    /// Use of Singleton pattern with private access
     private init() {}
 }
