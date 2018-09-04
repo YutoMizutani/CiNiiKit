@@ -16,11 +16,11 @@ public struct API {
             /// Base URL
             private static let base = "http://ci.nii.ac.jp/opensearch"
             /// CiNii Articles OpenSearch for Articles query
-            static let search = "\(API.Articles.OpenSearch.base)/search"
+            public static let search = "\(API.Articles.OpenSearch.base)/search"
             /// CiNii Articles OpenSearch for Authors query
-            static let author = "\(API.Articles.OpenSearch.base)/author"
+            public static let author = "\(API.Articles.OpenSearch.base)/author"
             /// CiNii Articles OpenSearch for Articles query
-            static let fullText = "\(API.Articles.OpenSearch.base)/fulltext"
+            public static let fullText = "\(API.Articles.OpenSearch.base)/fulltext"
         }
     }
 
@@ -31,13 +31,13 @@ public struct API {
             /// Base URL
             private static let base = "http://ci.nii.ac.jp/books/opensearch"
             /// CiNii Books OpenSearch query for Books & Journals
-            static let search = "\(API.Books.OpenSearch.base)/search"
+            public static let search = "\(API.Books.OpenSearch.base)/search"
             /// CiNii Books OpenSearch query for Authors
-            static let author = "\(API.Books.OpenSearch.base)/author"
+            public static let author = "\(API.Books.OpenSearch.base)/author"
             /// CiNii Books OpenSearch for Libraries query
-            static let library = "\(API.Books.OpenSearch.base)/library"
+            public static let library = "\(API.Books.OpenSearch.base)/library"
             /// CiNii Books OpenSearch for Holdings query
-            static let holder = "\(API.Books.OpenSearch.base)/holder"
+            public static let holder = "\(API.Books.OpenSearch.base)/holder"
         }
     }
 
@@ -48,7 +48,7 @@ public struct API {
             /// Base URL
             private static let base = "http://ci.nii.ac.jp/d"
             /// CiNii Dissertations OpenSearch query
-            static let search = "\(API.Dissertations.OpenSearch.base)/search"
+            public static let search = "\(API.Dissertations.OpenSearch.base)/search"
         }
     }
 }
