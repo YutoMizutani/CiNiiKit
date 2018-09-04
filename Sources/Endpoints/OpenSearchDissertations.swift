@@ -76,7 +76,7 @@ public extension CiNiiKitDissertations {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+        CiNiiKit.shared.request(API.Dissertations.OpenSearch.search,
                                 parameters: parameters,
                                 success: { data in
                                     let decoder: JSONDecoder = JSONDecoder()

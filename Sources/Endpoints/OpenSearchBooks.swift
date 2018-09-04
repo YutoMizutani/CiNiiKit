@@ -131,7 +131,7 @@ public extension CiNiiKitBooks {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
                                 parameters: parameters,
                                 success: { data in
                                     let decoder: JSONDecoder = JSONDecoder()
@@ -266,7 +266,7 @@ public extension CiNiiKitBooks {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
                                 parameters: parameters,
                                 success: { data in
                                     let decoder: JSONDecoder = JSONDecoder()
@@ -306,7 +306,7 @@ public extension CiNiiKitBooks {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
                                 parameters: parameters,
                                 success: { data in
                                     let decoder: JSONDecoder = JSONDecoder()
@@ -376,7 +376,7 @@ public extension CiNiiKitBooks {
         parameters["issue"] ?= issue
         parameters["cont"] = cont != nil ? cont! ? 0 : 1 : nil
 
-        CiNiiKit.shared.request(API.Articles.OpenSearch.search,
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
                                 parameters: parameters,
                                 success: { data in
                                     let decoder: JSONDecoder = JSONDecoder()
