@@ -33,57 +33,49 @@ public class CiNiiKit {
 
     // MARK: - Initializers
 
-    /// Returns a shared instance of CiNiiKit.
+    /// Returns a shared instance of CiNiiKit
     public static let shared = CiNiiKit()
 
+    /// Use of Singleton pattern with private access
     private init() {}
 
-    // MARK: - Keychain
+    // MARK: - API key
 
-    private let accessTokenKey = "accesstoken"
-//    private var keychain = Keychain(service: "com.ym.cinii-kit")
+    /// CiNii API key; See https://support.nii.ac.jp/en/cinii/api/developer if you don't already get the key or want to know more information
     private(set) var appid: String?
 
-//    public func register(key value: String) {
-//        self.keychain[self.accessTokenKey] = value
-//    }
-//
-//    public func remove() throws {
-//        try self.keychain.remove(self.accessTokenKey)
-//    }
-
+    /// Register API key
     public func register(key value: String) {
         self.appid = value
     }
 
+    /// Remove API key
     public func remove() {
         self.appid = nil
     }
 
     // MARK: - Requests
 
+    /// Request
     func request(_ url: String,
                  method: HTTPMethod = .get,
                  parameters: Parameters? = nil,
-                 success: ((_ data: Data) -> Void)?,
-                 failure: FailureHandler?) throws {
-
-//        guard let appid: String = try self.keychain.get(self.accessTokenKey) else {
-//            throw QueryError.noAppID
-//        }
-
-        guard let appid: String = appid else {
-            throw QueryError.noAppID
-        }
+                 success: SuccessHandler<Data>?,
+                 failure: FailureHandler?) {
 
         var parameters = parameters ?? Parameters()
         parameters["format"] = "json"
         parameters["appid"] = appid
 
         Alamofire.request(url, method: method, parameters: parameters, encoding: URLEncoding.default)
-            .response { response in
-                guard let data = response.data else { return }
-                success?(data)
+            .responseData { response in
+                switch response.result {
+                case .success:
+                    guard let data = response.data else { return }
+                    success?(data)
+                case .failure(let error):
+                    failure?(error)
+                }
             }
     }
 }

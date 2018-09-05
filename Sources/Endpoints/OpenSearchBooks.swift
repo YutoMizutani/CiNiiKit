@@ -131,16 +131,16 @@ public extension CiNiiKitBooks {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        try? CiNiiKit.shared.request(API.Books.OpenSearch.search,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 
     /**
@@ -266,16 +266,16 @@ public extension CiNiiKitBooks {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        try? CiNiiKit.shared.request(API.Books.OpenSearch.author,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 
     /**
@@ -306,16 +306,16 @@ public extension CiNiiKitBooks {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        try? CiNiiKit.shared.request(API.Books.OpenSearch.library,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 
     /**
@@ -376,15 +376,15 @@ public extension CiNiiKitBooks {
         parameters["issue"] ?= issue
         parameters["cont"] = cont != nil ? cont! ? 0 : 1 : nil
 
-        try? CiNiiKit.shared.request(API.Books.OpenSearch.holder,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Books.OpenSearch.search,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 }
