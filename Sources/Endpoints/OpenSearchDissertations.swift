@@ -76,16 +76,16 @@ public extension CiNiiKitDissertations {
         parameters["p"] ?= p
         parameters["count"] ?= count
 
-        try? CiNiiKit.shared.request(API.Articles.OpenSearch.search,
-                                     parameters: parameters,
-                                     success: { data in
-                                        let decoder: JSONDecoder = JSONDecoder()
-                                        guard let model: DissertationsModel = try? decoder.decode(DissertationsModel.self, from: data) else { return }
-                                        success?(model)
-                                     },
-                                     failure: { error in
-                                        failure?(error)
-                                     })
+        CiNiiKit.shared.request(API.Dissertations.OpenSearch.search,
+                                parameters: parameters,
+                                success: { data in
+                                    let decoder: JSONDecoder = JSONDecoder()
+                                    guard let model: DissertationsModel = try? decoder.decode(DissertationsModel.self, from: data) else { return }
+                                    success?(model)
+                                },
+                                failure: { error in
+                                    failure?(error)
+                                })
     }
 
     /**

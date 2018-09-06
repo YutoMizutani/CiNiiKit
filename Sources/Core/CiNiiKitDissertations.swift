@@ -8,7 +8,9 @@
 import Foundation
 
 public class CiNiiKitDissertations {
+    /// Returns a shared instance of CiNiiKit Dissertations
     public static let shared = CiNiiKitDissertations()
 
+    /// Use of Singleton pattern with private access
     private init() {}
 }
