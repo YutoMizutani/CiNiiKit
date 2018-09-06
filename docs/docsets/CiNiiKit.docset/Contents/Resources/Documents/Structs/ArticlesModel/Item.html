@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Item Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Item" class="dashAnchor"></a>
+    <a title="Item Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">CiNiiKit Docs</a> (88% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">CiNiiKit Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        Item Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKit.html">CiNiiKit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitArticles.html">CiNiiKitArticles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitArticles/SortOrderType.html">– SortOrderType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitBooks.html">CiNiiKitBooks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitBooks/ILLStatusType.html">– ILLStatusType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitBooks/MaterialType.html">– MaterialType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitBooks/ParticipantType.html">– ParticipantType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitBooks/ServiceStatusType.html">– ServiceStatusType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitBooks/SortOrderType.html">– SortOrderType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitDissertations.html">CiNiiKitDissertations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitDissertations/RangeType.html">– RangeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CiNiiKitDissertations/SortOrderType.html">– SortOrderType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/LanguageType.html">LanguageType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/API/Articles.html">– Articles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/API/Books.html">– Books</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/API/Dissertations.html">– Dissertations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/ArticlesModel.html">ArticlesModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/ArticlesModel/Context.html">– Context</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/ArticlesModel/Graph.html">– Graph</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/ArticlesModel/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/ArticlesModel/ObjectiveID.html">– ObjectiveID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/ArticlesModel/ObjectiveValue.html">– ObjectiveValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel.html">BooksModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel/Context.html">– Context</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel/Graph.html">– Graph</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel/Source.html">– Source</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel/Bibliography.html">– Bibliography</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel/ObjectiveID.html">– ObjectiveID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BooksModel/ObjectiveValue.html">– ObjectiveValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DissertationsModel.html">DissertationsModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DissertationsModel/Context.html">– Context</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DissertationsModel/Graph.html">– Graph</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DissertationsModel/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DissertationsModel/Source.html">– Source</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DissertationsModel/ObjectiveID.html">– ObjectiveID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DissertationsModel/ObjectiveValue.html">– ObjectiveValue</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Item</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Item</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>items Object</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV2idSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV2idSSSgvp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URI of the Bibliography Details Page</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Permalink to articles in the response.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV4typeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV4typeSSSgvp">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Fixed: <q>item</q>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV5titleSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV5titleSSSgvp">title</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Title</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV4linkAC11ObjectiveIDVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/link" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV4linkAC11ObjectiveIDVSgvp">link</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URI of Bibliography Details Page</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Indicates the permalink in Bibliography Details Page.
+<q>link</q>: {@id:<q>http://ci.nii.ac.jp/naid/1234567890</q>},
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">link</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ArticlesModel/ObjectiveID.html">ObjectiveID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV11rdfsSeeAlsoAC11ObjectiveIDVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/rdfsSeeAlso" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV11rdfsSeeAlsoAC11ObjectiveIDVSgvp">rdfsSeeAlso</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URI of Bibliography JSON-LD</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Indicates the URI of Bibliography JSON-LD (except parameter of appid)
+<q>rdfs:seeAlso</q>:{@id:<q>http://ci.nii.ac.jp/naid/1234567890.json</q>},
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">rdfsSeeAlso</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ArticlesModel/ObjectiveID.html">ObjectiveID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV9dcCreatorSayAC14ObjectiveValueVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dcCreator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV9dcCreatorSayAC14ObjectiveValueVGSgvp">dcCreator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Author name</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Repeated if there are multiple items
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dcCreator</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ArticlesModel/ObjectiveValue.html">ObjectiveValue</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV11dcPublisherSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dcPublisher" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV11dcPublisherSSSgvp">dcPublisher</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Publisher</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dcPublisher</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV20prismPublicationNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismPublicationName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV20prismPublicationNameSSSgvp">prismPublicationName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Publication name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismPublicationName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV20prismPublicationDateSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismPublicationDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV20prismPublicationDateSSSgvp">prismPublicationDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date of publication</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    W3CDTF format
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismPublicationDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV9prismIssnSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismIssn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV9prismIssnSSSgvp">prismIssn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>ISSN</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismIssn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV11prismVolumeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismVolume" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV11prismVolumeSSSgvp">prismVolume</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Volume</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismVolume</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV11prismNumberSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV11prismNumberSSSgvp">prismNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV17prismStartingPageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismStartingPage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV17prismStartingPageSSSgvp">prismStartingPage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start page</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismStartingPage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV15prismEndingPageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismEndingPage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV15prismEndingPageSSSgvp">prismEndingPage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>End page</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismEndingPage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV14prismPageRangeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prismPageRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV14prismPageRangeSSSgvp">prismPageRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Page range</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prismPageRange</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV11descriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV11descriptionSSSgvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Abstract</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    A displayed content is assumed to be that which is displayed when an user is not logged in.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8CiNiiKit13ArticlesModelV4ItemV6dcDateSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dcDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8CiNiiKit13ArticlesModelV4ItemV6dcDateSSSgvp">dcDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date of publication</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    The same as prism:publicationDate
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dcDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/YutoMizutani/CiNiiKit" target="_blank" rel="external">Yuto Mizutani</a>. All rights reserved. (Last updated: 2018-09-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

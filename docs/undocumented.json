@@ -1,143 +1,108 @@
 {
   "warnings": [
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/CiNiiKit.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKit.swift",
       "line": 14,
       "symbol": "CiNiiKit.text",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/CiNiiKit.swift",
-      "line": 46,
-      "symbol": "CiNiiKit.register(key:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/CiNiiKit.swift",
-      "line": 50,
-      "symbol": "CiNiiKit.remove()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitArticles.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitArticles.swift",
       "line": null,
       "symbol": "CiNiiKitArticles",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitArticles.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitArticles.swift",
       "line": null,
       "symbol": "CiNiiKitArticles",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitArticles.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitArticles.swift",
       "line": 10,
       "symbol": "CiNiiKitArticles",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitArticles.swift",
-      "line": 11,
-      "symbol": "CiNiiKitArticles.shared",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitBooks.swift",
       "line": null,
       "symbol": "CiNiiKitBooks",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitBooks.swift",
       "line": null,
       "symbol": "CiNiiKitBooks",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitBooks.swift",
       "line": null,
       "symbol": "CiNiiKitBooks",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitBooks.swift",
       "line": null,
       "symbol": "CiNiiKitBooks",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitBooks.swift",
       "line": null,
       "symbol": "CiNiiKitBooks",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitBooks.swift",
       "line": null,
       "symbol": "CiNiiKitBooks",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitBooks.swift",
       "line": 10,
       "symbol": "CiNiiKitBooks",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitBooks.swift",
-      "line": 11,
-      "symbol": "CiNiiKitBooks.shared",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitDissertations.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitDissertations.swift",
       "line": null,
       "symbol": "CiNiiKitDissertations",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitDissertations.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitDissertations.swift",
       "line": null,
       "symbol": "CiNiiKitDissertations",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitDissertations.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitDissertations.swift",
       "line": null,
       "symbol": "CiNiiKitDissertations",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitDissertations.swift",
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitDissertations.swift",
       "line": 10,
       "symbol": "CiNiiKitDissertations",
       "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Common/CiNiiKitDissertations.swift",
-      "line": 11,
-      "symbol": "CiNiiKitDissertations.shared",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -177,23 +142,58 @@
     },
     {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/ArticlesModel.swift",
-      "line": 10,
-      "symbol": "ArticlesModel",
+      "line": 107,
+      "symbol": "ArticlesModel.Graph",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/ArticlesModel.swift",
+      "line": 175,
+      "symbol": "ArticlesModel.Graph.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/BooksModel.swift",
+      "line": 123,
+      "symbol": "BooksModel.Graph",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/BooksModel.swift",
-      "line": 10,
-      "symbol": "BooksModel",
+      "line": 193,
+      "symbol": "BooksModel.Graph.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/BooksModel.swift",
+      "line": 352,
+      "symbol": "BooksModel.Bibliography",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/DissertationsModel.swift",
-      "line": 10,
-      "symbol": "DissertationsModel",
+      "line": 107,
+      "symbol": "DissertationsModel.Graph",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/DissertationsModel.swift",
+      "line": 175,
+      "symbol": "DissertationsModel.Graph.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/DissertationsModel.swift",
+      "line": 264,
+      "symbol": "DissertationsModel.Item.dcSource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
