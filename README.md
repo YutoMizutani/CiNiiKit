@@ -1,7 +1,10 @@
 # CiNiiKit
 
 [![Build Status](https://travis-ci.com/YutoMizutani/CiNiiKit.svg?branch=master)](https://travis-ci.com/YutoMizutani/CiNiiKit)
+[![CocoaPods](https://img.shields.io/cocoapods/p/CiNiiKit.svg)](https://github.com/YutoMizutani/CiNiiKit)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/YutoMizutani/CiNiiKit/blob/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/CiNiiKit.svg)](https://github.com/YutoMizutani/CiNiiKit)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/YutoMizutani/CiNiiKit)
 
 CiNii API client written in Swift.
 
