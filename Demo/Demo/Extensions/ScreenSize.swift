@@ -21,14 +21,6 @@ extension UIViewController {
     var width: CGFloat {
         return self.size.width
     }
-    var long: CGFloat {
-        let size = self.size
-        return size.height > size.width ? size.height : size.width
-    }
-    var short: CGFloat {
-        let size = self.size
-        return size.height > size.width ? size.width : size.height
-    }
 }
 
 extension UIView {
@@ -40,17 +32,6 @@ extension UIView {
     }
     var width: CGFloat {
         return self.size.width
-    }
-    var long: CGFloat {
-        let size = self.size
-        return size.height > size.width ? size.height : size.width
-    }
-    var short: CGFloat {
-        let size = self.size
-        return size.height > size.width ? size.width : size.height
-    }
-    var isPortrait: Bool {
-        return self.height >= self.width
     }
     var safeArea: UIEdgeInsets {
         let safeAreaInsets: UIEdgeInsets

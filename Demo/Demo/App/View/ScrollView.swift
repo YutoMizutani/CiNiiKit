@@ -33,6 +33,7 @@ class ScrollView: UIScrollView {
 
 // MARK: - Private configure methods
 private extension ScrollView {
+    /// Configure views
     func configureView() {
         self.contentInsetAdjustmentBehavior = .never
         self.showsVerticalScrollIndicator = false
@@ -40,6 +41,7 @@ private extension ScrollView {
         self.isPagingEnabled = true
     }
 
+    /// Layout views
     func layoutView() {
     }
 }
