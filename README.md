@@ -23,6 +23,12 @@ cinii.articles.search(keyword: keyword, success: { model in
 })
 ```
 
+## Demo
+
+[Demo app](https://github.com/YutoMizutani/CiNiiKit/tree/master/Demo) is a sample of CiNii Articles.
+
+![](https://raw.githubusercontent.com/YutoMizutani/CiNiiKit/media/demo.gif)
+
 ## Installation
 
 #### Cocoapods
