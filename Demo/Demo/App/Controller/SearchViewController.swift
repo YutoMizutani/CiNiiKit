@@ -10,7 +10,7 @@ import CiNiiKit
 import SafariServices
 import UIKit
 
-class ViewController: UIViewController {
+class SearchViewController: UIViewController {
     var searchView: SearchView!
     var copyrightView: CopyrightView!
     var scrollView: UIScrollView!
@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         self.layoutView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.getKey()
     }
 
     override func viewDidLayoutSubviews() {
@@ -43,11 +43,13 @@ class ViewController: UIViewController {
     override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         self.layoutView()
+        self.view.layoutIfNeeded()
     }
 }
 
 // MARK: - Private configure methods
-extension ViewController {
+extension SearchViewController {
+    /// Configure views
     private func configureView() {
         view: do {
             self.view.backgroundColor = .white
@@ -70,17 +72,19 @@ extension ViewController {
         }
     }
 
+    /// Configure Model
     private func configureModel() {
         self.model = SearchModel()
-        self.searchView.apiKeyTextField.text = self.model.getAPIKey()
     }
 
+    /// Configure actions
     private func configureAction() {
         searchButton: do {
             self.searchView.searchButton.addTarget(self, action: #selector(self.searchAction), for: .touchUpInside)
         }
     }
 
+    /// Layout views
     private func layoutView() {
         searchView: do {
             self.searchView.frame = self.view.bounds
@@ -95,56 +99,79 @@ extension ViewController {
     }
 }
 
-// MARK: - Private configure methods
-extension ViewController {
+// MARK: - Private methods
+extension SearchViewController {
+    /// Store API key
+    private func storeKey() {
+        guard let key = self.searchView.apiKeyTextField.text else { return }
+        self.model.register(key)
+    }
+
+    /// Get API key
+    private func getKey() {
+        self.searchView.apiKeyTextField.text = self.model.getKey()
+    }
+
+    /// Search from CiNii
     private func search() {
+        self.searchView.indicatorView.startAnimating()
+        self.storeKey()
+
         guard let key = self.searchView.apiKeyTextField.text, let searchWord = self.searchView.searchWordTextField.text else { return }
         self.model.register(key)
-        self.model.search(searchWord, success: { model in
+        self.model.search(searchWord, success: { [weak self] model in
+            guard let `self` = self else { return }
+            self.searchView.indicatorView.stopAnimating()
             dump(model)
-        }, failure: { error in
+            let navigationViewController = ResultBuilder().build(with: model)
+            self.present(navigationViewController, animated: true)
+        }, failure: { [weak self] error in
+            guard let `self` = self else { return }
+            self.searchView.indicatorView.stopAnimating()
             dump(error)
         })
     }
 }
 
 // MARK: - Actions
-extension ViewController {
+extension SearchViewController {
+    /// Search action
     @IBAction private func searchAction() {
         self.search()
     }
 }
 
 // MARK: - UITextFieldDelegate
-extension ViewController: UITextFieldDelegate {
+extension SearchViewController: UITextFieldDelegate {
+    /// Called when 'return' key pressed. return NO to ignore.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
-        if textField == self.searchView.apiKeyTextField {
+        switch textField {
+        case self.searchView.apiKeyTextField:
             self.searchView.searchWordTextField.becomeFirstResponder()
-        }else if textField == self.searchView.searchWordTextField {
-
-        }else{
+        case self.searchView.searchWordTextField:
+            self.search()
+        default:
             textField.resignFirstResponder()
         }
-
         return true
     }
 
+    /// Became first responder
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.scrollView?.isScrollEnabled = false
     }
 
-    func textFieldDidEndEditing(_ textField:UITextField) {
+    /// May be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
+    func textFieldDidEndEditing(_ textField: UITextField) {
         self.scrollView?.isScrollEnabled = true
     }
 }
 
 // MARK: - UITextViewDelegate
-extension ViewController: UITextViewDelegate {
+extension SearchViewController: UITextViewDelegate {
+    /// Called when press the link on the textView
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        let safariViewController = SFSafariViewController(url: URL)
-        safariViewController.modalPresentationStyle = .overFullScreen
-        self.present(safariViewController, animated: true, completion: nil)
+        SFSafariViewController.present(self, url: URL)
         return false
     }
 }

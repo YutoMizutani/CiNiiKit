@@ -14,6 +14,8 @@ class SearchView: UIView {
     var apiKeyTextField: UITextField = UITextField()
     var searchWordTextField: UITextField = UITextField()
     var searchButton: UIButton = UIButton()
+    /// Indicator when HTTP connection
+    var indicatorView: UIActivityIndicatorView = UIActivityIndicatorView()
 
     private let gradientLayer: CAGradientLayer = CAGradientLayer()
     private var titleGradientLayer: CAGradientLayer = CAGradientLayer()
@@ -38,7 +40,8 @@ class SearchView: UIView {
 
 // MARK: - Private configure methods
 private extension SearchView {
-    func configureView() {
+    /// Configure views
+    private func configureView() {
         backgroundColor: do {
             self.gradientLayer.colors = [
                 UIColor(red: 66/255, green: 121/255, blue: 131/255, alpha: 1.0).cgColor,
@@ -91,17 +94,22 @@ private extension SearchView {
             self.searchButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
             self.addSubview(self.searchButton)
         }
+        indicatorView: do {
+            self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+            self.addSubview(self.indicatorView)
+        }
     }
 
-    func configureAction() {
+    /// Configure actions
+    private func configureAction() {
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapAction)))
     }
 
-    func layoutView() {
-        backgroundColor: do {
+    /// Layout views
+    private func layoutView() {
+        view: do {
             self.gradientLayer.frame = self.bounds
         }
-
         titleLabel: do {
             self.titleView.frame = CGRect(x: 0, y: 50, width: 350, height: 200)
             self.titleView.center.x = self.center.x
@@ -123,11 +131,15 @@ private extension SearchView {
             let leftMargin: CGFloat = 10
             self.searchWordTextField.frame = CGRect(x: margin, y: self.apiKeyTextField.frame.maxY + margin, width: self.width - (margin * 2) - leftMargin - self.searchButton.width, height: height)
         }
+        indicatorView: do {
+            self.indicatorView.center = self.center
+        }
     }
 }
 
 // MARK: - Actions
 private extension SearchView {
+    /// Tap action
     @IBAction private func tapAction(sender: UITapGestureRecognizer) {
         self.endEditing(true)
     }

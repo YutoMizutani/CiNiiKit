@@ -9,8 +9,13 @@
 import CiNiiKit
 import UIKit
 
+/// ResultViewController builder
 struct ResultBuilder {
-    func build(with model: ArticlesModel) -> ResultViewController {
-        return ResultViewController(ResultModel(model: model))
+    /// build UINavigationController with model
+    func build(with model: ArticlesModel) -> UINavigationController {
+        let nextViewController = ResultViewController(ResultModel(model: model))
+        let navigationViewController = UINavigationController(rootViewController: nextViewController)
+        navigationViewController.modalTransitionStyle = .coverVertical
+        return navigationViewController
     }
 }

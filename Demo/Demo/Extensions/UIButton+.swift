@@ -8,7 +8,8 @@
 
 import UIKit
 
-fileprivate extension UIColor {
+private extension UIColor {
+    /// Create image of filled color
     var image: UIImage? {
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
@@ -24,6 +25,7 @@ fileprivate extension UIColor {
 }
 
 extension UIButton {
+    /// Set background color on UIButton
     func setBackgroundColor(_ color: UIColor, for state: UIControlState) {
         let image = color.image
         self.setBackgroundImage(image, for: state)

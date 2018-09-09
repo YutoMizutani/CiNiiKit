@@ -7,30 +7,18 @@
 //
 
 import CiNiiKit
+import SafariServices
 import UIKit
 
-class ResultViewController: UIViewController, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
-    var model: ResultModel
+class ResultViewController: UIViewController {
+    /// View content
+    private var resultView: ResultView = ResultView()
+    /// Model content
+    private var model: ResultModel
 
-
-    var statusBarHeight: CGFloat!
-    var navigationBarHeight: CGFloat!
-
-    //SearchBarインスタンス
-    private var mySearchBar: UISearchBar!
-
-    //コレクションビュー
-    var myCollectionView: UICollectionView!
-
-    //コレクションビューに表示するベースとなる配列
-    //ファイル名と製品名
-    var array: Array<Array<String>> = [["battery", "充電式乾電池"], ["earphone", "イヤフォン"], ["hdmi", "HDMIケーブル"], ["huto", "封筒"], ["keyborad", "キーボード"], ["moouse", "マウス"], ["tissue", "テッシュ"], ["toiletpaper", "トイレペーパー"]]
-
-    //検索された配列
-    var searchedArray: Array<Array<String>>!
-
-    convenience init(_ model: ResultModel) {
+    init(_ model: ResultModel) {
         self.model = model
+        super.init(nibName: nil, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -39,139 +27,118 @@ class ResultViewController: UIViewController, UISearchBarDelegate, UICollectionV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = .white
-
-        searchedArray = array
-
-        //サイズを取得
-        statusBarHeight = UIApplication.shared.statusBarFrame.size.height
-        navigationBarHeight = (self.navigationController?.navigationBar.frame.size.height)!
-        let viewWidth = self.view.frame.width
-        let viewHeight = self.view.frame.height
-        let collectionFrame = CGRect(x: 0, y: 0, width: viewWidth, height: viewHeight)
-        let searchBarHeight: CGFloat = 44
-
-        // MARK: - CollectionView関連
-        // CollectionViewのレイアウトを生成.
-        let layout = UICollectionViewFlowLayout()
-
-        // Cell一つ一つの大きさ.
-        layout.itemSize = CGSize(width: viewWidth / 2, height: viewWidth / 1.5)
-
-        // セルのマージン.
-        layout.sectionInset = UIEdgeInsets.zero
-        //layout.sectionInset = UIEdgeInsetsMake(16, 16, 16, 16)
-        //セルの横方向のマージン
-        layout.minimumInteritemSpacing = 0.0
-
-        //セルの縦方向のマージン
-        layout.minimumLineSpacing = 0.0
-
-        // セクション毎のヘッダーサイズ.
-        //サーチバー大きさ
-        layout.headerReferenceSize = CGSize(width: viewWidth, height: searchBarHeight)
-
-        // CollectionViewを生成.
-        myCollectionView = UICollectionView(frame: collectionFrame, collectionViewLayout: layout)
-
-        // Cellに使われるクラスを登録.
-        myCollectionView.register(ResultCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(ResultCollectionViewCell.self))
-
-        //デリゲートとデータソースを設定
-        myCollectionView.delegate = self
-        myCollectionView.dataSource = self
-        myCollectionView.backgroundColor = .white
-
-        //サーチバーの高さだけ初期位置を下げる
-        myCollectionView.contentOffset = CGPoint(x: 0, y: searchBarHeight)
-        self.view.addSubview(myCollectionView)
-
-        // MARK: - SearchBar関連
-        //SearchBarの作成
-        mySearchBar = UISearchBar()
-        //デリゲートを設定
-        mySearchBar.delegate = self
-        //大きさの指定
-        mySearchBar.frame = CGRect(x: 0, y: 0, width: viewWidth, height: 44)
-        //キャンセルボタンの追加
-        mySearchBar.showsCancelButton = true
-        self.myCollectionView.addSubview(mySearchBar)
-
-        //虫眼鏡の設定を実装
-        let rightNavBtn = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(rightBarBtnClicked(sender:)))
-        self.navigationItem.rightBarButtonItem = rightNavBtn
+        self.configureView()
+        self.layoutView()
     }
 
-    //MARK: - 渡された文字列を含む要素を検索し、テーブルビューを再表示する
-    func searchItems(searchText: String) {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.layoutView()
+        self.view.layoutIfNeeded()
+    }
+}
 
-        //要素を検索する
-        if searchText != "" {
-            searchedArray = array.filter { myItem in
-                return (myItem[1]).contains(searchText)
-                } as Array<Array<String>>
-
-        } else {
-            //渡された文字列が空の場合は全てを表示
-            searchedArray = array
+// MARK: - Private configure methods
+extension ResultViewController {
+    /// Configure views
+    private func configureView() {
+        view: do {
+            self.view.backgroundColor = .white
         }
-        //再読み込みする
-        myCollectionView.reloadData()
+        navigationBar: do {
+            self.title = self.model.searchWord
+            let leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(self.leftBarButtonAction))
+            self.navigationItem.leftBarButtonItem = leftBarButtonItem
+            let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.rightBarButtonAction))
+            self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        }
+        resultView: do {
+            self.resultView.searchBar.delegate = self
+            self.resultView.collectionView.delegate = self
+            self.resultView.collectionView.dataSource = self
+            self.resultView.collectionView.register(UINib(nibName: "ResultCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+            self.view.addSubview(self.resultView)
+        }
     }
 
-    //MARK: - ナビゲーションバーの右の虫眼鏡が押されたら呼ばれる
-    @objc internal func rightBarBtnClicked(sender: UIButton) {
-        print("rightBarBtnClicked")
-        myCollectionView.contentOffset = CGPoint(x: 0, y: -(statusBarHeight + navigationBarHeight))
+    /// Layout views
+    private func layoutView() {
+        resultView: do {
+            self.resultView.frame = self.view.bounds
+        }
+    }
+}
+
+// MARK: - Actions
+extension ResultViewController {
+    /// LeftBarButtonItem action
+    @IBAction private func leftBarButtonAction(sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
 
-    //MARK: - CollectionView Delegate Methods
-    //Cellが選択された際に呼び出される
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Num: \(indexPath.row)")
+    /// RightBarButtonItem action
+    @IBAction private func rightBarButtonAction(sender: UIButton) {
+        let navigationBarHeight: CGFloat = self.navigationController?.navigationBar.height ?? 0
+        let searchBarHeight: CGFloat = self.resultView.searchBar.height
+        let topInset: CGFloat = self.resultView.collectionView.contentInset.top
+        self.resultView.collectionView.setContentOffset(CGPoint(x: 0, y: -(navigationBarHeight + searchBarHeight + topInset)), animated: true)
     }
+}
 
-    //Cellの総数を返す
+// MARK: - Private methods
+extension ResultViewController {
+    /// Filter results with the keyword
+    func filter(_ keyword: String?) {
+        guard let keyword = keyword else { return }
+        self.model.filter(with: keyword)
+        self.resultView.collectionView.reloadData()
+    }
+}
+
+// MARK: - UICollectionViewDelegate & UICollectionViewDataSource
+extension ResultViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    /// Return number of cells
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return searchedArray.count
+        return self.model.viewModels.count
     }
 
-    //Cellに値を設定する
+    // Return cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        let cell: ResultCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(ResultCollectionViewCell.self), for: indexPath) as! ResultCollectionViewCell
-
-        if let model = self.model
-        cell.thumbnailImageView?.image = UIImage(named: searchedArray[indexPath.row][0])
-        cell.textLabel?.text = searchedArray[indexPath.row][1]
+        guard let viewModel = self.model.getViewModel(at: indexPath.row) else {
+            return UICollectionViewCell()
+        }
+        let cell: ResultCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ResultCollectionViewCell
+        cell.titleTextView?.text = viewModel.title
+        cell.journalTextView?.text = viewModel.journal
+        cell.authorTextView?.text = viewModel.author
         return cell
     }
 
-    // MARK: - SearchBarのデリゲードメソッドたち
-    //MARK: テキストが変更される毎に呼ばれる
+    // Called when selected the cell
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let url = self.model.getViewModel(at: indexPath.row)?.link else { return }
+        SFSafariViewController.present(self, url: url)
+    }
+}
+
+// MARK: - UISearchBarDelegate
+extension ResultViewController: UISearchBarDelegate {
+    /// Called when text changes (including clear)
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //検索する
-        searchItems(searchText: searchText)
+        self.resultView.searchBar.returnKeyType = searchText == "" ? .done : .search
+        self.filter(searchText)
     }
 
-    //MARK: キャンセルボタンが押されると呼ばれる
+    /// Called when cancel button pressed
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-
-        mySearchBar.text = ""
         self.view.endEditing(true)
-        searchedArray = array
-
-        //コレクションビューを再読み込みする
-        myCollectionView.reloadData()
+        searchBar.text = ""
+        self.filter(searchBar.text)
     }
 
-    //MARK: Searchボタンが押されると呼ばれる
+    /// Called when keyboard search button pressed
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-
         self.view.endEditing(true)
-        //検索する
-        searchItems(searchText: mySearchBar.text! as String)
+        self.filter(searchBar.text)
     }
-
 }
