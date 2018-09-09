@@ -8,8 +8,11 @@
 
 import UIKit
 
-fileprivate struct Copyright {
+/// Copyright
+private struct Copyright {
+    /// copyright text
     let text: String = "Copyright © 2018 Yuto Mizutani. \nReleased under the MIT license. See more on GitHub."
+    /// Link attribute
     var attributedString: NSMutableAttributedString {
         let attributedString = NSMutableAttributedString(string: self.text)
         attributedString.addAttribute(.link,
@@ -20,6 +23,7 @@ fileprivate struct Copyright {
 }
 
 class CopyrightView: UIView {
+    /// Copyright text view
     var textView: UITextView!
 
     required init(coder aDecoder: NSCoder) {
@@ -41,8 +45,9 @@ class CopyrightView: UIView {
 
 // MARK: - Private configure methods
 extension CopyrightView {
+    /// Configure views
     private func configureView() {
-        `self`: do {
+        view: do {
             self.backgroundColor = UIColor.black
         }
         textView: do {
@@ -57,7 +62,8 @@ extension CopyrightView {
         }
     }
 
-    func layoutView() {
+    /// Layout views
+    private func layoutView() {
         self.textView.frame = self.bounds
     }
 }
