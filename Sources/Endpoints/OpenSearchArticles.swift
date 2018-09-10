@@ -267,4 +267,50 @@ public extension CiNiiKitArticles {
                                     failure?(error)
                                 })
     }
+
+    /**
+     Pagenation - next page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func nextPage(_ model: ArticlesModel,
+                  success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                  failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.nextPage(model,
+                                 success: { data in
+                                     let decoder: JSONDecoder = JSONDecoder()
+                                     guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                     success?(model)
+                                 },
+                                 failure: { error in
+                                     failure?(error)
+                                 })
+    }
+
+    /**
+     Pagenation - previous page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func previousPage(_ model: ArticlesModel,
+                      success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                      failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.previousPage(model,
+                                     success: { data in
+                                         let decoder: JSONDecoder = JSONDecoder()
+                                         guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                         success?(model)
+                                     },
+                                     failure: { error in
+                                         failure?(error)
+                                     })
+    }
 }

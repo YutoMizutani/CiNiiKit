@@ -387,4 +387,50 @@ public extension CiNiiKitBooks {
                                     failure?(error)
                                 })
     }
+
+    /**
+     Pagenation - next page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func nextPage(_ model: BooksModel,
+                  success: CiNiiKit.SuccessHandler<BooksModel>?,
+                  failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.nextPage(model,
+                                 success: { data in
+                                     let decoder: JSONDecoder = JSONDecoder()
+                                     guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                     success?(model)
+                                 },
+                                 failure: { error in
+                                     failure?(error)
+                                 })
+    }
+
+    /**
+     Pagenation - previous page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func previousPage(_ model: BooksModel,
+                      success: CiNiiKit.SuccessHandler<BooksModel>?,
+                      failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.previousPage(model,
+                                     success: { data in
+                                         let decoder: JSONDecoder = JSONDecoder()
+                                         guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                         success?(model)
+                                     },
+                                     failure: { error in
+                                         failure?(error)
+                                     })
+    }
 }

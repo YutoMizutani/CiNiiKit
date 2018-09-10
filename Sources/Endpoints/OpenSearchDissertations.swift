@@ -149,4 +149,50 @@ public extension CiNiiKitDissertations {
                          success: success,
                          failure: failure)
     }
+
+    /**
+     Pagenation - next page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func nextPage(_ model: DissertationsModel,
+                  success: CiNiiKit.SuccessHandler<DissertationsModel>?,
+                  failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.nextPage(model,
+                                 success: { data in
+                                     let decoder: JSONDecoder = JSONDecoder()
+                                     guard let model: DissertationsModel = try? decoder.decode(DissertationsModel.self, from: data) else { return }
+                                     success?(model)
+                                 },
+                                 failure: { error in
+                                     failure?(error)
+                                 })
+    }
+
+    /**
+     Pagenation - previous page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func previousPage(_ model: DissertationsModel,
+                      success: CiNiiKit.SuccessHandler<DissertationsModel>?,
+                      failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.previousPage(model,
+                                     success: { data in
+                                         let decoder: JSONDecoder = JSONDecoder()
+                                         guard let model: DissertationsModel = try? decoder.decode(DissertationsModel.self, from: data) else { return }
+                                         success?(model)
+                                     },
+                                     failure: { error in
+                                         failure?(error)
+                                     })
+    }
 }

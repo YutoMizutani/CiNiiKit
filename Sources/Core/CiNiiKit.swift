@@ -98,7 +98,7 @@ public class CiNiiKit {
          - success: Success handler
          - failure: Failure handler
      */
-    public func nextPage(_ pageableModel: OpenSearchPageable,
+    func nextPage(_ pageableModel: OpenSearchPageable,
                   success: SuccessHandler<Data>?,
                   failure: FailureHandler?) {
 
@@ -122,7 +122,7 @@ public class CiNiiKit {
          - success: Success handler
          - failure: Failure handler
      */
-    public func previousPage(_ pageableModel: OpenSearchPageable,
+    func previousPage(_ pageableModel: OpenSearchPageable,
                       success: SuccessHandler<Data>?,
                       failure: FailureHandler?) {
 
