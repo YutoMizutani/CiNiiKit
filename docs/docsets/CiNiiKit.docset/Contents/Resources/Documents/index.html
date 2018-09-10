@@ -13,7 +13,7 @@
     <a title="CiNiiKit  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CiNiiKit Docs</a> (88% documented)</p>
+        <p><a href="index.html">CiNiiKit Docs</a> (93% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -72,6 +72,20 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Enums/LanguageType.html">LanguageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PagenationError.html">PagenationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/QueryError.html">QueryError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/OpenSearchPageable.html">OpenSearchPageable</a>
               </li>
             </ul>
           </li>
@@ -164,14 +178,67 @@
             <h1 id='ciniikit' class='heading'>CiNiiKit</h1>
 
 <p><a href="https://travis-ci.com/YutoMizutani/CiNiiKit"><img src="https://travis-ci.com/YutoMizutani/CiNiiKit.svg?branch=master" alt="Build Status"></a>
-<a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License"></a></p>
+<a href="https://github.com/YutoMizutani/CiNiiKit"><img src="https://img.shields.io/cocoapods/p/CiNiiKit.svg" alt="CocoaPods"></a>
+<a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License"></a>
+<a href="https://github.com/YutoMizutani/CiNiiKit"><img src="https://img.shields.io/cocoapods/v/CiNiiKit.svg" alt="CocoaPods"></a>
+<a href="https://github.com/YutoMizutani/CiNiiKit"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a></p>
 
 <p>CiNii API client written in Swift.</p>
+<h2 id='get-started' class='heading'>Get Started</h2>
+
+<p>A sample of CiNii Article search,</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CiNiiKit</span>
+
+<span class="k">let</span> <span class="nv">cinii</span><span class="p">:</span> <span class="kt">CiNiiKit</span> <span class="o">=</span> <span class="kt">CiNiiKit</span><span class="o">.</span><span class="n">shared</span>
+<span class="n">cinii</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="s">"ENTER YOUR API KEY"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">keyword</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"ENTER YOUR SEARCH WORD"</span>
+<span class="n">cinii</span><span class="o">.</span><span class="n">articles</span><span class="o">.</span><span class="nf">search</span><span class="p">(</span><span class="nv">keyword</span><span class="p">:</span> <span class="n">keyword</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="n">model</span> <span class="k">in</span>
+    <span class="c1">// e.g. get first journal title</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">?[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+<span class="p">},</span> <span class="nv">failure</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre>
+<h2 id='demo' class='heading'>Demo</h2>
+
+<p><a href="https://github.com/YutoMizutani/CiNiiKit/tree/master/Demo">Demo app</a> is a sample of CiNii Articles.</p>
+
+<p><img src="https://raw.githubusercontent.com/YutoMizutani/CiNiiKit/media/demo.gif" alt=""></p>
+<h2 id='installation' class='heading'>Installation</h2>
+<h4 id='cocoapods' class='heading'>Cocoapods</h4>
+
+<p>Add this to your Podfile:</p>
+<pre class="highlight plaintext"><code>pod 'CiNiiKit'
+</code></pre>
+
+<p>and</p>
+<pre class="highlight plaintext"><code>$ pod install
+</code></pre>
+<h4 id='carthage' class='heading'>Carthage</h4>
+
+<p>Add this to your Cartfile:</p>
+<pre class="highlight plaintext"><code>github "YutoMizutani/CiNiiKit"
+</code></pre>
+
+<p>and</p>
+<pre class="highlight plaintext"><code>$ carthage update
+</code></pre>
+<h2 id='get-api-key' class='heading'>Get API key</h2>
+
+<p>This API is required key(application ID). Register <a href="https://support.nii.ac.jp/en/cinii/api/developer">this page</a>.</p>
+<h2 id='references' class='heading'>References</h2>
+
+<ul>
+<li><a href="https://support.nii.ac.jp/en/cinii/api/api_outline">CiNii - Metadata and API</a></li>
+</ul>
+<h2 id='license' class='heading'>License</h2>
+
+<p>CiNiiKit is available under the <a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/LICENSE">MIT license</a>.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/YutoMizutani/CiNiiKit" target="_blank" rel="external">Yuto Mizutani</a>. All rights reserved. (Last updated: 2018-09-06)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/YutoMizutani/CiNiiKit" target="_blank" rel="external">Yuto Mizutani</a>. All rights reserved. (Last updated: 2018-09-10)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		998F93AA21466F3A005D8E8D /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */; };
 		999C52462134AFF600611308 /* CiNiiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C523D2134AFF500611308 /* CiNiiKit.framework */; };
 		999C52552134B14400611308 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51E22134318B00611308 /* CiNiiKit.swift */; };
 		999C52572134B14800611308 /* CiNiiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51F1213431A000611308 /* CiNiiKitTests.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchPageable.swift; sourceTree = "<group>"; };
 		999C51D62134313200611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999C51E22134318B00611308 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
 		999C51F1213431A000611308 /* CiNiiKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitTests.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		99F97AA62137A4440052391A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */,
 				99F97AA72137A47B0052391A /* ArticlesModel.swift */,
 				99F97ADC2139987E0052391A /* BooksModel.swift */,
 				99F97AD42138E9700052391A /* DissertationsModel.swift */,
@@ -402,6 +405,7 @@
 				99F97AE3213B076A0052391A /* ParticipantType.swift in Sources */,
 				99F97ACF2138D3900052391A /* OpenSearchDissertations.swift in Sources */,
 				99F97AE1213B07230052391A /* ILLStatusType.swift in Sources */,
+				998F93AA21466F3A005D8E8D /* OpenSearchPageable.swift in Sources */,
 				999C52552134B14400611308 /* CiNiiKit.swift in Sources */,
 				99F97AD32138E3F30052391A /* RangeType.swift in Sources */,
 				99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */,

@@ -3,6 +3,7 @@
 
 import PackageDescription
 
+/// Package
 let package = Package(
     name: "CiNiiKit",
     products: [

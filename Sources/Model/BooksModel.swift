@@ -120,6 +120,7 @@ public struct BooksModel: Codable {
         }
     }
 
+    /// @graph Object
     public struct Graph: Codable {
         /**
          Requested URI
@@ -348,7 +349,7 @@ public struct BooksModel: Codable {
         }
     }
 
-    // Bibliography object
+    /// Bibliography object
     public struct Bibliography: Codable {
         /**
          URI of Parent bibliography

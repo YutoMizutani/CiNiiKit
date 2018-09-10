@@ -7,7 +7,10 @@
 
 import Foundation
 
+/// Language type
 public enum LanguageType: String {
+    /// Japanese
     case ja
+    /// English
     case en
 }
