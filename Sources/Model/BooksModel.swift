@@ -349,7 +349,7 @@ public struct BooksModel: Codable {
         }
     }
 
-    // Bibliography object
+    /// Bibliography object
     public struct Bibliography: Codable {
         /**
          URI of Parent bibliography

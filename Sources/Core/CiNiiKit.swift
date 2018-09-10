@@ -6,11 +6,11 @@
 //
 
 import Alamofire
-//import KeychainAccess
 import UIKit
 
 /// A set of helper functions to make the Instagram API easier to use.
 public class CiNiiKit {
+    /// TESTABLE TEXT
     public let text = "Hello, World!"
 
     /// CiNii Articles - https://ci.nii.ac.jp/
@@ -98,7 +98,7 @@ public class CiNiiKit {
          - success: Success handler
          - failure: Failure handler
      */
-    func nextPage(_ pageableModel: OpenSearchPageable,
+    public func nextPage(_ pageableModel: OpenSearchPageable,
                   success: SuccessHandler<Data>?,
                   failure: FailureHandler?) {
 
@@ -122,7 +122,7 @@ public class CiNiiKit {
          - success: Success handler
          - failure: Failure handler
      */
-    func previousPage(_ pageableModel: OpenSearchPageable,
+    public func previousPage(_ pageableModel: OpenSearchPageable,
                       success: SuccessHandler<Data>?,
                       failure: FailureHandler?) {
 
