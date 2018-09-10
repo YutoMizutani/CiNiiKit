@@ -36,8 +36,8 @@ public extension CiNiiKitArticles {
          - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cia/api/a_opensearch
@@ -126,8 +126,8 @@ public extension CiNiiKitArticles {
          - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cia/api/a_opensearch
@@ -187,8 +187,8 @@ public extension CiNiiKitArticles {
          - start: Start number for the acquired search result list (optional)
          - format: Specifies the format of the response (optional)
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
       https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
@@ -233,8 +233,8 @@ public extension CiNiiKitArticles {
          - start: Start number for the acquired search result list (optional)
          - format: Specifies the format of the response (optional)
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cia/api/a_opensearch_full

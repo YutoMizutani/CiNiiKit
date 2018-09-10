@@ -31,8 +31,8 @@ public extension CiNiiKitDissertations {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cid/api/d_opensearch
@@ -108,8 +108,8 @@ public extension CiNiiKitDissertations {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cid/api/d_opensearch

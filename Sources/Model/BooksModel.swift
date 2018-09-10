@@ -120,6 +120,7 @@ public struct BooksModel: Codable {
         }
     }
 
+    /// @graph Object
     public struct Graph: Codable {
         /**
          Requested URI

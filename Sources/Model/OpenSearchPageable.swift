@@ -7,6 +7,7 @@
 
 import Alamofire
 
+/// Paging feature protocol
 public protocol OpenSearchPageable {
     /// Requested URI
     var id: String { get }
@@ -52,42 +53,51 @@ public extension OpenSearchPageable {
 }
 
 extension ArticlesModel: OpenSearchPageable {
+    /// Total search results
     public var opensearchTotalResults: String {
         return self.graph[0].opensearchTotalResults
     }
 
+    /// Start number
     public var opensearchStartIndex: String? {
         return self.graph[0].opensearchStartIndex
     }
 
+    /// Results per page
     public var opensearchItemsPerPage: String? {
         return self.graph[0].opensearchItemsPerPage
     }
 }
 
 extension BooksModel: OpenSearchPageable {
+    /// Total search results
     public var opensearchTotalResults: String {
         return self.graph[0].opensearchTotalResults
     }
 
+    /// Start number
     public var opensearchStartIndex: String? {
         return self.graph[0].opensearchStartIndex
     }
 
+    /// Results per page
     public var opensearchItemsPerPage: String? {
         return self.graph[0].opensearchItemsPerPage
     }
 }
 
 extension DissertationsModel: OpenSearchPageable {
+    /// Total search results
     public var opensearchTotalResults: String {
         return self.graph[0].opensearchTotalResults
     }
 
+    /// Start number
     public var opensearchStartIndex: String? {
         return self.graph[0].opensearchStartIndex
     }
 
+    /// Results per page
     public var opensearchItemsPerPage: String? {
         return self.graph[0].opensearchItemsPerPage
     }

@@ -42,8 +42,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch
@@ -174,8 +174,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch
@@ -247,8 +247,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
@@ -287,8 +287,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
@@ -337,8 +337,8 @@ public extension CiNiiKitBooks {
          - vol: Journal Holding - Volume
          - issue: Journal Holding - Number
          - cont: Journal Holding - Continuing
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch_lib

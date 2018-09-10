@@ -56,7 +56,16 @@ public class CiNiiKit {
 
     // MARK: - Requests
 
-    /// Request
+    /**
+     Request
+
+     - Parameters:
+         - url: API URL
+         - method: HTTP method
+         - parameters: Query parameters
+         - success: Success handler
+         - failure: Failure handler
+     */
     func request(_ url: String,
                  method: HTTPMethod = .get,
                  parameters: Parameters? = nil,
@@ -81,7 +90,14 @@ public class CiNiiKit {
             }
     }
 
-    /// Pagenation - next page
+    /**
+     Pagenation - next page
+
+     - Parameters:
+         - pageableModel: paging model
+         - success: Success handler
+         - failure: Failure handler
+     */
     func nextPage(_ pageableModel: OpenSearchPageable,
                   success: SuccessHandler<Data>?,
                   failure: FailureHandler?) {
@@ -98,7 +114,14 @@ public class CiNiiKit {
         self.request(url, parameters: parameters, success: success, failure: failure)
     }
 
-    /// Pagenation - previous page
+    /**
+     Pagenation - previous page
+
+     - Parameters:
+         - pageableModel: paging model
+         - success: Success handler
+         - failure: Failure handler
+     */
     func previousPage(_ pageableModel: OpenSearchPageable,
                       success: SuccessHandler<Data>?,
                       failure: FailureHandler?) {
