@@ -50,7 +50,7 @@ excluded:
   - .build
 
 line_length: 
-  warning: 150
+  warning: 160
   ignores_comments: true
 type_body_length:
   - 300 # warning
