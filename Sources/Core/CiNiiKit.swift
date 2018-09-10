@@ -64,8 +64,10 @@ public class CiNiiKit {
                  failure: FailureHandler?) {
 
         var parameters = parameters ?? Parameters()
+        parameters["count"] = parameters["count"] ?? "200"
+        parameters["start"] = parameters["start"] ?? "1"
         parameters["format"] = "json"
-        parameters["appid"] = appid
+        parameters["appid"] = self.appid
 
         Alamofire.request(url, method: method, parameters: parameters, encoding: URLEncoding.default)
             .responseData { response in
@@ -77,5 +79,39 @@ public class CiNiiKit {
                     failure?(error)
                 }
             }
+    }
+
+    /// Pagenation - next page
+    func nextPage(_ pageableModel: OpenSearchPageable,
+                  success: SuccessHandler<Data>?,
+                  failure: FailureHandler?) {
+
+        guard !pageableModel.requestParameters.isReachEnd else {
+            failure?(PagenationError.maxPage)
+            return
+        }
+        let url: String = pageableModel.requestParameters.detail.url
+        var parameters: Parameters = pageableModel.requestParameters.detail.parameters
+        let currentPage: Int = Int((parameters["start"] as? String) ?? "1") ?? 1
+        parameters["start"] = "\(currentPage + 1)"
+
+        self.request(url, parameters: parameters, success: success, failure: failure)
+    }
+
+    /// Pagenation - previous page
+    func previousPage(_ pageableModel: OpenSearchPageable,
+                      success: SuccessHandler<Data>?,
+                      failure: FailureHandler?) {
+
+        let url: String = pageableModel.requestParameters.detail.url
+        var parameters: Parameters = pageableModel.requestParameters.detail.parameters
+        let currentPage: Int = Int((parameters["start"] as? String) ?? "1") ?? 1
+        guard currentPage > 1 else {
+            failure?(PagenationError.minPage)
+            return
+        }
+        parameters["start"] = "\(currentPage - 1)"
+
+        self.request(url, parameters: parameters, success: success, failure: failure)
     }
 }
