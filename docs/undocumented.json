@@ -1,13 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKit.swift",
-      "line": 14,
-      "symbol": "CiNiiKit.text",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitArticles.swift",
       "line": null,
       "symbol": "CiNiiKitArticles",
@@ -117,13 +110,6 @@
       "line": 194,
       "symbol": "BooksModel.Graph.items",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/BooksModel.swift",
-      "line": 353,
-      "symbol": "BooksModel.Bibliography",
-      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
