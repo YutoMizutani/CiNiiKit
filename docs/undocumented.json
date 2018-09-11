@@ -1,13 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKit.swift",
-      "line": 14,
-      "symbol": "CiNiiKit.text",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Core/CiNiiKitArticles.swift",
       "line": null,
       "symbol": "CiNiiKitArticles",
@@ -103,95 +96,32 @@
       "line": 10,
       "symbol": "CiNiiKitDissertations",
       "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Enum/LanguageType.swift",
-      "line": 10,
-      "symbol": "LanguageType",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Enum/LanguageType.swift",
-      "line": 11,
-      "symbol": "LanguageType.ja",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Enum/LanguageType.swift",
-      "line": 12,
-      "symbol": "LanguageType.en",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Enum/SortOrderType.swift",
-      "line": 11,
-      "symbol": "CiNiiKitArticles.SortOrderType",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Enum/SortOrderType.swift",
-      "line": 122,
-      "symbol": "CiNiiKitBooks.SortOrderType",
-      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/ArticlesModel.swift",
-      "line": 107,
-      "symbol": "ArticlesModel.Graph",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/ArticlesModel.swift",
-      "line": 175,
+      "line": 176,
       "symbol": "ArticlesModel.Graph.items",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/BooksModel.swift",
-      "line": 123,
-      "symbol": "BooksModel.Graph",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/BooksModel.swift",
-      "line": 193,
+      "line": 194,
       "symbol": "BooksModel.Graph.items",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/BooksModel.swift",
-      "line": 352,
-      "symbol": "BooksModel.Bibliography",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/DissertationsModel.swift",
-      "line": 107,
-      "symbol": "DissertationsModel.Graph",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/DissertationsModel.swift",
-      "line": 175,
+      "line": 176,
       "symbol": "DissertationsModel.Graph.items",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ym/Developer/programs/swift/swift4/iOS/CiNiiKit/Sources/Model/DissertationsModel.swift",
-      "line": 264,
+      "line": 265,
       "symbol": "DissertationsModel.Item.dcSource",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"

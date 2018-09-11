@@ -8,6 +8,12 @@
 import Foundation
 
 public extension CiNiiKitArticles {
+    /**
+     Sort Order
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cia/api/a_opensearch
+     */
     struct SortOrderType {
         /**
          Specifies the sorting condition. The default is 1.
@@ -92,33 +98,13 @@ public extension CiNiiKitArticles {
     }
 }
 
-public extension CiNiiKitDissertations {
+public extension CiNiiKitBooks {
     /**
      Sort Order
 
      - SeeAlso:
-     https://support.nii.ac.jp/en/cid/api/d_opensearch
+     https://support.nii.ac.jp/en/cib/api/b_opensearch
      */
-    enum SortOrderType: Int {
-
-        /// Sorts results with the newest year at the top(default)
-        case newestYearAtTheTop = 1
-
-        /// Sorts results with the oldest year at the top
-        case oldestYearAtTheTop = 2
-
-        /// Sorts results with the title(A-Z)
-        case titleAscending = 3
-
-        /// Sorts results with the title(Z-A)
-        case titleDescending = 4
-
-        /// Sorts by relevance in descending order
-        case relevanceDescending = 5
-    }
-}
-
-public extension CiNiiKitBooks {
     struct SortOrderType {
         /**
          Sort Order
@@ -191,5 +177,31 @@ public extension CiNiiKitBooks {
             /// Sorts by number of books　with the highest number at the top
             case highestNumberAtTheTop = 5
         }
+    }
+}
+
+public extension CiNiiKitDissertations {
+    /**
+     Sort Order
+
+     - SeeAlso:
+     https://support.nii.ac.jp/en/cid/api/d_opensearch
+     */
+    enum SortOrderType: Int {
+
+        /// Sorts results with the newest year at the top(default)
+        case newestYearAtTheTop = 1
+
+        /// Sorts results with the oldest year at the top
+        case oldestYearAtTheTop = 2
+
+        /// Sorts results with the title(A-Z)
+        case titleAscending = 3
+
+        /// Sorts results with the title(Z-A)
+        case titleDescending = 4
+
+        /// Sorts by relevance in descending order
+        case relevanceDescending = 5
     }
 }

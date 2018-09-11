@@ -36,8 +36,8 @@ public extension CiNiiKitArticles {
          - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cia/api/a_opensearch
@@ -126,8 +126,8 @@ public extension CiNiiKitArticles {
          - yearTo: Searches by year of publication (To).
          - range: Specifies the search target option.
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cia/api/a_opensearch
@@ -187,8 +187,8 @@ public extension CiNiiKitArticles {
          - start: Start number for the acquired search result list (optional)
          - format: Specifies the format of the response (optional)
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
       https://support.nii.ac.jp/en/cia/api/a_opensearch_auth
@@ -233,8 +233,8 @@ public extension CiNiiKitArticles {
          - start: Start number for the acquired search result list (optional)
          - format: Specifies the format of the response (optional)
          - sortOrder: Specifies the sorting condition.
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cia/api/a_opensearch_full
@@ -266,5 +266,51 @@ public extension CiNiiKitArticles {
                                 failure: { error in
                                     failure?(error)
                                 })
+    }
+
+    /**
+     Pagenation - next page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func nextPage(_ model: ArticlesModel,
+                  success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                  failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.nextPage(model,
+                                 success: { data in
+                                     let decoder: JSONDecoder = JSONDecoder()
+                                     guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                     success?(model)
+                                 },
+                                 failure: { error in
+                                     failure?(error)
+                                 })
+    }
+
+    /**
+     Pagenation - previous page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func previousPage(_ model: ArticlesModel,
+                      success: CiNiiKit.SuccessHandler<ArticlesModel>?,
+                      failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.previousPage(model,
+                                     success: { data in
+                                         let decoder: JSONDecoder = JSONDecoder()
+                                         guard let model: ArticlesModel = try? decoder.decode(ArticlesModel.self, from: data) else { return }
+                                         success?(model)
+                                     },
+                                     failure: { error in
+                                         failure?(error)
+                                     })
     }
 }

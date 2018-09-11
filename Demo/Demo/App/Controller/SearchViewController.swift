@@ -114,10 +114,10 @@ extension SearchViewController {
 
     /// Search from CiNii
     private func search() {
-        self.searchView.indicatorView.startAnimating()
         self.storeKey()
 
         guard let key = self.searchView.apiKeyTextField.text, let searchWord = self.searchView.searchWordTextField.text else { return }
+        self.searchView.indicatorView.startAnimating()
         self.model.register(key)
         self.model.search(searchWord, success: { [weak self] model in
             guard let `self` = self else { return }

@@ -104,6 +104,7 @@ public struct DissertationsModel: Codable {
         }
     }
 
+    /// @graph Object
     public struct Graph: Codable {
         /**
          Requested URI

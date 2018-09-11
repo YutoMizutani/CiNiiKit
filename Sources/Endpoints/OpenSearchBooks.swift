@@ -42,8 +42,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch
@@ -174,8 +174,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch
@@ -247,8 +247,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Search Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
@@ -287,8 +287,8 @@ public extension CiNiiKitBooks {
          - sortOrder: Sort Order
          - p: Page Number
          - count: Number of outcome per one page
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
@@ -337,8 +337,8 @@ public extension CiNiiKitBooks {
          - vol: Journal Holding - Volume
          - issue: Journal Holding - Number
          - cont: Journal Holding - Continuing
-         - success:
-         - failure:
+         - success: Success handler
+         - failure: Failure handler
 
      - SeeAlso:
      https://support.nii.ac.jp/en/cib/api/b_opensearch_lib
@@ -386,5 +386,51 @@ public extension CiNiiKitBooks {
                                 failure: { error in
                                     failure?(error)
                                 })
+    }
+
+    /**
+     Pagenation - next page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func nextPage(_ model: BooksModel,
+                  success: CiNiiKit.SuccessHandler<BooksModel>?,
+                  failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.nextPage(model,
+                                 success: { data in
+                                     let decoder: JSONDecoder = JSONDecoder()
+                                     guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                     success?(model)
+                                 },
+                                 failure: { error in
+                                     failure?(error)
+                                 })
+    }
+
+    /**
+     Pagenation - previous page
+
+     - Parameters:
+         - model: Response model
+         - success: Success handler
+         - failure: Failure handler
+     */
+    func previousPage(_ model: BooksModel,
+                      success: CiNiiKit.SuccessHandler<BooksModel>?,
+                      failure: CiNiiKit.FailureHandler?) {
+
+        CiNiiKit.shared.previousPage(model,
+                                     success: { data in
+                                         let decoder: JSONDecoder = JSONDecoder()
+                                         guard let model: BooksModel = try? decoder.decode(BooksModel.self, from: data) else { return }
+                                         success?(model)
+                                     },
+                                     failure: { error in
+                                         failure?(error)
+                                     })
     }
 }
