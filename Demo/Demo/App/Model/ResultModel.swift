@@ -31,9 +31,12 @@ struct ResultModel {
     private(set) var viewModels: [ResultViewModel] = []
 
     init(model: ArticlesModel) {
-        let title = model.graph[0].title
-        // @graph; e.g. CiNii OpenSearch - Operant Models of Relapse in Zebrafish -> Operant Models of Relapse in Zebrafish
-        self.searchWord = String(title[(title.range(of: " - ")?.upperBound ?? title.startIndex)..<title.endIndex])
+        self.searchWord = "Result"
+        if let searchQuery = model.id.split(separator: "&").first(where: { $0.hasPrefix("q=") }),
+           let searchWord = searchQuery[searchQuery.index(searchQuery.startIndex, offsetBy: 2)..<searchQuery.endIndex].removingPercentEncoding {
+            self.searchWord = searchWord
+        }
+
         self._viewModels = []
         model.graph[0].items?.forEach {
             let title = $0.title ?? ""
