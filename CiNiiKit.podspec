@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CiNiiKit"
-  s.version          = "0.0.4"
+  s.version          = "0.1.0"
   s.summary          = "CiNii API client written in Swift"
 
   s.description      = <<-DESC
