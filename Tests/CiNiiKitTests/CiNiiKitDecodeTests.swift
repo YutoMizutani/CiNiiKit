@@ -65,6 +65,6 @@ extension CiNiiKitTests {
         XCTAssertEqual(item.dcDate, "2018-07-20")
         XCTAssertEqual(item.prismVolume, "30")
         XCTAssertEqual(item.prismPublicationDate, "2018-07-20")
-        XCTAssertEqual(item.prismNumber, "100000000") // "2"
+        XCTAssertEqual(item.prismNumber, "2")
     }
 }
