@@ -15,9 +15,12 @@ class ResultViewController: UIViewController {
     private var resultView: ResultView = ResultView()
     /// Model content
     private var model: ResultModel
+    /// Load view state
+    private var isLoading: Bool
 
     init(_ model: ResultModel) {
         self.model = model
+        self.isLoading = true
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -29,6 +32,11 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         self.configureView()
         self.layoutView()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.isLoading = false
     }
 
     override func viewDidLayoutSubviews() {
@@ -88,10 +96,17 @@ extension ResultViewController {
 // MARK: - Private methods
 extension ResultViewController {
     /// Filter results with the keyword
-    func filter(_ keyword: String?) {
+    private func filter(_ keyword: String?) {
         guard let keyword = keyword else { return }
         self.model.filter(with: keyword)
         self.resultView.collectionView.reloadData()
+    }
+
+    /// Next page
+    private func requestNextPage() {
+        self.model.nextPage(success: { [weak self] in
+            self?.resultView.collectionView.reloadData()
+        })
     }
 }
 
@@ -118,6 +133,15 @@ extension ResultViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let url = self.model.getViewModel(at: indexPath.row)?.link else { return }
         SFSafariViewController.present(self, url: url)
+    }
+
+    // Called when any offset changes
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard !isLoading else { return }
+        let maxOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
+        if maxOffset - scrollView.contentOffset.y < 2500 {
+            self.requestNextPage()
+        }
     }
 }
 
