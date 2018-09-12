@@ -29,7 +29,7 @@ enum PagingState {
     case maxPage
 }
 
-// MARK: - Private methods
+/// Result model
 class ResultModel {
     /// Searched model
     private var model: ArticlesModel
