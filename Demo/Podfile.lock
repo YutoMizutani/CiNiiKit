@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
-  - CiNiiKit (0.0.4):
+  - CiNiiKit (0.1.1):
     - Alamofire
 
 DEPENDENCIES:
@@ -13,7 +13,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  CiNiiKit: 26491b9dd9937a74486c8e81043fc58fd303efe7
+  CiNiiKit: c93b11539dfd1e49246808b114f09e20ca9aff8a
 
 PODFILE CHECKSUM: f71bc88b0306b3ae58f81700e3b9da443a80d3f2
 

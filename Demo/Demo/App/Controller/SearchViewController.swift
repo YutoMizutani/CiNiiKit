@@ -122,13 +122,11 @@ extension SearchViewController {
         self.model.search(searchWord, success: { [weak self] model in
             guard let `self` = self else { return }
             self.searchView.indicatorView.stopAnimating()
-            dump(model)
             let navigationViewController = ResultBuilder().build(with: model)
             self.present(navigationViewController, animated: true)
         }, failure: { [weak self] error in
             guard let `self` = self else { return }
             self.searchView.indicatorView.stopAnimating()
-            dump(error)
         })
     }
 }
