@@ -1,0 +1,650 @@
+{
+    "@context" : {
+        "prism" : "http:\/\/prismstandard.org\/namespaces\/basic\/2.0\/",
+        "rdf" : "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#",
+        "rdfs" : "http:\/\/www.w3.org\/2000\/01\/rdf-schema#",
+        "@vocab" : "http:\/\/purl.org\/rss\/1.0\/",
+        "opensearch" : "http:\/\/a9.com\/-\/spec\/opensearch\/1.1\/",
+        "dc" : "http:\/\/purl.org\/dc\/elements\/1.1\/"
+    },
+    "@id" : "https:\/\/ci.nii.ac.jp\/opensearch\/search?count=20&format=json&q=%E8%A1%8C%E5%8B%95%E5%88%86%E6%9E%90%E5%AD%A6&start=1&REMOTE_ADDR2=150.249.192.41",
+    "@graph" : [
+                {
+                "link" : {
+                "@id" : "https:\/\/ci.nii.ac.jp\/opensearch\/search?count=20&format=json&q=%E8%A1%8C%E5%8B%95%E5%88%86%E6%9E%90%E5%AD%A6&start=1&REMOTE_ADDR2=150.249.192.41"
+                },
+                "@id" : "https:\/\/ci.nii.ac.jp\/opensearch\/search?count=20&format=json&q=%E8%A1%8C%E5%8B%95%E5%88%86%E6%9E%90%E5%AD%A6&start=1&REMOTE_ADDR2=150.249.192.41",
+                "opensearch:startIndex" : "1",
+                "opensearch:totalResults" : "3422",
+                "items" : [
+                           {
+                           "prism:endingPage" : "84",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/110008093161\/en",
+                           "description" : "This article is a proposal for the full cooperation of the profession of &quot;psychology&quot; and &quot;social welfare&quot; for the handicapped person through the mediation of philosophy and methodology of &quot;behavior analysis. &quot; From the standpoint of &quot;radical behaviorism,&quot; which is the philosophy of &quot;behavior analysis&quot; founded by B.F. Skinner, every term or concept on handicapped person is a description of the interaction between individual and environment. Any behavioral service for those people, therefore, is a &quot;adjustment&quot; between individuals and their environments. In this context, if necessary, we must change their environments including the social systems. Behavioral approach, however, has been regarded as a procedure which changes only the client in the field of social casework. The reason of the misconception might be derived both from outside and inside of the framework of behavioral approach itself. For the full cooperation of behavior analyst and social caseworker, some new directions of method of &quot;behavioral social casework&quot; were discussed.",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/110008093161.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/110008093161\/en"
+                           },
+                           "prism:issn" : "0911-0232",
+                           "prism:publicationName" : "Japanese Journal of Social Welfare",
+                           "prism:startingPage" : "64",
+                           "dc:publisher" : "Japanese Society for the Study of Social Welfare (JSSSW)",
+                           "title" : "Behavior Analysis as a Methodology of Social Casework : New Relation between Psychology and Social Welfare",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "Mochizuki Akira"
+                                           }
+                                           ],
+                           "dc:date" : "2018-07-20",
+                           "prism:volume" : "30",
+                           "prism:publicationDate" : "2018-07-20",
+                           "prism:number" : "2"
+                           },
+                           {
+                           "prism:endingPage" : "20",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021608074\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021608074.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021608074\/en"
+                           },
+                           "prism:issn" : "1882-7993",
+                           "prism:publicationName" : "認知症ケア事例ジャーナル",
+                           "prism:startingPage" : "13",
+                           "dc:publisher" : "日本認知症ケア学会 ; 2008-",
+                           "title" : "認知症高齢者の徘徊行動に対する応用行動分析学的介入の一例",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "宮 裕昭"
+                                           },
+                                           {
+                                           "@value" : "松岡 照之"
+                                           },
+                                           {
+                                           "@value" : "鑪 直樹"
+                                           },
+                                           {
+                                           "@value" : "大川 一郎"
+                                           }
+                                           ],
+                           "dc:date" : "2018-06",
+                           "prism:volume" : "11",
+                           "prism:publicationDate" : "2018-06",
+                           "prism:number" : "1"
+                           },
+                           {
+                           "prism:endingPage" : "22",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021538735\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021538735.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021538735\/en"
+                           },
+                           "prism:issn" : "0913-5685",
+                           "prism:publicationName" : "電子情報通信学会技術研究報告 = IEICE technical report : 信学技報",
+                           "prism:startingPage" : "17",
+                           "dc:publisher" : "電子情報通信学会",
+                           "title" : "Application of Behavioral Analysis on Safety Management Approach utilizing ICT in IoT era : Objective measurement, prediction and control of human behavior",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "北條 理恵子"
+                                           },
+                                           {
+                                           "@value" : "濱島 京子"
+                                           },
+                                           {
+                                           "@value" : "清水 尚憲"
+                                           }
+                                           ],
+                           "dc:date" : "2018-04-24",
+                           "prism:volume" : "118",
+                           "prism:publicationDate" : "2018-04-24",
+                           "prism:number" : "13"
+                           },
+                           {
+                           "prism:endingPage" : "501",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021560316\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021560316.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021560316\/en"
+                           },
+                           "prism:issn" : "0912-1862",
+                           "prism:publicationName" : "精神科治療学",
+                           "prism:startingPage" : "495",
+                           "dc:publisher" : "星和書店",
+                           "title" : "A case of autistic adolescent with self-injurious behavior who were treated by applied behavior analysis in hospitalization",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "佐野 樹"
+                                           },
+                                           {
+                                           "@value" : "山本 竜也"
+                                           },
+                                           {
+                                           "@value" : "坂井 誠"
+                                           }
+                                           ],
+                           "dc:date" : "2018-04",
+                           "prism:volume" : "33",
+                           "prism:publicationDate" : "2018-04",
+                           "prism:number" : "4"
+                           },
+                           {
+                           "prism:endingPage" : "12",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021521201\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021521201.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021521201\/en"
+                           },
+                           "prism:issn" : "0913-5685",
+                           "prism:publicationName" : "電子情報通信学会技術研究報告 = IEICE technical report : 信学技報",
+                           "prism:startingPage" : "9",
+                           "dc:publisher" : "電子情報通信学会",
+                           "title" : "Efficiency verification of supportive protection system at demonstration experiment site in mobile robot running environment virtualizing tunnel construction site",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "伊藤 大貴"
+                                           },
+                                           {
+                                           "@value" : "松井 克海"
+                                           },
+                                           {
+                                           "@value" : "北條 理恵子"
+                                           },
+                                           {
+                                           "@value" : "濱島 京子"
+                                           },
+                                           {
+                                           "@value" : "梅崎 重夫"
+                                           },
+                                           {
+                                           "@value" : "土屋 政雄"
+                                           },
+                                           {
+                                           "@value" : "福田 隆文"
+                                           },
+                                           {
+                                           "@value" : "清水 尚憲"
+                                           },
+                                           {
+                                           "@value" : "高橋 聖"
+                                           }
+                                           ],
+                           "dc:date" : "2018-03-27",
+                           "prism:volume" : "117",
+                           "prism:publicationDate" : "2018-03-27",
+                           "prism:number" : "521"
+                           },
+                           {
+                           "prism:endingPage" : "8",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021521171\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021521171.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021521171\/en"
+                           },
+                           "prism:issn" : "0913-5685",
+                           "prism:publicationName" : "電子情報通信学会技術研究報告 = IEICE technical report : 信学技報",
+                           "prism:startingPage" : "5",
+                           "dc:publisher" : "電子情報通信学会",
+                           "title" : "Evaluation about Procedure of Behavioral Analysis on Tunnel Construction Site under Experimental Situation",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "松井 克海"
+                                           },
+                                           {
+                                           "@value" : "伊藤 大貴"
+                                           },
+                                           {
+                                           "@value" : "北條 理恵子"
+                                           },
+                                           {
+                                           "@value" : "濱島 京子"
+                                           },
+                                           {
+                                           "@value" : "梅崎 重夫"
+                                           },
+                                           {
+                                           "@value" : "土屋 政雄"
+                                           },
+                                           {
+                                           "@value" : "福田 隆文"
+                                           },
+                                           {
+                                           "@value" : "清水 尚憲"
+                                           },
+                                           {
+                                           "@value" : "高橋 聖"
+                                           }
+                                           ],
+                           "dc:date" : "2018-03-27",
+                           "prism:volume" : "117",
+                           "prism:publicationDate" : "2018-03-27",
+                           "prism:number" : "521"
+                           },
+                           {
+                           "prism:endingPage" : "8",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021448215\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021448215.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021448215\/en"
+                           },
+                           "prism:publicationName" : "心理学ワールド",
+                           "prism:startingPage" : "5",
+                           "dc:publisher" : "日本心理学会",
+                           "title" : "罰の効果とその問題点 : 罰なき社会をめざす行動分析学 (特集 罰)",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "吉野 俊彦"
+                                           }
+                                           ],
+                           "dc:date" : "2018-01",
+                           "prism:publicationDate" : "2018-01",
+                           "prism:number" : "80"
+                           },
+                           {
+                           "prism:endingPage" : "164",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021632102\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021632102.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021632102\/en"
+                           },
+                           "prism:issn" : "0916-1422",
+                           "prism:publicationName" : "発達研究 : 発達科学研究教育センター紀要",
+                           "prism:startingPage" : "161",
+                           "dc:publisher" : "発達科学研究教育センター",
+                           "title" : "The Quality of Childcare and Education in Practical Childcare : Behavioral analysis of children's reactions and the words of childcare workers",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "川口 めぐみ"
+                                           }
+                                           ],
+                           "dc:date" : "2018",
+                           "prism:volume" : "32",
+                           "prism:publicationDate" : "2018"
+                           },
+                           {
+                           "prism:endingPage" : "167",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539414\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539414.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539414\/en"
+                           },
+                           "prism:issn" : "0913-8013",
+                           "prism:publicationName" : "行動分析学研究 = Japanese journal of behavior analysis",
+                           "prism:startingPage" : "153",
+                           "dc:publisher" : "日本行動分析学会",
+                           "title" : "A Case History in Behavior-Analytic Modeling Work : The Copyist Model",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "丹野 貴行"
+                                           }
+                                           ],
+                           "dc:date" : "2018",
+                           "prism:volume" : "32",
+                           "prism:publicationDate" : "2018",
+                           "prism:number" : "2"
+                           },
+                           {
+                           "prism:endingPage" : "152",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539403\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539403.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539403\/en"
+                           },
+                           "prism:issn" : "0913-8013",
+                           "prism:publicationName" : "行動分析学研究 = Japanese journal of behavior analysis",
+                           "prism:startingPage" : "138",
+                           "dc:publisher" : "日本行動分析学会",
+                           "title" : "A Classwide Intervention With Individual Support in Three Regular Classrooms : Effects on the Academic Preparation Behavior of All Students, Including Students With Developmental and\/or Intellectual Disabilities",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "岩本 佳世"
+                                           },
+                                           {
+                                           "@value" : "野呂 文行"
+                                           }
+                                           ],
+                           "dc:date" : "2018",
+                           "prism:volume" : "32",
+                           "prism:publicationDate" : "2018",
+                           "prism:number" : "2"
+                           },
+                           {
+                           "prism:endingPage" : "137",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539394\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539394.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539394\/en"
+                           },
+                           "prism:issn" : "0913-8013",
+                           "prism:publicationName" : "行動分析学研究 = Japanese journal of behavior analysis",
+                           "prism:startingPage" : "127",
+                           "dc:publisher" : "日本行動分析学会",
+                           "title" : "Effects of an Interdependent Group-Oriented Contingency on Inappropriate Behavior in a Regular Classroom at the Outset of the Morning Meeting and in Classes",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "宮木 秀雄"
+                                           }
+                                           ],
+                           "dc:date" : "2018",
+                           "prism:volume" : "32",
+                           "prism:publicationDate" : "2018",
+                           "prism:number" : "2"
+                           },
+                           {
+                           "prism:endingPage" : "126",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539383\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539383.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021539383\/en"
+                           },
+                           "prism:issn" : "0913-8013",
+                           "prism:publicationName" : "行動分析学研究 = Japanese journal of behavior analysis",
+                           "prism:startingPage" : "110",
+                           "dc:publisher" : "日本行動分析学会",
+                           "title" : "Tact Training Targeting the Expression of Emotions : Using Four-Panel Comic Strips With Elementary School Students With Autistic Spectrum Disorder",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "富田 悠香"
+                                           },
+                                           {
+                                           "@value" : "菅佐原 洋"
+                                           }
+                                           ],
+                           "dc:date" : "2018",
+                           "prism:volume" : "32",
+                           "prism:publicationDate" : "2018",
+                           "prism:number" : "2"
+                           },
+                           {
+                           "prism:endingPage" : "20",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021432423\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021432423.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021432423\/en"
+                           },
+                           "prism:issn" : "0913-5685",
+                           "prism:publicationName" : "電子情報通信学会技術研究報告 = IEICE technical report : 信学技報",
+                           "prism:startingPage" : "17",
+                           "dc:publisher" : "電子情報通信学会",
+                           "title" : "Examination of validity of the supporting protection system (SPS) : For improvement of working efficiency using the SPS and intervention procedure of behavior analysis",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "北條 理恵子"
+                                           },
+                                           {
+                                           "@value" : "清水 尚憲"
+                                           },
+                                           {
+                                           "@value" : "濱島 京子"
+                                           },
+                                           {
+                                           "@value" : "土屋 政雄"
+                                           },
+                                           {
+                                           "@value" : "梅崎 重夫"
+                                           }
+                                           ],
+                           "dc:date" : "2017-12-19",
+                           "prism:volume" : "117",
+                           "prism:publicationDate" : "2017-12-19",
+                           "prism:number" : "365"
+                           },
+                           {
+                           "prism:endingPage" : "21",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021431336\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021431336.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021431336\/en"
+                           },
+                           "prism:issn" : "1349-9661",
+                           "prism:publicationName" : "学校健康相談研究 = Studies in school health counseling",
+                           "prism:startingPage" : "13",
+                           "dc:publisher" : "日本学校健康相談学会",
+                           "title" : "Applicability of applied behavior analysis for the approach to children with developmental disorders by school nurses",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "半田 健"
+                                           }
+                                           ],
+                           "dc:date" : "2017-12",
+                           "prism:volume" : "14",
+                           "prism:publicationDate" : "2017-12",
+                           "prism:number" : "1"
+                           },
+                           {
+                           "prism:endingPage" : "1373",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021421604\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021421604.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021421604\/en"
+                           },
+                           "prism:issn" : "0915-6305",
+                           "prism:publicationName" : "老年精神医学雑誌",
+                           "prism:startingPage" : "1368",
+                           "dc:publisher" : "ワールドプランニング",
+                           "title" : "Applied behavior analytic interventions for challenging behavior in older persons with dementia",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "宮 裕昭"
+                                           }
+                                           ],
+                           "dc:date" : "2017-12",
+                           "prism:volume" : "28",
+                           "prism:publicationDate" : "2017-12",
+                           "prism:number" : "12"
+                           },
+                           {
+                           "prism:endingPage" : "17",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006370700\/en",
+                           "description" : "　本稿は、行動分析学の視点から、高齢者のライフスタイルの構築と終末に関する有用な知見を提供することを目的とする。このテーマは、（1）スキナーの幸福観の概要と高齢者への適用（2）選択機会と高齢者の行動的QOL（3）複数の行動のまとまりから構成される「活動」概念に基づいて、より巨視的な観点から高齢者のライフスタイルの構築を考える（4）終末期における不安や恐怖への対処という4つの観点から総合的に検討する必要があると考えるが、本稿では紙幅の制限により、（2）についてはすでに長谷川（2012, 2013）で論じているのでここでは省略し、また（1）と（4）は概略を述べるにとどめ、新しい概念を取り入れた（3）について重点的に取り上げていくことにしたい。",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006370700.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006370700\/en"
+                           },
+                           "prism:issn" : "0285-4864",
+                           "prism:publicationName" : "岡山大学文学部紀要",
+                           "prism:startingPage" : "1",
+                           "dc:publisher" : "岡山大学文学部",
+                           "title" : "A Post-Skinnerian Perspective in Psychology(26)Old Age as a Radical Behaviorist",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "長谷川 芳典"
+                                           }
+                                           ],
+                           "dc:date" : "2017-12",
+                           "prism:publicationDate" : "2017-12",
+                           "prism:number" : "68"
+                           },
+                           {
+                           "prism:endingPage" : "19",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006369693\/en",
+                           "description" : "[Abstract] The purpose of this study is to examine how the university students increased their understanding about\" equality\" in communication, that is balanced respects for self and others, by participating in the assertiveness-training(AT). The descriptions in their reflection papers were analyzed.　The results show that, at relatively early stages of the training, they became to appreciate their own rights to express their feelings and requests. This suggests the effectiveness of AT to reduce over-adaptation tendency by encouraging self-expression. In addition, participants became to believe the possibility that the balanced respects for self and others could be achieved in everyday communication, by knowing some skills, such as reducing own request to a definite and concrete one. However, it is found that accepting the mutual differences in values, framing the problem they faced with balanced respects for self and others, and acknowledging self-responsibility for the problem were not fully acquired, and that the training program needs some improvements for the better understanding about\" equality\" in communication.専攻(堀田): 社会心理学, 専攻(本岡): 臨床心理学, 専攻(大対): 応用行動分析学, 専攻(直井): スポーツ心理学",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006369693.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006369693\/en"
+                           },
+                           "prism:issn" : "2186-6260",
+                           "prism:publicationName" : "近畿大学総合社会学部紀要 = Applied sociology research review Kinki University",
+                           "prism:startingPage" : "1",
+                           "dc:publisher" : "近畿大学総合社会学部",
+                           "title" : "Understanding and acquiring of \"equality\" in the assertiveness training for university students",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "堀田 美保"
+                                           },
+                                           {
+                                           "@value" : "本岡 寛子"
+                                           },
+                                           {
+                                           "@value" : "大対 香奈子"
+                                           },
+                                           {
+                                           "@value" : "直井 愛里"
+                                           }
+                                           ],
+                           "dc:date" : "2017-10",
+                           "prism:volume" : "6",
+                           "prism:publicationDate" : "2017-10",
+                           "prism:number" : "1"
+                           },
+                           {
+                           "prism:endingPage" : "23",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006349972\/en",
+                           "description" : "　著明な視力低下と進行性の右下肢痙性麻痺を呈した79歳女性に対して，車椅子への移乗動作中の危険行動を減少させることを目的とした介入を実施した．拡大した写真と文章によって危険行動と適切行動を教示し，適正な姿勢を確認するための触覚的プロンプトを整備した．移乗動作中の危険行動のチェックシートを作成し，改善状況をグラフ化してフィードバックした．ベースライン期には4-5点を推移していた危険行動は，介入開始から徐々に減少し，9日目以降は0点で推移した．さらに，12日目以降は視覚的教示をなくしたが，危険行動は出現しなかった．本介入中には，明らかな機能障害の変化はなく，今回の動作能力の改善は，適切な移乗動作の学習によって生じたものと考えられた．",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006349972.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/120006349972\/en"
+                           },
+                           "prism:issn" : "13455648",
+                           "prism:publicationName" : "高知リハビリテーション学院紀要 = Journal of Kochi Rehabilitation Institute",
+                           "prism:startingPage" : "19",
+                           "title" : "Transfer exercise for a patient who repeated falls : Intervention using applied behavior analysis",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "牧村 奈穂"
+                                           },
+                                           {
+                                           "@value" : "中山 智晴"
+                                           },
+                                           {
+                                           "@value" : "山崎 裕司"
+                                           }
+                                           ],
+                           "dc:date" : "2017-09-30",
+                           "prism:volume" : "19",
+                           "prism:publicationDate" : "2017-09-30",
+                           "prism:number" : "1"
+                           },
+                           {
+                           "prism:endingPage" : "162",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021342328\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021342328.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021342328\/en"
+                           },
+                           "prism:issn" : "1882-7993",
+                           "prism:publicationName" : "認知症ケア事例ジャーナル",
+                           "prism:startingPage" : "156",
+                           "dc:publisher" : "日本認知症ケア学会 ; 2008-",
+                           "title" : "認知症対応型グループホームで攻撃的言動を示す利用者のケア (特集 心理学を認知症ケアに生かす)",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "前田 浩美"
+                                           },
+                                           {
+                                           "@value" : "民永 和博"
+                                           },
+                                           {
+                                           "@value" : "吉村 幸子"
+                                           },
+                                           {
+                                           "@value" : "増永 恵美"
+                                           },
+                                           {
+                                           "@value" : "原山 幸子"
+                                           },
+                                           {
+                                           "@value" : "杉山 尚子"
+                                           }
+                                           ],
+                           "dc:date" : "2017-09",
+                           "prism:volume" : "10",
+                           "prism:publicationDate" : "2017-09",
+                           "prism:number" : "2"
+                           },
+                           {
+                           "prism:endingPage" : "155",
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021342314\/en",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021342314.json"
+                           },
+                           "link" : {
+                           "@id" : "https:\/\/ci.nii.ac.jp\/naid\/40021342314\/en"
+                           },
+                           "prism:issn" : "1882-7993",
+                           "prism:publicationName" : "認知症ケア事例ジャーナル",
+                           "prism:startingPage" : "149",
+                           "dc:publisher" : "日本認知症ケア学会 ; 2008-",
+                           "title" : "あるグループホームの利用者における激しい言語性保続(常同言語)への介入 (特集 心理学を認知症ケアに生かす)",
+                           "dc:creator" : [
+                                           {
+                                           "@value" : "高橋 恵子"
+                                           },
+                                           {
+                                           "@value" : "橋本 恵美"
+                                           },
+                                           {
+                                           "@value" : "杉山 尚子"
+                                           }
+                                           ],
+                           "dc:date" : "2017-09",
+                           "prism:volume" : "10",
+                           "prism:publicationDate" : "2017-09",
+                           "prism:number" : "2"
+                           }
+                           ],
+                "opensearch:itemsPerPage" : "20",
+                "title" : "CiNii OpenSearch - 行動分析学",
+                "@type" : "channel",
+                "description" : "CiNii OpenSearch - 行動分析学",
+                "dc:date" : "2018-09-12T16:26:57+09:00"
+                }
+                ]
+}
