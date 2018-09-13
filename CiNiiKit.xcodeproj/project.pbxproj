@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9927B2D2214A7F2300575358 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927B2D1214A7F2300575358 /* Int+.swift */; };
+		9927B2D4214A800F00575358 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927B2D3214A800F00575358 /* String+.swift */; };
 		998F93AA21466F3A005D8E8D /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */; };
 		999C52462134AFF600611308 /* CiNiiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C523D2134AFF500611308 /* CiNiiKit.framework */; };
 		999C52552134B14400611308 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51E22134318B00611308 /* CiNiiKit.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9927B2D1214A7F2300575358 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		9927B2D3214A800F00575358 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchPageable.swift; sourceTree = "<group>"; };
 		999C51D62134313200611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999C51E22134318B00611308 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
@@ -256,7 +260,9 @@
 		99F97A9F2136CFAB0052391A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9927B2D1214A7F2300575358 /* Int+.swift */,
 				99F97AA02136CFD70052391A /* Operator+.swift */,
+				9927B2D3214A800F00575358 /* String+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -424,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				99F97AD7213978800052391A /* OpenSearchBooks.swift in Sources */,
+				9927B2D2214A7F2300575358 /* Int+.swift in Sources */,
+				9927B2D4214A800F00575358 /* String+.swift in Sources */,
 				99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */,
 				99F97AD12138D3B30052391A /* CiNiiKitDissertations.swift in Sources */,
 				99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */,
