@@ -15,6 +15,8 @@ final class CiNiiKitTests: XCTestCase {
 
     static var allTests = [
         ("testExample", testExample),
-        ("testDecodeArticle", testDecodeArticle)
+        ("testDecodeArticle", testDecodeArticle),
+        ("testDecodeBooks", testDecodeBooks),
+        ("testDecodeDissertations", testDecodeDissertations)
     ]
 }
