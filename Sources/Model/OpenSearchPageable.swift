@@ -24,7 +24,7 @@ public protocol OpenSearchPageable {
 public extension OpenSearchPageable {
     /// Get query parameter
     fileprivate func getParameter(_ key: String) -> String? {
-        return self.id.split(separator: "&").reversed().map { String($0) }.first(where: { $0.hasPrefix("\(parameter)=") })
+        return self.id.split(separator: "&").reversed().map { String($0) }.first(where: { $0.hasPrefix("\(key)=") })
     }
 
     /**
