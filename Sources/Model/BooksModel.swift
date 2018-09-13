@@ -255,12 +255,12 @@ public struct BooksModel: Codable {
         /**
          Author name
          */
-        public let dcCreator: [ObjectiveValue]?
+        public let dcCreator: String?
 
         /**
          University
          */
-        public let dcPublisher: String?
+        public let dcPublisher: [String]?
 
         /**
          Date of publication
@@ -286,7 +286,7 @@ public struct BooksModel: Codable {
          Example:
          "dcterms:isPartOf":[{"@id":"http://ci.nii.ac.jp/ncid/BN06190301","dc:title":"丸善ライブラリー"}],
          */
-        public let dcTermsIsPartOf: [Bibliography]
+        public let dcTermsIsPartOf: [Bibliography]?
 
         /**
          Description of ISBN and ISSN
