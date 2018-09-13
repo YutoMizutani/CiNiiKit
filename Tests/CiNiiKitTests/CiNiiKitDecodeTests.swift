@@ -58,7 +58,7 @@ extension CiNiiKitTests {
         XCTAssertEqual(item?.prismStartingPage, "64")
         XCTAssertEqual(item?.dcPublisher, "Japanese Society for the Study of Social Welfare (JSSSW)")
         XCTAssertEqual(item?.title, "Behavior Analysis as a Methodology of Social Casework : New Relation between Psychology and Social Welfare")
-        XCTAssertEqual(item?.dcCreator.map { $0.map { $0.value } }, ["Mochizuki Akira"])
+        XCTAssertEqual(item?.dcCreator?.map { $0.value }, ["Mochizuki Akira"])
         XCTAssertEqual(item?.dcDate, "2018-07-20")
         XCTAssertEqual(item?.prismVolume, "30")
         XCTAssertEqual(item?.prismPublicationDate, "2018-07-20")
@@ -114,7 +114,7 @@ extension CiNiiKitTests {
         XCTAssertEqual(item?.ciniiOwnerCount, "54")
         XCTAssertEqual(item?.id, "http://ci.nii.ac.jp/ncid/AN10150936")
         XCTAssertEqual(item?.dcPublisher, ["日本行動分析学会"])
-        XCTAssertEqual(item?.dcTermsHasPart.map { $0.map { $0.id } }, ["urn:issn:09138013"])
+        XCTAssertEqual(item?.dcTermsHasPart?.map { $0.id }, ["urn:issn:09138013"])
         XCTAssertEqual(item?.title, "行動分析学研究")
         XCTAssertEqual(item?.dcCreator, "日本行動分析学会")
         XCTAssertEqual(item?.type, "item")
@@ -165,16 +165,16 @@ extension CiNiiKitTests {
         XCTAssertEqual(item?.link?.id, "http://ci.nii.ac.jp/naid/500000978699")
         XCTAssertEqual(item?.id, "http://ci.nii.ac.jp/naid/500000978699#article")
         XCTAssertEqual(item?.dcPublisher, "東海大学")
-        let dcSource = item?.dcSource?.map { [$0.id, $0.dcTitle] }
-        XCTAssertNotNil(dcSource)
-        XCTAssertEqual(dcSource?.first, ["http://dl.ndl.go.jp/info:ndljp/pid/10192282", "NDLデジタルコレクション"])
+        let dcSourceOptional = item?.dcSource?.map { [$0.id, $0.dcTitle] }
+        XCTAssertNotNil(dcSourceOptional)
+        guard let dcSource = dcSourceOptional else { return }
         XCTAssertEqual(dcSource, [
             ["http://dl.ndl.go.jp/info:ndljp/pid/10192282", "NDLデジタルコレクション"],
             ["https://opac.time.u-tokai.ac.jp/webopac/TD00000195", "東海大学"]
             ]
         )
         XCTAssertEqual(item?.title, "モデル動物における連合学習神経基盤の研究")
-        XCTAssertEqual(item?.dcCreator.map { $0.map { $0.value } }, ["滝上, 慧"])
+        XCTAssertEqual(item?.dcCreator?.map { $0.value }, ["滝上, 慧"])
         XCTAssertEqual(item?.type, "item")
         XCTAssertEqual(item?.rdfsSeeAlso?.id, "http://ci.nii.ac.jp/naid/500000978699.json")
         XCTAssertEqual(item?.ndlDegreeName, "博士(理学)")
