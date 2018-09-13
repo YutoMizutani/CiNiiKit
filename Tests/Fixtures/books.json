@@ -1,0 +1,481 @@
+{
+    "@context" : {
+        "cinii" : "http:\/\/ci.nii.ac.jp\/ns\/1.0\/",
+        "rdf" : "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#",
+        "dcterms" : "http:\/\/purl.org\/dc\/terms\/",
+        "rdfs" : "http:\/\/www.w3.org\/2000\/01\/rdf-schema#",
+        "prism" : "http:\/\/prismstandard.org\/namespaces\/basic\/2.0\/",
+        "@vocab" : "http:\/\/purl.org\/rss\/1.0\/",
+        "opensearch" : "http:\/\/a9.com\/-\/spec\/opensearch\/1.1\/",
+        "dc" : "http:\/\/purl.org\/dc\/elements\/1.1\/"
+    },
+    "@id" : "http:\/\/ci.nii.ac.jp\/books\/opensearch\/search?q=%E8%A1%8C%E5%8B%95%E5%88%86%E6%9E%90%E5%AD%A6&count=20&format=json&start=1",
+    "@graph" : [
+                {
+                "link" : {
+                "@id" : "http:\/\/ci.nii.ac.jp\/books\/opensearch\/search?q=%E8%A1%8C%E5%8B%95%E5%88%86%E6%9E%90%E5%AD%A6&count=20&format=json&start=1"
+                },
+                "opensearch:totalResults" : "56",
+                "opensearch:startIndex" : "0",
+                "@id" : "http:\/\/ci.nii.ac.jp\/books\/opensearch\/search?q=%E8%A1%8C%E5%8B%95%E5%88%86%E6%9E%90%E5%AD%A6&count=20&format=json&start=1",
+                "opensearch:itemsPerPage" : "20",
+                "description" : "CiNii Books OpenSearch - 行動分析学 20 1",
+                "title" : "CiNii Books OpenSearch - 行動分析学 20 1",
+                "@type" : "channel",
+                "dc:date" : "2018-09-12T20:36:15+09:00",
+                "items" : [
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AN10150936"
+                           },
+                           "cinii:ownerCount" : "54",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AN10150936",
+                           "dc:publisher" : [
+                                             "日本行動分析学会"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:issn:09138013"
+                                                }
+                                                ],
+                           "title" : "行動分析学研究",
+                           "dc:creator" : "日本行動分析学会",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AN10150936.json"
+                           },
+                           "prism:publicationDate" : "1987",
+                           "dc:date" : "1987"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA11545472"
+                           },
+                           "cinii:ownerCount" : "3",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA11545472",
+                           "dc:publisher" : [
+                                             "日本行動分析学会"
+                                             ],
+                           "title" : "行動分析学研究",
+                           "dc:creator" : "日本行動分析学会編",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA11545472.json"
+                           },
+                           "prism:publicationDate" : "1987",
+                           "dc:date" : "1987"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA1141809X"
+                           },
+                           "cinii:ownerCount" : "0",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA1141809X",
+                           "dc:publisher" : [
+                                             "日本行動分析学会"
+                                             ],
+                           "title" : "日本行動分析学会年次大会プログラム・発表論文集",
+                           "@type" : "item",
+                           "dc:date" : "19--",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA1141809X.json"
+                           },
+                           "prism:publicationDate" : "19--"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA12071952"
+                           },
+                           "cinii:ownerCount" : "1",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA12071952",
+                           "dc:publisher" : [
+                                             "リハビリテーションのための行動分析学研究会"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:issn:13483617"
+                                                }
+                                                ],
+                           "title" : "リハビリテーションと行動分析学 = Journal of rehabilitation and behavioral analysis : JRBA",
+                           "dc:creator" : "リハビリテーションのための行動分析学研究会 [編]",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA12071952.json"
+                           },
+                           "prism:publicationDate" : "2003",
+                           "dc:date" : "2003"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA11546985"
+                           },
+                           "cinii:ownerCount" : "2",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA11546985",
+                           "dc:publisher" : [
+                                             "日本行動分析学会"
+                                             ],
+                           "title" : "日本行動分析学会年次大会プログラム・発表論文集",
+                           "@type" : "item",
+                           "dc:date" : "1983",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA11546985.json"
+                           },
+                           "prism:publicationDate" : "1983"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA53557567"
+                           },
+                           "cinii:ownerCount" : "174",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA53557567",
+                           "dc:publisher" : [
+                                             "ブレーン出版"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:489242675X"
+                                                }
+                                                ],
+                           "title" : "ことばと行動 : 言語の基礎から臨床まで",
+                           "dc:creator" : "日本行動分析学会編",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA53557567.json"
+                           },
+                           "prism:publicationDate" : "2001",
+                           "dc:date" : "2001"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA12526134"
+                           },
+                           "cinii:ownerCount" : "1",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA12526134",
+                           "dc:publisher" : [
+                                             "リハビリテーションのための応用行動分析学研究会"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:issn:18842658"
+                                                }
+                                                ],
+                           "title" : "リハビリテーションと応用行動分析学 = Journal of rehabiritation and applied behavior analysis",
+                           "dc:creator" : "リハビリテーションのための応用行動分析学研究会 [編]",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/AA12526134.json"
+                           },
+                           "prism:publicationDate" : "2010",
+                           "dc:date" : "2010"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB18692437"
+                           },
+                           "cinii:ownerCount" : "13",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB18692437",
+                           "dc:publisher" : [
+                                             "三学出版"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784903520957"
+                                                }
+                                                ],
+                           "title" : "「心の言葉」使用禁止! : アドラー心理学と行動分析学に学ぶ",
+                           "dc:creator" : "中井孝章著",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB18692437.json"
+                           },
+                           "prism:publicationDate" : "2015",
+                           "dc:date" : "2015"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB15265600"
+                           },
+                           "cinii:ownerCount" : "188",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB15265600",
+                           "dcterms:isPartOf" : [
+                                                 {
+                                                 "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BN1135760X",
+                                                 "dc:title" : "ちくま新書, 1066"
+                                                 }
+                                                 ],
+                           "dc:publisher" : [
+                                             "筑摩書房"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784480067722"
+                                                }
+                                                ],
+                           "title" : "使える行動分析学 : じぶん実験のすすめ",
+                           "@type" : "item",
+                           "dc:creator" : "島宗理 [著]",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB15265600.json"
+                           },
+                           "prism:publicationDate" : "2014",
+                           "dc:date" : "2014"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BN11406057"
+                           },
+                           "cinii:ownerCount" : "1",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BN11406057",
+                           "dc:publisher" : [
+                                             "産図テクスト"
+                                             ],
+                           "title" : "行動分析学入門",
+                           "dc:creator" : "リチャード・W・マロット[ほか]著",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BN11406057.json"
+                           },
+                           "prism:publicationDate" : "1994",
+                           "dc:date" : "1994"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB10801492"
+                           },
+                           "cinii:ownerCount" : "162",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB10801492",
+                           "dcterms:isPartOf" : [
+                                                 {
+                                                 "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA44476690",
+                                                 "dc:title" : "集英社新書, 0664E"
+                                                 }
+                                                 ],
+                           "dc:publisher" : [
+                                             "集英社"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784087206647"
+                                                }
+                                                ],
+                           "title" : "メリットの法則 : 行動分析学・実践編",
+                           "@type" : "item",
+                           "dc:creator" : "奥田健次著",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB10801492.json"
+                           },
+                           "prism:publicationDate" : "2012",
+                           "dc:date" : "2012"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB19492444"
+                           },
+                           "cinii:ownerCount" : "158",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB19492444",
+                           "dc:publisher" : [
+                                             "金剛出版"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784772414487"
+                                                }
+                                                ],
+                           "title" : "ケースで学ぶ行動分析学による問題解決",
+                           "dc:creator" : "日本行動分析学会編 ; 山本淳一, 武藤崇, 鎌倉やよい責任編集",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB19492444.json"
+                           },
+                           "prism:publicationDate" : "2015",
+                           "dc:date" : "2015"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB05741198"
+                           },
+                           "cinii:ownerCount" : "61",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB05741198",
+                           "dc:publisher" : [
+                                             "星和書店"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784791107636"
+                                                }
+                                                ],
+                           "title" : "行動分析学研究アンソロジー",
+                           "dc:creator" : "日本行動分析学会編 ; 藤健一 [ほか] 責任編集",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB05741198.json"
+                           },
+                           "prism:publicationDate" : "2011",
+                           "dc:date" : "2011"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB18528444"
+                           },
+                           "cinii:ownerCount" : "37",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB18528444",
+                           "dc:publisher" : [
+                                             "二瓶社"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784861080722"
+                                                }
+                                                ],
+                           "title" : "行動分析家の倫理 : 責任ある実践へのガイドライン",
+                           "dc:creator" : "ジョン・ベイリー, メアリー・バーチ著 ; 日本行動分析学会行動倫理研究会訳",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB18528444.json"
+                           },
+                           "prism:publicationDate" : "2015",
+                           "dc:date" : "2015"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA87893328"
+                           },
+                           "cinii:ownerCount" : "106",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA87893328",
+                           "dc:publisher" : [
+                                             "ふくろう出版"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784861863639"
+                                                }
+                                                ],
+                           "title" : "対人支援の行動分析学 : 看護・福祉・教育職をめざす人のABA入門",
+                           "dc:creator" : "服巻繁, 島宗理著",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA87893328.json"
+                           },
+                           "prism:publicationDate" : "2008",
+                           "dc:date" : "2008"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA74693381"
+                           },
+                           "cinii:ownerCount" : "212",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA74693381",
+                           "dc:publisher" : [
+                                             "二瓶社"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784861080166"
+                                                }
+                                                ],
+                           "title" : "スキナーの心理学 : 応用行動分析学(ABA)の誕生",
+                           "dc:creator" : "ウィリアム・T・オドノヒュー, カイル・E・ファーガソン著 ; 佐久間徹監訳",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA74693381.json"
+                           },
+                           "prism:publicationDate" : "2005",
+                           "dc:date" : "2005"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB22073756"
+                           },
+                           "cinii:ownerCount" : "59",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB22073756",
+                           "dc:publisher" : [
+                                             "学苑社"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784761407834"
+                                                }
+                                                ],
+                           "title" : "プログラム学習で学ぶ行動分析学ワークブック",
+                           "dc:creator" : "吉野智富美, 吉野俊彦著",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB22073756.json"
+                           },
+                           "prism:publicationDate" : "2016",
+                           "dc:date" : "2016"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB19876526"
+                           },
+                           "cinii:ownerCount" : "40",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB19876526",
+                           "dc:publisher" : [
+                                             "日本実業出版社"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784534053138"
+                                                }
+                                                ],
+                           "title" : "リーダーのための行動分析学入門 : 部下を育てる!強いチームをつくる!",
+                           "dc:creator" : "島宗理著",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BB19876526.json"
+                           },
+                           "prism:publicationDate" : "2015",
+                           "dc:date" : "2015"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA72429021"
+                           },
+                           "cinii:ownerCount" : "108",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA72429021",
+                           "dc:publisher" : [
+                                             "西日本法規出版"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:4861862299"
+                                                }
+                                                ],
+                           "title" : "対人支援の行動分析学 : 看護・福祉職をめざす人のABA入門",
+                           "dc:creator" : "服巻繁, 島宗理著",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA72429021.json"
+                           },
+                           "prism:publicationDate" : "2005",
+                           "dc:date" : "2005"
+                           },
+                           {
+                           "link" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA46101327"
+                           },
+                           "cinii:ownerCount" : "216",
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA46101327",
+                           "dc:publisher" : [
+                                             "米田出版",
+                                             "産業図書 (発売)"
+                                             ],
+                           "dcterms:hasPart" : [
+                                                {
+                                                "@id" : "urn:isbn:9784946553073"
+                                                }
+                                                ],
+                           "title" : "パフォーマンス・マネジメント : 問題解決のための行動分析学",
+                           "dc:creator" : "島宗理著",
+                           "@type" : "item",
+                           "rdfs:seeAlso" : {
+                           "@id" : "http:\/\/ci.nii.ac.jp\/ncid\/BA46101327.json"
+                           },
+                           "prism:publicationDate" : "2000",
+                           "dc:date" : "2000"
+                           }
+                           ]
+                }
+                ]
+}

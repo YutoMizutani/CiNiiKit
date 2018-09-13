@@ -10,9 +10,6 @@ import UIKit
 
 /// A set of helper functions to make the Instagram API easier to use.
 public class CiNiiKit {
-    /// TESTABLE TEXT
-    public let text = "Hello, World!"
-
     /// CiNii Articles - https://ci.nii.ac.jp/
     public let articles = CiNiiKitArticles.shared
     /// CiNii Books - https://ci.nii.ac.jp/books/

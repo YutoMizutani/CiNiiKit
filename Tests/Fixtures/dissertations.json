@@ -1,0 +1,530 @@
+{
+"@context" : {
+    "prism" : "http:\/\/prismstandard.org\/namespaces\/basic\/2.0\/",
+    "rdf" : "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#",
+    "rdfs" : "http:\/\/www.w3.org\/2000\/01\/rdf-schema#",
+    "@vocab" : "http:\/\/purl.org\/rss\/1.0\/",
+    "opensearch" : "http:\/\/a9.com\/-\/spec\/opensearch\/1.1\/",
+    "dc" : "http:\/\/purl.org\/dc\/elements\/1.1\/"
+},
+"@id" : "http:\/\/ci.nii.ac.jp\/d\/search?q=%E6%9D%A1%E4%BB%B6%E3%81%A5%E3%81%91&count=20&format=json&start=1",
+"@graph" : [
+            {
+            "link" : {
+            "@id" : "http:\/\/ci.nii.ac.jp\/d\/search?q=%E6%9D%A1%E4%BB%B6%E3%81%A5%E3%81%91&count=20&format=json&start=1"
+            },
+            "@id" : "http:\/\/ci.nii.ac.jp\/d\/search?q=%E6%9D%A1%E4%BB%B6%E3%81%A5%E3%81%91&count=20&format=json&start=1",
+            "opensearch:startIndex" : "0",
+            "opensearch:totalResults" : "46",
+            "items" : [
+                       {
+                       "ndl:dissertationNumber" : "甲第985号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000978699"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000978699#article",
+                       "dc:publisher" : "東海大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/10192282",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      },
+                                      {
+                                      "@id" : "https:\/\/opac.time.u-tokai.ac.jp\/webopac\/TD00000195",
+                                      "dc:title" : "東海大学"
+                                      }
+                                      ],
+                       "title" : "モデル動物における連合学習神経基盤の研究",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "滝上, 慧"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000978699.json"
+                       },
+                       "ndl:degreeName" : "博士(理学)",
+                       "dc:date" : "2016-03-24"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第487号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000920565"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000920565#article",
+                       "dc:publisher" : "関西学院大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/8953055",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      },
+                                      {
+                                      "@id" : "http:\/\/hdl.handle.net\/10236\/12543",
+                                      "dc:title" : "関西学院大学"
+                                      },
+                                      {
+                                      "@id" : "http:\/\/hdl.handle.net\/10236\/12609",
+                                      "dc:title" : "関西学院大学"
+                                      }
+                                      ],
+                       "title" : "回顧的再評価に関する実験心理学的研究 : 随伴性判断と古典的条件づけを中心に",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "沼田, 恵太郎"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000920565.json"
+                       },
+                       "ndl:degreeName" : "博士（心理学）",
+                       "dc:date" : "2013-09-04"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第1598号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000581867"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000581867#article",
+                       "dc:publisher" : "総合研究大学院大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/id.nii.ac.jp\/1013\/00003904\/",
+                                      "dc:title" : "総合研究大学院大学"
+                                      }
+                                      ],
+                       "title" : "時間整合アルゴリズムに基づくタイヤ振動解析法 : リアルタイム路面状態判別システムの開発",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "花塚, 泰史"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000581867.json"
+                       },
+                       "ndl:degreeName" : "博士(学術)",
+                       "dc:date" : "2013-03-22"
+                       },
+                       {
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000576141"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000576141#article",
+                       "dc:publisher" : "玉川大学",
+                       "ndl:degreeName" : "博士(工学)",
+                       "title" : "背側海馬破壊による条件づけ味覚嫌悪反応における復元効果への影響",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "藤原, 浩樹"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000576141.json"
+                       },
+                       "dc:date" : "2013-03-10",
+                       "ndl:dissertationNumber" : "乙第130号"
+                       },
+                       {
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000551141"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000551141#article",
+                       "dc:publisher" : "東京大学",
+                       "ndl:degreeName" : "博士 (薬学)",
+                       "title" : "条件づけ恐怖とその消失に対応した扁桃体神経細胞のシナプス伝達およびその構造的基盤",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "豊田, 雄"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000551141.json"
+                       },
+                       "dc:date" : "2011-03-24",
+                       "ndl:dissertationNumber" : "甲第27174号"
+                       },
+                       {
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000543252"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000543252#article",
+                       "dc:publisher" : "慶應義塾大学",
+                       "ndl:degreeName" : "博士 (医学)",
+                       "title" : "A new rapid protocol for eyeblink conditioning to assess cerebellar motor learning",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "江見, 恭一"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000543252.json"
+                       },
+                       "dc:date" : "2011-03-23",
+                       "ndl:dissertationNumber" : "甲第3510号"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第14465号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000516688"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000516688#article",
+                       "dc:publisher" : "大阪大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/hdl.handle.net\/11094\/54304",
+                                      "dc:title" : "大阪大学"
+                                      }
+                                      ],
+                       "title" : "複文を構成する周辺的形式 : 順接の条件づけを中心に",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "佐野, 裕子"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000516688.json"
+                       },
+                       "ndl:degreeName" : "博士 (言語文化学)",
+                       "dc:date" : "2010-03-23"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第8350号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000471941"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000471941#article",
+                       "dc:publisher" : "名古屋大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/hdl.handle.net\/2237\/16964",
+                                      "dc:title" : "名古屋大学"
+                                      }
+                                      ],
+                       "title" : "道具的弁別学習における弁別刺激-強化結果連合の形成に関する研究 : 表象媒介型条件づけを用いた実験的検討",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "井口, 善生"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000471941.json"
+                       },
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "dc:date" : "2009-03-25"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第3627号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000439553"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000439553#article",
+                       "dc:publisher" : "千葉大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/opac.ll.chiba-u.jp\/da\/curator\/900053408\/",
+                                      "dc:title" : "千葉大学"
+                                      }
+                                      ],
+                       "title" : "Acoustic communication in Bengalese finches : studies using visual stimulus",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "関, 義正"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000439553.json"
+                       },
+                       "ndl:degreeName" : "博士 (理学)",
+                       "dc:date" : "2008-03-25"
+                       },
+                       {
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000350034"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000350034#article",
+                       "dc:publisher" : "東北大学",
+                       "ndl:degreeName" : "博士 (医学)",
+                       "title" : "Impact of serotonin transporter gene on negative emotion and brain processing during fear conditioning",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "水野, 資子"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000350034.json"
+                       },
+                       "dc:date" : "2006-03-24",
+                       "ndl:dissertationNumber" : "甲第10795号"
+                       },
+                       {
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000348382"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000348382#article",
+                       "dc:publisher" : "関西学院大学",
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "title" : "強制遊泳を無条件刺激とした味覚嫌悪条件づけに関する行動学的研究",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "柾木, 隆寿"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000348382.json"
+                       },
+                       "dc:date" : "2006-03-16",
+                       "ndl:dissertationNumber" : "甲第213号"
+                       },
+                       {
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000341126"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000341126#article",
+                       "dc:publisher" : "関西学院大学",
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "title" : "麻薬効果の条件づけに関する研究",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "北村, 元隆"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000341126.json"
+                       },
+                       "dc:date" : "2005-12-21",
+                       "ndl:dissertationNumber" : "甲第207号"
+                       },
+                       {
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000216653"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000216653#article",
+                       "dc:publisher" : "広島大学",
+                       "ndl:degreeName" : "博士 (学術)",
+                       "title" : "恐怖条件づけ過程に及ぼす認知的要因の検討",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "細羽, 竜也"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000216653.json"
+                       },
+                       "dc:date" : "2001-03-05",
+                       "ndl:dissertationNumber" : "甲第2327号"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第2487号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000209118"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000209118#article",
+                       "dc:publisher" : "筑波大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/3187659",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      },
+                                      {
+                                      "@id" : "http:\/\/hdl.handle.net\/2241\/3455",
+                                      "dc:title" : "筑波大学"
+                                      }
+                                      ],
+                       "title" : "線条体カイニン酸投与ラットの学習行動",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "高濱, 祥子"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000209118.json"
+                       },
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "dc:date" : "2001-03-23"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第8672号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000203689"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000203689#article",
+                       "dc:publisher" : "京都大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/3182801",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      },
+                                      {
+                                      "@id" : "http:\/\/hdl.handle.net\/2433\/150459",
+                                      "dc:title" : "京都大学"
+                                      }
+                                      ],
+                       "title" : "食行動における比較心理学的研究",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "粟津, 俊二"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000203689.json"
+                       },
+                       "ndl:degreeName" : "博士 (文学)",
+                       "dc:date" : "2001-03-23"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第108号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000200391"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000200391#article",
+                       "dc:publisher" : "同志社大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/3179516",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      }
+                                      ],
+                       "title" : "扁桃体の心理学的機能の研究 : 恐怖の古典的条件づけと扁桃体神経核の役割",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "田積, 徹"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000200391.json"
+                       },
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "dc:date" : "2001-03-20"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第14822号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000212230"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000212230#article",
+                       "dc:publisher" : "東京大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/3190020",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      }
+                                      ],
+                       "title" : "シオミズツボワムシの個体数の変動機構と生活史特性に関する実験生態学的研究",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "吉永, 龍起"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000212230.json"
+                       },
+                       "ndl:degreeName" : "博士 (農学)",
+                       "dc:date" : "2000-01-17"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "乙第5729号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000186417"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000186417#article",
+                       "dc:publisher" : "名古屋大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/3165538",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      },
+                                      {
+                                      "@id" : "http:\/\/hdl.handle.net\/2237\/10839",
+                                      "dc:title" : "名古屋大学"
+                                      }
+                                      ],
+                       "title" : "動物の連合学習の機構に関する実証的研究",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "石井, 澄"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000186417.json"
+                       },
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "dc:date" : "2000-02-29"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "乙第3175号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000185371"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000185371#article",
+                       "dc:publisher" : "広島大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/3164492",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      }
+                                      ],
+                       "title" : "情報処理的アプローチによるパヴロフ型嫌悪条件づけ過程の分析",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "中谷, 隆"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000185371.json"
+                       },
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "dc:date" : "1999-02-17"
+                       },
+                       {
+                       "ndl:dissertationNumber" : "甲第113号",
+                       "link" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000181196"
+                       },
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000181196#article",
+                       "dc:publisher" : "関西学院大学",
+                       "dc:source" : [
+                                      {
+                                      "@id" : "http:\/\/dl.ndl.go.jp\/info:ndljp\/pid\/3160318",
+                                      "dc:title" : "NDLデジタルコレクション"
+                                      }
+                                      ],
+                       "title" : "「無関係」という関係に関する実験心理学的考察",
+                       "dc:creator" : [
+                                       {
+                                       "@value" : "北口勝也"
+                                       }
+                                       ],
+                       "@type" : "item",
+                       "rdfs:seeAlso" : {
+                       "@id" : "http:\/\/ci.nii.ac.jp\/naid\/500000181196.json"
+                       },
+                       "ndl:degreeName" : "博士 (心理学)",
+                       "dc:date" : "1999-09-24"
+                       }
+                       ],
+            "opensearch:itemsPerPage" : "20",
+            "title" : "CiNii Dissertations - 条件づけ 20",
+            "@type" : "channel",
+            "description" : "CiNii Dissertations - 条件づけ 20",
+            "dc:date" : "2018-09-12T20:36:34+09:00"
+            }
+            ]
+}
