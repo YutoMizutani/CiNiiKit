@@ -106,6 +106,36 @@ and
 $ carthage update
 ```
 
+## Usage HTTP
+
+CiNii API is using *HTTP* connection.
+
+> App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+
+Write it into your `Info.plist`.
+
+![](https://raw.githubusercontent.com/YutoMizutani/CiNiiKit/media/infoplist.png)
+
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSAllowsArbitraryLoads</key>
+	<false/>
+	<key>NSExceptionDomains</key>
+	<dict>
+		<key>ci.nii.ac.jp</key>
+		<dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+			<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+```
+
 ## Get API key
 
 This API is required key(application ID). Register [this page](https://support.nii.ac.jp/en/cinii/api/developer).
