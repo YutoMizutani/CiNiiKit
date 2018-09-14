@@ -204,6 +204,47 @@
 <p><a href="https://github.com/YutoMizutani/CiNiiKit/tree/master/Demo">Demo app</a> is a sample of CiNii Articles.</p>
 
 <p><img src="https://raw.githubusercontent.com/YutoMizutani/CiNiiKit/media/demo.gif" alt=""></p>
+<h2 id='support' class='heading'>Support</h2>
+
+<p>It fully supports CiNii APIs!</p>
+
+<p>Supports multiple query parameters in call methods,</p>
+<h4 id='a-href-https-ci-nii-ac-jp-en-cinii-articles-a' class='heading'><a href="https://ci.nii.ac.jp/en">CiNii Articles</a></h4>
+
+<ol>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchArticles.swift#L135"><code>search()</code></a></p>
+
+<p>Get a result of search articles from CiNii Articles.</p></li>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchArticles.swift#L196"><code>author()</code></a></p>
+
+<p>Get a result of search authors from CiNii Articles.</p></li>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchArticles.swift#L242"><code>fulltext()</code></a></p>
+
+<p>Get a result of search full text from CiNii Articles.</p></li>
+</ol>
+<h4 id='a-href-https-ci-nii-ac-jp-books-l-en-cinii-books-a' class='heading'><a href="https://ci.nii.ac.jp/books/?l=en">CiNii Books</a></h4>
+
+<ol>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L183"><code>search()</code></a></p>
+
+<p>Get a result of search books from CiNii Books.</p></li>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L256"><code>author()</code></a></p>
+
+<p>Get a result of search for authors from CiNii Books.</p></li>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L296"><code>library()</code></a></p>
+
+<p>Get a result of search for libraries from CiNii Books.</p></li>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L346"><code>holding()</code></a></p>
+
+<p>Get a result of search for holdings from CiNii Books.</p></li>
+</ol>
+<h4 id='a-href-https-ci-nii-ac-jp-d-l-en-cinii-dissartations-a' class='heading'><a href="https://ci.nii.ac.jp/d/?l=en">CiNii Dissartations</a></h4>
+
+<ol>
+<li><p><a href="https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchDissertations.swift#L117"><code>search()</code></a></p>
+
+<p>Get a result of search dissertations from CiNii Dissertations.</p></li>
+</ol>
 <h2 id='installation' class='heading'>Installation</h2>
 <h4 id='cocoapods' class='heading'>Cocoapods</h4>
 
@@ -223,6 +264,35 @@
 <p>and</p>
 <pre class="highlight plaintext"><code>$ carthage update
 </code></pre>
+<h2 id='usage-http' class='heading'>Usage HTTP</h2>
+
+<p>CiNii API is using <em>HTTP</em> connection.</p>
+
+<blockquote>
+<p>App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app&rsquo;s Info.plist file.</p>
+</blockquote>
+
+<p>Write it into your <code>Info.plist</code>.</p>
+
+<p><img src="https://raw.githubusercontent.com/YutoMizutani/CiNiiKit/media/infoplist.png" alt=""></p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSAppTransportSecurity<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>NSAllowsArbitraryLoads<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;false/&gt;</span>
+    <span class="nt">&lt;key&gt;</span>NSExceptionDomains<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="nt">&lt;key&gt;</span>ci.nii.ac.jp<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;dict&gt;</span>
+            <span class="nt">&lt;key&gt;</span>NSIncludesSubdomains<span class="nt">&lt;/key&gt;</span>
+            <span class="nt">&lt;true/&gt;</span>
+            <span class="nt">&lt;key&gt;</span>NSTemporaryExceptionAllowsInsecureHTTPLoads<span class="nt">&lt;/key&gt;</span>
+            <span class="nt">&lt;true/&gt;</span>
+            <span class="nt">&lt;key&gt;</span>NSTemporaryExceptionRequiresForwardSecrecy<span class="nt">&lt;/key&gt;</span>
+            <span class="nt">&lt;false/&gt;</span>
+        <span class="nt">&lt;/dict&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/dict&gt;</span>
+</code></pre>
 <h2 id='get-api-key' class='heading'>Get API key</h2>
 
 <p>This API is required key(application ID). Register <a href="https://support.nii.ac.jp/en/cinii/api/developer">this page</a>.</p>
@@ -238,7 +308,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/YutoMizutani/CiNiiKit" target="_blank" rel="external">Yuto Mizutani</a>. All rights reserved. (Last updated: 2018-09-10)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/YutoMizutani/CiNiiKit" target="_blank" rel="external">Yuto Mizutani</a>. All rights reserved. (Last updated: 2018-09-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
