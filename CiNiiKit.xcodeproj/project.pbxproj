@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9927B2D2214A7F2300575358 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927B2D1214A7F2300575358 /* Int+.swift */; };
 		9927B2D4214A800F00575358 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927B2D3214A800F00575358 /* String+.swift */; };
+		9949A2CD214BDC7200FE0508 /* CiNiiKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */; };
+		9949A2D2214BDC7200FE0508 /* CiNiiKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2D1214BDC7200FE0508 /* CiNiiKit_macOSTests.swift */; };
+		9949A2D4214BDC7200FE0508 /* CiNiiKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9949A2C6214BDC7200FE0508 /* CiNiiKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		998F93AA21466F3A005D8E8D /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */; };
 		999C52462134AFF600611308 /* CiNiiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C523D2134AFF500611308 /* CiNiiKit.framework */; };
 		999C52552134B14400611308 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51E22134318B00611308 /* CiNiiKit.swift */; };
@@ -41,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9949A2CE214BDC7200FE0508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9949A2C3214BDC7200FE0508;
+			remoteInfo = "CiNiiKit macOS";
+		};
 		999C52472134AFF600611308 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -53,6 +63,12 @@
 /* Begin PBXFileReference section */
 		9927B2D1214A7F2300575358 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		9927B2D3214A800F00575358 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CiNiiKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9949A2C6214BDC7200FE0508 /* CiNiiKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CiNiiKit_macOS.h; sourceTree = "<group>"; };
+		9949A2C7214BDC7200FE0508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CiNiiKit macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9949A2D1214BDC7200FE0508 /* CiNiiKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKit_macOSTests.swift; sourceTree = "<group>"; };
+		9949A2D3214BDC7200FE0508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchPageable.swift; sourceTree = "<group>"; };
 		999C51D62134313200611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999C51E22134318B00611308 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
@@ -90,6 +106,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9949A2C0214BDC7200FE0508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9949A2C9214BDC7200FE0508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9949A2CD214BDC7200FE0508 /* CiNiiKit_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		999C52392134AFF500611308 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +148,24 @@
 				99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */,
 			);
 			name = OpenSearch;
+			sourceTree = "<group>";
+		};
+		9949A2C5214BDC7200FE0508 /* CiNiiKit macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9949A2C6214BDC7200FE0508 /* CiNiiKit_macOS.h */,
+				9949A2C7214BDC7200FE0508 /* Info.plist */,
+			);
+			path = "CiNiiKit macOS";
+			sourceTree = "<group>";
+		};
+		9949A2D0214BDC7200FE0508 /* CiNiiKit macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9949A2D1214BDC7200FE0508 /* CiNiiKit_macOSTests.swift */,
+				9949A2D3214BDC7200FE0508 /* Info.plist */,
+			);
+			path = "CiNiiKit macOSTests";
 			sourceTree = "<group>";
 		};
 		999C51E02134318B00611308 /* Sources */ = {
@@ -279,6 +328,8 @@
 			children = (
 				999C523D2134AFF500611308 /* CiNiiKit.framework */,
 				999C52452134AFF600611308 /* CiNiiKit iOSTests.xctest */,
+				9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */,
+				9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -290,6 +341,8 @@
 				999C51E02134318B00611308 /* Sources */,
 				999C51F7213431B200611308 /* Supporting Files */,
 				999C51EF213431A000611308 /* Tests */,
+				9949A2C5214BDC7200FE0508 /* CiNiiKit macOS */,
+				9949A2D0214BDC7200FE0508 /* CiNiiKit macOSTests */,
 				999C52732135819400611308 /* Frameworks */,
 				OBJ_14 /* Products */,
 			);
@@ -298,6 +351,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		9949A2C1214BDC7200FE0508 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9949A2D4214BDC7200FE0508 /* CiNiiKit_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		999C523A2134AFF500611308 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +369,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9949A2C3214BDC7200FE0508 /* CiNiiKit macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9949A2D9214BDC7200FE0508 /* Build configuration list for PBXNativeTarget "CiNiiKit macOS" */;
+			buildPhases = (
+				9949A2BF214BDC7200FE0508 /* Sources */,
+				9949A2C0214BDC7200FE0508 /* Frameworks */,
+				9949A2C1214BDC7200FE0508 /* Headers */,
+				9949A2C2214BDC7200FE0508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CiNiiKit macOS";
+			productName = "CiNiiKit macOS";
+			productReference = 9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9949A2CB214BDC7200FE0508 /* CiNiiKit macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9949A2DA214BDC7200FE0508 /* Build configuration list for PBXNativeTarget "CiNiiKit macOSTests" */;
+			buildPhases = (
+				9949A2C8214BDC7200FE0508 /* Sources */,
+				9949A2C9214BDC7200FE0508 /* Frameworks */,
+				9949A2CA214BDC7200FE0508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9949A2CF214BDC7200FE0508 /* PBXTargetDependency */,
+			);
+			name = "CiNiiKit macOSTests";
+			productName = "CiNiiKit macOSTests";
+			productReference = 9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		999C523C2134AFF500611308 /* CiNiiKit iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 999C524E2134AFF600611308 /* Build configuration list for PBXNativeTarget "CiNiiKit iOS" */;
@@ -354,6 +451,16 @@
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 9999;
 				TargetAttributes = {
+					9949A2C3214BDC7200FE0508 = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = Y3FSN97W3M;
+						ProvisioningStyle = Automatic;
+					};
+					9949A2CB214BDC7200FE0508 = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = Y3FSN97W3M;
+						ProvisioningStyle = Automatic;
+					};
 					999C523C2134AFF500611308 = {
 						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Manual;
@@ -379,11 +486,27 @@
 			targets = (
 				999C523C2134AFF500611308 /* CiNiiKit iOS */,
 				999C52442134AFF500611308 /* CiNiiKit iOSTests */,
+				9949A2C3214BDC7200FE0508 /* CiNiiKit macOS */,
+				9949A2CB214BDC7200FE0508 /* CiNiiKit macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9949A2C2214BDC7200FE0508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9949A2CA214BDC7200FE0508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		999C523B2134AFF500611308 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +544,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9949A2BF214BDC7200FE0508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9949A2C8214BDC7200FE0508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9949A2D2214BDC7200FE0508 /* CiNiiKit_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		999C52382134AFF500611308 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,6 +602,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9949A2CF214BDC7200FE0508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9949A2C3214BDC7200FE0508 /* CiNiiKit macOS */;
+			targetProxy = 9949A2CE214BDC7200FE0508 /* PBXContainerItemProxy */;
+		};
 		999C52482134AFF600611308 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 999C523C2134AFF500611308 /* CiNiiKit iOS */;
@@ -472,6 +615,271 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9949A2D5214BDC7200FE0508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y3FSN97W3M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CiNiiKit macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9949A2D6214BDC7200FE0508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y3FSN97W3M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CiNiiKit macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9949A2D7214BDC7200FE0508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y3FSN97W3M;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CiNiiKit macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9949A2D8214BDC7200FE0508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Y3FSN97W3M;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CiNiiKit macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		999C524F2134AFF600611308 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -808,6 +1216,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9949A2D9214BDC7200FE0508 /* Build configuration list for PBXNativeTarget "CiNiiKit macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9949A2D5214BDC7200FE0508 /* Debug */,
+				9949A2D6214BDC7200FE0508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9949A2DA214BDC7200FE0508 /* Build configuration list for PBXNativeTarget "CiNiiKit macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9949A2D7214BDC7200FE0508 /* Debug */,
+				9949A2D8214BDC7200FE0508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		999C524E2134AFF600611308 /* Build configuration list for PBXNativeTarget "CiNiiKit iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
