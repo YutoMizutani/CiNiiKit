@@ -32,6 +32,50 @@ cinii.articles.search(keyword: keyword, success: { model in
 
 ![](https://raw.githubusercontent.com/YutoMizutani/CiNiiKit/media/demo.gif)
 
+## Support
+
+It fully supports CiNii APIs!
+
+Supports multiple query parameters in call methods,
+
+#### [CiNii Articles](https://ci.nii.ac.jp/en)
+
+1. [`search()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchArticles.swift#L135)
+
+	Get a result of search articles from CiNii Articles.
+
+2. [`author()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchArticles.swift#L196)
+
+	Get a result of search authors from CiNii Articles.
+
+3. [`fulltext()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchArticles.swift#L242)
+
+	Get a result of search full text from CiNii Articles.
+
+#### [CiNii Books](https://ci.nii.ac.jp/books/?l=en)
+
+1. [`search()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L183)
+
+	Get a result of search books from CiNii Books.
+
+2. [`author()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L256)
+
+	Get a result of search for authors from CiNii Books.
+
+3. [`library()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L296)
+
+	Get a result of search for libraries from CiNii Books.
+
+4. [`holding()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchBooks.swift#L346)
+
+	Get a result of search for holdings from CiNii Books.
+
+#### [CiNii Dissartations](https://ci.nii.ac.jp/d/?l=en)
+
+1. [`search()`](https://github.com/YutoMizutani/CiNiiKit/blob/master/Sources/Endpoints/OpenSearchDissertations.swift#L117)
+
+	Get a result of search dissertations from CiNii Dissertations.
+
 ## Installation
 
 #### Cocoapods
@@ -60,6 +104,36 @@ and
 
 ```
 $ carthage update
+```
+
+## Usage HTTP
+
+CiNii API is using *HTTP* connection.
+
+> App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+
+Write it into your `Info.plist`.
+
+![](https://raw.githubusercontent.com/YutoMizutani/CiNiiKit/media/infoplist.png)
+
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSAllowsArbitraryLoads</key>
+	<false/>
+	<key>NSExceptionDomains</key>
+	<dict>
+		<key>ci.nii.ac.jp</key>
+		<dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+			<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
 ```
 
 ## Get API key
