@@ -7,14 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9927B2D2214A7F2300575358 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927B2D1214A7F2300575358 /* Int+.swift */; };
-		9927B2D4214A800F00575358 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927B2D3214A800F00575358 /* String+.swift */; };
-		9949A2CD214BDC7200FE0508 /* CiNiiKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */; };
-		9949A2D2214BDC7200FE0508 /* CiNiiKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2D1214BDC7200FE0508 /* CiNiiKit_macOSTests.swift */; };
-		9949A2D4214BDC7200FE0508 /* CiNiiKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9949A2C6214BDC7200FE0508 /* CiNiiKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		998F93AA21466F3A005D8E8D /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */; };
+		9949A2CD214BDC7200FE0508 /* CiNiiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949A2C4214BDC7200FE0508 /* CiNiiKit.framework */; };
+		9949A2DB214BDDBD00FE0508 /* CiNiiKitDecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D035A7214927C9001DA591 /* CiNiiKitDecodeTests.swift */; };
+		9949A2DC214BDDC000FE0508 /* CiNiiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51F1213431A000611308 /* CiNiiKitTests.swift */; };
+		9949A2DD214BDDC200FE0508 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D035A321490636001DA591 /* Helper.swift */; };
+		9949A2FB214BDDEA00FE0508 /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */; };
+		9949A2FC214BDDEA00FE0508 /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */; };
+		9949A2FD214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */; };
+		9949A2FE214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */; };
+		9949A2FF214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */; };
+		9949A300214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */; };
+		9949A301214BDDEA00FE0508 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */; };
+		9949A302214BDDEA00FE0508 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */; };
+		9949A303214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */; };
+		9949A304214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */; };
+		9949A305214BDDEA00FE0508 /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E6214BDDEA00FE0508 /* MaterialType.swift */; };
+		9949A306214BDDEA00FE0508 /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E6214BDDEA00FE0508 /* MaterialType.swift */; };
+		9949A307214BDDEA00FE0508 /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */; };
+		9949A308214BDDEA00FE0508 /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */; };
+		9949A309214BDDEA00FE0508 /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */; };
+		9949A30A214BDDEA00FE0508 /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */; };
+		9949A30B214BDDEA00FE0508 /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */; };
+		9949A30C214BDDEA00FE0508 /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */; };
+		9949A30D214BDDEA00FE0508 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EA214BDDEA00FE0508 /* LanguageType.swift */; };
+		9949A30E214BDDEA00FE0508 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EA214BDDEA00FE0508 /* LanguageType.swift */; };
+		9949A30F214BDDEA00FE0508 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EB214BDDEA00FE0508 /* API.swift */; };
+		9949A310214BDDEA00FE0508 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EB214BDDEA00FE0508 /* API.swift */; };
+		9949A311214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */; };
+		9949A312214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */; };
+		9949A313214BDDEA00FE0508 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2ED214BDDEA00FE0508 /* RangeType.swift */; };
+		9949A314214BDDEA00FE0508 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2ED214BDDEA00FE0508 /* RangeType.swift */; };
+		9949A315214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */; };
+		9949A316214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */; };
+		9949A317214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */; };
+		9949A318214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */; };
+		9949A319214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */; };
+		9949A31A214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */; };
+		9949A31B214BDDEA00FE0508 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F3214BDDEA00FE0508 /* Int+.swift */; };
+		9949A31C214BDDEA00FE0508 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F3214BDDEA00FE0508 /* Int+.swift */; };
+		9949A31D214BDDEA00FE0508 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F4214BDDEA00FE0508 /* String+.swift */; };
+		9949A31E214BDDEA00FE0508 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F4214BDDEA00FE0508 /* String+.swift */; };
+		9949A31F214BDDEA00FE0508 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F5214BDDEA00FE0508 /* Operator+.swift */; };
+		9949A320214BDDEA00FE0508 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F5214BDDEA00FE0508 /* Operator+.swift */; };
+		9949A321214BDDEA00FE0508 /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */; };
+		9949A322214BDDEA00FE0508 /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */; };
+		9949A323214BDDEA00FE0508 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F8214BDDEA00FE0508 /* BooksModel.swift */; };
+		9949A324214BDDEA00FE0508 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F8214BDDEA00FE0508 /* BooksModel.swift */; };
+		9949A325214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */; };
+		9949A326214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */; };
+		9949A327214BDDEA00FE0508 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */; };
+		9949A328214BDDEA00FE0508 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */; };
+		9949A32D214BDEDB00FE0508 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035A12148F8C4001DA591 /* articles.json */; };
+		9949A32E214BDEDB00FE0508 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035A921493361001DA591 /* books.json */; };
+		9949A32F214BDEDB00FE0508 /* dissertations.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035AB2149353E001DA591 /* dissertations.json */; };
+		9949A330214BE0A200FE0508 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949A32B214BDE3600FE0508 /* Alamofire.framework */; };
 		999C52462134AFF600611308 /* CiNiiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C523D2134AFF500611308 /* CiNiiKit.framework */; };
-		999C52552134B14400611308 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51E22134318B00611308 /* CiNiiKit.swift */; };
 		999C52572134B14800611308 /* CiNiiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51F1213431A000611308 /* CiNiiKitTests.swift */; };
 		999C5278213581DF00611308 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5275213581DF00611308 /* Alamofire.framework */; };
 		99D035A22148F8C4001DA591 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035A12148F8C4001DA591 /* articles.json */; };
@@ -22,25 +69,6 @@
 		99D035A8214927C9001DA591 /* CiNiiKitDecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D035A7214927C9001DA591 /* CiNiiKitDecodeTests.swift */; };
 		99D035AA21493361001DA591 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035A921493361001DA591 /* books.json */; };
 		99D035AC2149353E001DA591 /* dissertations.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035AB2149353E001DA591 /* dissertations.json */; };
-		99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7321360ED40052391A /* OpenSearchArticles.swift */; };
-		99F97A7B213615530052391A /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7A213615530052391A /* LanguageType.swift */; };
-		99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7D21364AE80052391A /* SortOrderType.swift */; };
-		99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */; };
-		99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97A83213679BA0052391A /* ErrorHandring.swift */; };
-		99F97AA12136CFD70052391A /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA02136CFD70052391A /* Operator+.swift */; };
-		99F97AA32136D2300052391A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA22136D2300052391A /* API.swift */; };
-		99F97AA82137A47B0052391A /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AA72137A47B0052391A /* ArticlesModel.swift */; };
-		99F97ACF2138D3900052391A /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */; };
-		99F97AD12138D3B30052391A /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD02138D3B30052391A /* CiNiiKitDissertations.swift */; };
-		99F97AD32138E3F30052391A /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD22138E3F30052391A /* RangeType.swift */; };
-		99F97AD52138E9700052391A /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD42138E9700052391A /* DissertationsModel.swift */; };
-		99F97AD7213978800052391A /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD62139787F0052391A /* OpenSearchBooks.swift */; };
-		99F97AD921397B8D0052391A /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AD821397B8C0052391A /* CiNiiKitBooks.swift */; };
-		99F97ADB213991FC0052391A /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97ADA213991FC0052391A /* MaterialType.swift */; };
-		99F97ADD2139987E0052391A /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97ADC2139987E0052391A /* BooksModel.swift */; };
-		99F97ADF213A48680052391A /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97ADE213A48680052391A /* ServiceStatusType.swift */; };
-		99F97AE1213B07230052391A /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AE0213B07230052391A /* ILLStatusType.swift */; };
-		99F97AE3213B076A0052391A /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F97AE2213B076A0052391A /* ParticipantType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,17 +89,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9927B2D1214A7F2300575358 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
-		9927B2D3214A800F00575358 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
-		9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CiNiiKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9949A2C6214BDC7200FE0508 /* CiNiiKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CiNiiKit_macOS.h; sourceTree = "<group>"; };
-		9949A2C7214BDC7200FE0508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9949A2C4214BDC7200FE0508 /* CiNiiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CiNiiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CiNiiKit macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9949A2D1214BDC7200FE0508 /* CiNiiKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKit_macOSTests.swift; sourceTree = "<group>"; };
-		9949A2D3214BDC7200FE0508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchPageable.swift; sourceTree = "<group>"; };
+		9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandring.swift; sourceTree = "<group>"; };
+		9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitBooks.swift; sourceTree = "<group>"; };
+		9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitDissertations.swift; sourceTree = "<group>"; };
+		9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
+		9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitArticles.swift; sourceTree = "<group>"; };
+		9949A2E6214BDDEA00FE0508 /* MaterialType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialType.swift; sourceTree = "<group>"; };
+		9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILLStatusType.swift; sourceTree = "<group>"; };
+		9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantType.swift; sourceTree = "<group>"; };
+		9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
+		9949A2EA214BDDEA00FE0508 /* LanguageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
+		9949A2EB214BDDEA00FE0508 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceStatusType.swift; sourceTree = "<group>"; };
+		9949A2ED214BDDEA00FE0508 /* RangeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeType.swift; sourceTree = "<group>"; };
+		9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchArticles.swift; sourceTree = "<group>"; };
+		9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchDissertations.swift; sourceTree = "<group>"; };
+		9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchBooks.swift; sourceTree = "<group>"; };
+		9949A2F3214BDDEA00FE0508 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		9949A2F4214BDDEA00FE0508 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		9949A2F5214BDDEA00FE0508 /* Operator+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
+		9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DissertationsModel.swift; sourceTree = "<group>"; };
+		9949A2F8214BDDEA00FE0508 /* BooksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
+		9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchPageable.swift; sourceTree = "<group>"; };
+		9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
+		9949A32B214BDE3600FE0508 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		999C51D62134313200611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		999C51E22134318B00611308 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
 		999C51F1213431A000611308 /* CiNiiKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitTests.swift; sourceTree = "<group>"; };
 		999C51F92134326400611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		999C523D2134AFF500611308 /* CiNiiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CiNiiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,26 +126,6 @@
 		99D035A7214927C9001DA591 /* CiNiiKitDecodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitDecodeTests.swift; sourceTree = "<group>"; };
 		99D035A921493361001DA591 /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		99D035AB2149353E001DA591 /* dissertations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dissertations.json; sourceTree = "<group>"; };
-		99F97A7321360ED40052391A /* OpenSearchArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchArticles.swift; sourceTree = "<group>"; };
-		99F97A7A213615530052391A /* LanguageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
-		99F97A7D21364AE80052391A /* SortOrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
-		99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitArticles.swift; sourceTree = "<group>"; };
-		99F97A83213679BA0052391A /* ErrorHandring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandring.swift; sourceTree = "<group>"; };
-		99F97A8D213685F30052391A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		99F97AA02136CFD70052391A /* Operator+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
-		99F97AA22136D2300052391A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		99F97AA72137A47B0052391A /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
-		99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchDissertations.swift; sourceTree = "<group>"; };
-		99F97AD02138D3B30052391A /* CiNiiKitDissertations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitDissertations.swift; sourceTree = "<group>"; };
-		99F97AD22138E3F30052391A /* RangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeType.swift; sourceTree = "<group>"; };
-		99F97AD42138E9700052391A /* DissertationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationsModel.swift; sourceTree = "<group>"; };
-		99F97AD62139787F0052391A /* OpenSearchBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSearchBooks.swift; sourceTree = "<group>"; };
-		99F97AD821397B8C0052391A /* CiNiiKitBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiNiiKitBooks.swift; sourceTree = "<group>"; };
-		99F97ADA213991FC0052391A /* MaterialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialType.swift; sourceTree = "<group>"; };
-		99F97ADC2139987E0052391A /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
-		99F97ADE213A48680052391A /* ServiceStatusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatusType.swift; sourceTree = "<group>"; };
-		99F97AE0213B07230052391A /* ILLStatusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILLStatusType.swift; sourceTree = "<group>"; };
-		99F97AE2213B076A0052391A /* ParticipantType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantType.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9949A330214BE0A200FE0508 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9949A2CD214BDC7200FE0508 /* CiNiiKit_macOS.framework in Frameworks */,
+				9949A2CD214BDC7200FE0508 /* CiNiiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,43 +165,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		990270D2213B8BF500B91499 /* OpenSearch */ = {
+		9949A2DE214BDDEA00FE0508 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				99F97A7321360ED40052391A /* OpenSearchArticles.swift */,
-				99F97AD62139787F0052391A /* OpenSearchBooks.swift */,
-				99F97ACE2138D3900052391A /* OpenSearchDissertations.swift */,
+				9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */,
 			);
-			name = OpenSearch;
+			path = Error;
 			sourceTree = "<group>";
 		};
-		9949A2C5214BDC7200FE0508 /* CiNiiKit macOS */ = {
+		9949A2E0214BDDEA00FE0508 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9949A2C6214BDC7200FE0508 /* CiNiiKit_macOS.h */,
-				9949A2C7214BDC7200FE0508 /* Info.plist */,
+				9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */,
+				9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */,
+				9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */,
+				9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */,
 			);
-			path = "CiNiiKit macOS";
+			path = Core;
 			sourceTree = "<group>";
 		};
-		9949A2D0214BDC7200FE0508 /* CiNiiKit macOSTests */ = {
+		9949A2E5214BDDEA00FE0508 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				9949A2D1214BDC7200FE0508 /* CiNiiKit_macOSTests.swift */,
-				9949A2D3214BDC7200FE0508 /* Info.plist */,
+				9949A2E6214BDDEA00FE0508 /* MaterialType.swift */,
+				9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */,
+				9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */,
+				9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */,
+				9949A2EA214BDDEA00FE0508 /* LanguageType.swift */,
+				9949A2EB214BDDEA00FE0508 /* API.swift */,
+				9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */,
+				9949A2ED214BDDEA00FE0508 /* RangeType.swift */,
 			);
-			path = "CiNiiKit macOSTests";
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		9949A2EE214BDDEA00FE0508 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */,
+				9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */,
+				9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		9949A2F2214BDDEA00FE0508 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9949A2F3214BDDEA00FE0508 /* Int+.swift */,
+				9949A2F4214BDDEA00FE0508 /* String+.swift */,
+				9949A2F5214BDDEA00FE0508 /* Operator+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9949A2F6214BDDEA00FE0508 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */,
+				9949A2F8214BDDEA00FE0508 /* BooksModel.swift */,
+				9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */,
+				9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9949A329214BDE0600FE0508 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9949A32B214BDE3600FE0508 /* Alamofire.framework */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		9949A32A214BDE0F00FE0508 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = macOS;
 			sourceTree = "<group>";
 		};
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				99F97A9F2136CFAB0052391A /* Extension */,
-				99F97A82213679A90052391A /* Error */,
-				99F97A7C21364A890052391A /* Enum */,
-				99F97A81213655370052391A /* Core */,
-				99F97AA62137A4440052391A /* Model */,
-				99F97A7021360E6B0052391A /* Endpoints */,
+				9949A2E0214BDDEA00FE0508 /* Core */,
+				9949A2EE214BDDEA00FE0508 /* Endpoints */,
+				9949A2E5214BDDEA00FE0508 /* Enum */,
+				9949A2DE214BDDEA00FE0508 /* Error */,
+				9949A2F2214BDDEA00FE0508 /* Extension */,
+				9949A2F6214BDDEA00FE0508 /* Model */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -221,6 +298,7 @@
 		999C52732135819400611308 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9949A329214BDE0600FE0508 /* macOS */,
 				999C5274213581C900611308 /* iOS */,
 			);
 			name = Frameworks;
@@ -247,6 +325,7 @@
 		99F97A622135826E0052391A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9949A32A214BDE0F00FE0508 /* macOS */,
 				99F97A63213582730052391A /* iOS */,
 			);
 			name = Frameworks;
@@ -255,72 +334,8 @@
 		99F97A63213582730052391A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				99F97A8D213685F30052391A /* Alamofire.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		99F97A7021360E6B0052391A /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				990270D2213B8BF500B91499 /* OpenSearch */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		99F97A7C21364A890052391A /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				99F97AA22136D2300052391A /* API.swift */,
-				99F97A7A213615530052391A /* LanguageType.swift */,
-				99F97A7D21364AE80052391A /* SortOrderType.swift */,
-				99F97AD22138E3F30052391A /* RangeType.swift */,
-				99F97ADA213991FC0052391A /* MaterialType.swift */,
-				99F97ADE213A48680052391A /* ServiceStatusType.swift */,
-				99F97AE0213B07230052391A /* ILLStatusType.swift */,
-				99F97AE2213B076A0052391A /* ParticipantType.swift */,
-			);
-			path = Enum;
-			sourceTree = "<group>";
-		};
-		99F97A81213655370052391A /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				999C51E22134318B00611308 /* CiNiiKit.swift */,
-				99F97A7F213650AE0052391A /* CiNiiKitArticles.swift */,
-				99F97AD821397B8C0052391A /* CiNiiKitBooks.swift */,
-				99F97AD02138D3B30052391A /* CiNiiKitDissertations.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		99F97A82213679A90052391A /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				99F97A83213679BA0052391A /* ErrorHandring.swift */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
-		99F97A9F2136CFAB0052391A /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				9927B2D1214A7F2300575358 /* Int+.swift */,
-				99F97AA02136CFD70052391A /* Operator+.swift */,
-				9927B2D3214A800F00575358 /* String+.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		99F97AA62137A4440052391A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				998F93A921466F3A005D8E8D /* OpenSearchPageable.swift */,
-				99F97AA72137A47B0052391A /* ArticlesModel.swift */,
-				99F97ADC2139987E0052391A /* BooksModel.swift */,
-				99F97AD42138E9700052391A /* DissertationsModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		OBJ_14 /* Products */ = {
@@ -328,7 +343,7 @@
 			children = (
 				999C523D2134AFF500611308 /* CiNiiKit.framework */,
 				999C52452134AFF600611308 /* CiNiiKit iOSTests.xctest */,
-				9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */,
+				9949A2C4214BDC7200FE0508 /* CiNiiKit.framework */,
 				9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */,
 			);
 			name = Products;
@@ -341,8 +356,6 @@
 				999C51E02134318B00611308 /* Sources */,
 				999C51F7213431B200611308 /* Supporting Files */,
 				999C51EF213431A000611308 /* Tests */,
-				9949A2C5214BDC7200FE0508 /* CiNiiKit macOS */,
-				9949A2D0214BDC7200FE0508 /* CiNiiKit macOSTests */,
 				999C52732135819400611308 /* Frameworks */,
 				OBJ_14 /* Products */,
 			);
@@ -355,7 +368,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9949A2D4214BDC7200FE0508 /* CiNiiKit_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +389,7 @@
 				9949A2C0214BDC7200FE0508 /* Frameworks */,
 				9949A2C1214BDC7200FE0508 /* Headers */,
 				9949A2C2214BDC7200FE0508 /* Resources */,
+				9949A331214BE0BA00FE0508 /* SwiftLint Run Script */,
 			);
 			buildRules = (
 			);
@@ -384,7 +397,7 @@
 			);
 			name = "CiNiiKit macOS";
 			productName = "CiNiiKit macOS";
-			productReference = 9949A2C4214BDC7200FE0508 /* CiNiiKit_macOS.framework */;
+			productReference = 9949A2C4214BDC7200FE0508 /* CiNiiKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9949A2CB214BDC7200FE0508 /* CiNiiKit macOSTests */ = {
@@ -504,6 +517,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9949A32F214BDEDB00FE0508 /* dissertations.json in Resources */,
+				9949A32E214BDEDB00FE0508 /* books.json in Resources */,
+				9949A32D214BDEDB00FE0508 /* articles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +543,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9949A331214BE0BA00FE0508 /* SwiftLint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		999C52542134B0EB00611308 /* SwiftLint Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +578,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9949A31C214BDDEA00FE0508 /* Int+.swift in Sources */,
+				9949A310214BDDEA00FE0508 /* API.swift in Sources */,
+				9949A304214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */,
+				9949A324214BDDEA00FE0508 /* BooksModel.swift in Sources */,
+				9949A30A214BDDEA00FE0508 /* ParticipantType.swift in Sources */,
+				9949A322214BDDEA00FE0508 /* DissertationsModel.swift in Sources */,
+				9949A2FE214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */,
+				9949A316214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */,
+				9949A328214BDDEA00FE0508 /* ArticlesModel.swift in Sources */,
+				9949A30E214BDDEA00FE0508 /* LanguageType.swift in Sources */,
+				9949A31A214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */,
+				9949A30C214BDDEA00FE0508 /* SortOrderType.swift in Sources */,
+				9949A318214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */,
+				9949A320214BDDEA00FE0508 /* Operator+.swift in Sources */,
+				9949A31E214BDDEA00FE0508 /* String+.swift in Sources */,
+				9949A326214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */,
+				9949A308214BDDEA00FE0508 /* ILLStatusType.swift in Sources */,
+				9949A306214BDDEA00FE0508 /* MaterialType.swift in Sources */,
+				9949A302214BDDEA00FE0508 /* CiNiiKit.swift in Sources */,
+				9949A312214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */,
+				9949A300214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */,
+				9949A2FC214BDDEA00FE0508 /* ErrorHandring.swift in Sources */,
+				9949A314214BDDEA00FE0508 /* RangeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +608,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9949A2D2214BDC7200FE0508 /* CiNiiKit_macOSTests.swift in Sources */,
+				9949A2DB214BDDBD00FE0508 /* CiNiiKitDecodeTests.swift in Sources */,
+				9949A2DC214BDDC000FE0508 /* CiNiiKitTests.swift in Sources */,
+				9949A2DD214BDDC200FE0508 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,29 +618,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F97AD7213978800052391A /* OpenSearchBooks.swift in Sources */,
-				9927B2D2214A7F2300575358 /* Int+.swift in Sources */,
-				9927B2D4214A800F00575358 /* String+.swift in Sources */,
-				99F97A80213650AE0052391A /* CiNiiKitArticles.swift in Sources */,
-				99F97AD12138D3B30052391A /* CiNiiKitDissertations.swift in Sources */,
-				99F97A7E21364AE80052391A /* SortOrderType.swift in Sources */,
-				99F97AD52138E9700052391A /* DissertationsModel.swift in Sources */,
-				99F97AE3213B076A0052391A /* ParticipantType.swift in Sources */,
-				99F97ACF2138D3900052391A /* OpenSearchDissertations.swift in Sources */,
-				99F97AE1213B07230052391A /* ILLStatusType.swift in Sources */,
-				998F93AA21466F3A005D8E8D /* OpenSearchPageable.swift in Sources */,
-				999C52552134B14400611308 /* CiNiiKit.swift in Sources */,
-				99F97AD32138E3F30052391A /* RangeType.swift in Sources */,
-				99F97A84213679BA0052391A /* ErrorHandring.swift in Sources */,
-				99F97ADF213A48680052391A /* ServiceStatusType.swift in Sources */,
-				99F97AA32136D2300052391A /* API.swift in Sources */,
-				99F97A7421360ED40052391A /* OpenSearchArticles.swift in Sources */,
-				99F97ADD2139987E0052391A /* BooksModel.swift in Sources */,
-				99F97AA12136CFD70052391A /* Operator+.swift in Sources */,
-				99F97AA82137A47B0052391A /* ArticlesModel.swift in Sources */,
-				99F97AD921397B8D0052391A /* CiNiiKitBooks.swift in Sources */,
-				99F97ADB213991FC0052391A /* MaterialType.swift in Sources */,
-				99F97A7B213615530052391A /* LanguageType.swift in Sources */,
+				9949A31B214BDDEA00FE0508 /* Int+.swift in Sources */,
+				9949A30F214BDDEA00FE0508 /* API.swift in Sources */,
+				9949A303214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */,
+				9949A323214BDDEA00FE0508 /* BooksModel.swift in Sources */,
+				9949A309214BDDEA00FE0508 /* ParticipantType.swift in Sources */,
+				9949A321214BDDEA00FE0508 /* DissertationsModel.swift in Sources */,
+				9949A2FD214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */,
+				9949A315214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */,
+				9949A327214BDDEA00FE0508 /* ArticlesModel.swift in Sources */,
+				9949A30D214BDDEA00FE0508 /* LanguageType.swift in Sources */,
+				9949A319214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */,
+				9949A30B214BDDEA00FE0508 /* SortOrderType.swift in Sources */,
+				9949A317214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */,
+				9949A31F214BDDEA00FE0508 /* Operator+.swift in Sources */,
+				9949A31D214BDDEA00FE0508 /* String+.swift in Sources */,
+				9949A325214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */,
+				9949A307214BDDEA00FE0508 /* ILLStatusType.swift in Sources */,
+				9949A305214BDDEA00FE0508 /* MaterialType.swift in Sources */,
+				9949A301214BDDEA00FE0508 /* CiNiiKit.swift in Sources */,
+				9949A311214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */,
+				9949A2FF214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */,
+				9949A2FB214BDDEA00FE0508 /* ErrorHandring.swift in Sources */,
+				9949A313214BDDEA00FE0508 /* RangeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +712,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -672,13 +731,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CiNiiKit macOS/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = CiNiiKit;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -732,6 +791,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -742,13 +805,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CiNiiKit macOS/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = CiNiiKit;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.0;
@@ -760,6 +823,7 @@
 		9949A2D7214BDC7200FE0508 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -794,6 +858,10 @@
 				DEVELOPMENT_TEAM = Y3FSN97W3M;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -808,7 +876,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CiNiiKit macOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -824,6 +892,7 @@
 		9949A2D8214BDC7200FE0508 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -859,6 +928,10 @@
 				DEVELOPMENT_TEAM = Y3FSN97W3M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = fast;
@@ -868,7 +941,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "CiNiiKit macOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
