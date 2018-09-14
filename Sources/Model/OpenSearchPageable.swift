@@ -11,15 +11,22 @@ import Alamofire
 public protocol OpenSearchPageable {
     /// Requested URI
     var id: String { get }
+    /// Current page
+    var page: Int? { get }
     /// Total search results
-    var opensearchTotalResults: String { get }
+    var totalResults: Int? { get }
     /// Start number
-    var opensearchStartIndex: String? { get }
+    var startIndex: Int? { get }
     /// Results per page
-    var opensearchItemsPerPage: String? { get }
+    var itemsPerPage: Int? { get }
 }
 
 public extension OpenSearchPageable {
+    /// Get query parameter
+    fileprivate func getParameter(_ key: String) -> String? {
+        return self.id.split(separator: "&").reversed().map { String($0) }.first(where: { $0.hasPrefix("\(key)=") })
+    }
+
     /**
      Request parameters from model
 
@@ -29,9 +36,13 @@ public extension OpenSearchPageable {
      */
     var requestParameters: (detail: (url: String, parameters: Parameters), isReachEnd: Bool) {
         let id: String = self.id
-        var url: String
-        var parameters: Parameters = Parameters()
         let isReachEnd: Bool
+        let url: String
+        var parameters: Parameters = Parameters()
+
+        parameters["count"] ?= String(self.itemsPerPage)
+        parameters["start"] ?= String(self.page)
+
         if let urlIndex: Range<String.Index> = id.range(of: "?") {
             url = String(id[id.startIndex..<urlIndex.lowerBound])
             let rawParameters: String = String(id[urlIndex.upperBound..<id.endIndex])
@@ -43,62 +54,82 @@ public extension OpenSearchPageable {
         } else {
             url = id
         }
-        parameters["count"] ?= self.opensearchItemsPerPage
-        parameters["start"] ?= self.opensearchStartIndex
-        isReachEnd = Int(self.opensearchTotalResults) != nil
-            ? (Int(self.opensearchItemsPerPage ?? "1") ?? 1) * (Int(self.opensearchStartIndex ?? "1") ?? 1) > Int(self.opensearchTotalResults)!
-            : false
+
+        if let page = self.page,
+            let totalResults = self.totalResults,
+            let startIndex = self.startIndex,
+            let itemsPerPage = self.itemsPerPage {
+            isReachEnd = itemsPerPage * (startIndex == 0 ? page + 1 : startIndex) > totalResults
+        } else {
+            isReachEnd = false
+        }
+
         return (detail: (url: url, parameters: parameters), isReachEnd: isReachEnd)
     }
 }
 
 extension ArticlesModel: OpenSearchPageable {
+    /// Current page
+    public var page: Int? {
+        return Int(self.getParameter("start"))
+    }
+
     /// Total search results
-    public var opensearchTotalResults: String {
-        return self.graph[0].opensearchTotalResults
+    public var totalResults: Int? {
+        return Int(self.graph[0].opensearchTotalResults)
     }
 
     /// Start number
-    public var opensearchStartIndex: String? {
-        return self.graph[0].opensearchStartIndex
+    public var startIndex: Int? {
+        return Int(self.graph[0].opensearchStartIndex)
     }
 
     /// Results per page
-    public var opensearchItemsPerPage: String? {
-        return self.graph[0].opensearchItemsPerPage
+    public var itemsPerPage: Int? {
+        return Int(self.graph[0].opensearchItemsPerPage)
     }
 }
 
 extension BooksModel: OpenSearchPageable {
+    /// Current page
+    public var page: Int? {
+        return Int(self.getParameter("start"))
+    }
+
     /// Total search results
-    public var opensearchTotalResults: String {
-        return self.graph[0].opensearchTotalResults
+    public var totalResults: Int? {
+        return Int(self.graph[0].opensearchTotalResults)
     }
 
     /// Start number
-    public var opensearchStartIndex: String? {
-        return self.graph[0].opensearchStartIndex
+    public var startIndex: Int? {
+        return Int(self.graph[0].opensearchStartIndex)
     }
 
     /// Results per page
-    public var opensearchItemsPerPage: String? {
-        return self.graph[0].opensearchItemsPerPage
+    public var itemsPerPage: Int? {
+        return Int(self.graph[0].opensearchItemsPerPage)
     }
 }
 
 extension DissertationsModel: OpenSearchPageable {
+    /// Current page
+    public var page: Int? {
+        return Int(self.getParameter("start"))
+    }
+
     /// Total search results
-    public var opensearchTotalResults: String {
-        return self.graph[0].opensearchTotalResults
+    public var totalResults: Int? {
+        return Int(self.graph[0].opensearchTotalResults)
     }
 
     /// Start number
-    public var opensearchStartIndex: String? {
-        return self.graph[0].opensearchStartIndex
+    public var startIndex: Int? {
+        return Int(self.graph[0].opensearchStartIndex)
     }
 
     /// Results per page
-    public var opensearchItemsPerPage: String? {
-        return self.graph[0].opensearchItemsPerPage
+    public var itemsPerPage: Int? {
+        return Int(self.graph[0].opensearchItemsPerPage)
     }
 }

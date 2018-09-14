@@ -116,7 +116,10 @@ extension SearchViewController {
     private func search() {
         self.storeKey()
 
-        guard let key = self.searchView.apiKeyTextField.text, let searchWord = self.searchView.searchWordTextField.text else { return }
+        guard let key = self.searchView.apiKeyTextField.text,
+              let searchWord = self.searchView.searchWordTextField.text,
+              searchWord != ""
+        else { return }
         self.searchView.indicatorView.startAnimating()
         self.model.register(key)
         self.model.search(searchWord, success: { [weak self] model in

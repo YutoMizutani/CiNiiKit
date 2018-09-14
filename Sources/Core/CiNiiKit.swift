@@ -10,9 +10,6 @@ import UIKit
 
 /// A set of helper functions to make the Instagram API easier to use.
 public class CiNiiKit {
-    /// TESTABLE TEXT
-    public let text = "Hello, World!"
-
     /// CiNii Articles - https://ci.nii.ac.jp/
     public let articles = CiNiiKitArticles.shared
     /// CiNii Books - https://ci.nii.ac.jp/books/
@@ -74,7 +71,6 @@ public class CiNiiKit {
 
         var parameters = parameters ?? Parameters()
         parameters["count"] = parameters["count"] ?? "200"
-        parameters["start"] = parameters["start"] ?? "1"
         parameters["format"] = "json"
         parameters["appid"] = self.appid
 
@@ -108,7 +104,7 @@ public class CiNiiKit {
         }
         let url: String = pageableModel.requestParameters.detail.url
         var parameters: Parameters = pageableModel.requestParameters.detail.parameters
-        let currentPage: Int = Int((parameters["start"] as? String) ?? "1") ?? 1
+        let currentPage: Int = pageableModel.page ?? 0
         parameters["start"] = "\(currentPage + 1)"
 
         self.request(url, parameters: parameters, success: success, failure: failure)
@@ -128,8 +124,8 @@ public class CiNiiKit {
 
         let url: String = pageableModel.requestParameters.detail.url
         var parameters: Parameters = pageableModel.requestParameters.detail.parameters
-        let currentPage: Int = Int((parameters["start"] as? String) ?? "1") ?? 1
-        guard currentPage > 1 else {
+        let currentPage: Int = pageableModel.page ?? 0
+        if let minPage = pageableModel.startIndex, currentPage <= minPage {
             failure?(PagenationError.minPage)
             return
         }
