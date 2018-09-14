@@ -5,6 +5,7 @@ xcode_sdk: iphonesimulator11.0
 env:
   matrix:
   - TARGET=iOS
+  - TARGET=macOS
 notifications:
   email: false
 before_install:
