@@ -49,7 +49,7 @@ public extension OpenSearchPageable {
             rawParameters.split(separator: "&").forEach {
                 let splittedParam = $0.split(separator: "=").map { String($0) }
                 let param: (key: String, value: String) = (splittedParam[0], splittedParam[1])
-                parameters[param.key] = param.value
+                parameters[param.key] = param.value.removingPercentEncoding ?? param.value
             }
         } else {
             url = id
