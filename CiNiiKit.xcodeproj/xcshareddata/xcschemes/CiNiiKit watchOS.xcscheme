@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "99871A0B214CB7D200385C93"
-               BuildableName = "CiNiiKit_watchOS.framework"
+               BuildableName = "CiNiiKit.framework"
                BlueprintName = "CiNiiKit watchOS"
                ReferencedContainer = "container:CiNiiKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "99871A0B214CB7D200385C93"
-            BuildableName = "CiNiiKit_watchOS.framework"
+            BuildableName = "CiNiiKit.framework"
             BlueprintName = "CiNiiKit watchOS"
             ReferencedContainer = "container:CiNiiKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "99871A0B214CB7D200385C93"
-            BuildableName = "CiNiiKit_watchOS.framework"
+            BuildableName = "CiNiiKit.framework"
             BlueprintName = "CiNiiKit watchOS"
             ReferencedContainer = "container:CiNiiKit.xcodeproj">
          </BuildableReference>
