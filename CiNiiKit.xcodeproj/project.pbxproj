@@ -11,56 +11,80 @@
 		9949A2DB214BDDBD00FE0508 /* CiNiiKitDecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D035A7214927C9001DA591 /* CiNiiKitDecodeTests.swift */; };
 		9949A2DC214BDDC000FE0508 /* CiNiiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51F1213431A000611308 /* CiNiiKitTests.swift */; };
 		9949A2DD214BDDC200FE0508 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D035A321490636001DA591 /* Helper.swift */; };
-		9949A2FB214BDDEA00FE0508 /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */; };
-		9949A2FC214BDDEA00FE0508 /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */; };
-		9949A2FD214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */; };
-		9949A2FE214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */; };
-		9949A2FF214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */; };
-		9949A300214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */; };
-		9949A301214BDDEA00FE0508 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */; };
-		9949A302214BDDEA00FE0508 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */; };
-		9949A303214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */; };
-		9949A304214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */; };
-		9949A305214BDDEA00FE0508 /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E6214BDDEA00FE0508 /* MaterialType.swift */; };
-		9949A306214BDDEA00FE0508 /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E6214BDDEA00FE0508 /* MaterialType.swift */; };
-		9949A307214BDDEA00FE0508 /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */; };
-		9949A308214BDDEA00FE0508 /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */; };
-		9949A309214BDDEA00FE0508 /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */; };
-		9949A30A214BDDEA00FE0508 /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */; };
-		9949A30B214BDDEA00FE0508 /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */; };
-		9949A30C214BDDEA00FE0508 /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */; };
-		9949A30D214BDDEA00FE0508 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EA214BDDEA00FE0508 /* LanguageType.swift */; };
-		9949A30E214BDDEA00FE0508 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EA214BDDEA00FE0508 /* LanguageType.swift */; };
-		9949A30F214BDDEA00FE0508 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EB214BDDEA00FE0508 /* API.swift */; };
-		9949A310214BDDEA00FE0508 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EB214BDDEA00FE0508 /* API.swift */; };
-		9949A311214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */; };
-		9949A312214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */; };
-		9949A313214BDDEA00FE0508 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2ED214BDDEA00FE0508 /* RangeType.swift */; };
-		9949A314214BDDEA00FE0508 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2ED214BDDEA00FE0508 /* RangeType.swift */; };
-		9949A315214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */; };
-		9949A316214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */; };
-		9949A317214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */; };
-		9949A318214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */; };
-		9949A319214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */; };
-		9949A31A214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */; };
-		9949A31B214BDDEA00FE0508 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F3214BDDEA00FE0508 /* Int+.swift */; };
-		9949A31C214BDDEA00FE0508 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F3214BDDEA00FE0508 /* Int+.swift */; };
-		9949A31D214BDDEA00FE0508 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F4214BDDEA00FE0508 /* String+.swift */; };
-		9949A31E214BDDEA00FE0508 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F4214BDDEA00FE0508 /* String+.swift */; };
-		9949A31F214BDDEA00FE0508 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F5214BDDEA00FE0508 /* Operator+.swift */; };
-		9949A320214BDDEA00FE0508 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F5214BDDEA00FE0508 /* Operator+.swift */; };
-		9949A321214BDDEA00FE0508 /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */; };
-		9949A322214BDDEA00FE0508 /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */; };
-		9949A323214BDDEA00FE0508 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F8214BDDEA00FE0508 /* BooksModel.swift */; };
-		9949A324214BDDEA00FE0508 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F8214BDDEA00FE0508 /* BooksModel.swift */; };
-		9949A325214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */; };
-		9949A326214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */; };
-		9949A327214BDDEA00FE0508 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */; };
-		9949A328214BDDEA00FE0508 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */; };
 		9949A32D214BDEDB00FE0508 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035A12148F8C4001DA591 /* articles.json */; };
 		9949A32E214BDEDB00FE0508 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035A921493361001DA591 /* books.json */; };
 		9949A32F214BDEDB00FE0508 /* dissertations.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D035AB2149353E001DA591 /* dissertations.json */; };
 		9949A330214BE0A200FE0508 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949A32B214BDE3600FE0508 /* Alamofire.framework */; };
+		99871A31214CB86A00385C93 /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A15214CB86A00385C93 /* ErrorHandring.swift */; };
+		99871A32214CB86A00385C93 /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A15214CB86A00385C93 /* ErrorHandring.swift */; };
+		99871A33214CB86A00385C93 /* ErrorHandring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A15214CB86A00385C93 /* ErrorHandring.swift */; };
+		99871A34214CB86A00385C93 /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A17214CB86A00385C93 /* CiNiiKitBooks.swift */; };
+		99871A35214CB86A00385C93 /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A17214CB86A00385C93 /* CiNiiKitBooks.swift */; };
+		99871A36214CB86A00385C93 /* CiNiiKitBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A17214CB86A00385C93 /* CiNiiKitBooks.swift */; };
+		99871A37214CB86A00385C93 /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A18214CB86A00385C93 /* CiNiiKitDissertations.swift */; };
+		99871A38214CB86A00385C93 /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A18214CB86A00385C93 /* CiNiiKitDissertations.swift */; };
+		99871A39214CB86A00385C93 /* CiNiiKitDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A18214CB86A00385C93 /* CiNiiKitDissertations.swift */; };
+		99871A3A214CB86A00385C93 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A19214CB86A00385C93 /* CiNiiKit.swift */; };
+		99871A3B214CB86A00385C93 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A19214CB86A00385C93 /* CiNiiKit.swift */; };
+		99871A3C214CB86A00385C93 /* CiNiiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A19214CB86A00385C93 /* CiNiiKit.swift */; };
+		99871A3D214CB86A00385C93 /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1A214CB86A00385C93 /* CiNiiKitArticles.swift */; };
+		99871A3E214CB86A00385C93 /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1A214CB86A00385C93 /* CiNiiKitArticles.swift */; };
+		99871A3F214CB86A00385C93 /* CiNiiKitArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1A214CB86A00385C93 /* CiNiiKitArticles.swift */; };
+		99871A40214CB86A00385C93 /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1C214CB86A00385C93 /* MaterialType.swift */; };
+		99871A41214CB86A00385C93 /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1C214CB86A00385C93 /* MaterialType.swift */; };
+		99871A42214CB86A00385C93 /* MaterialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1C214CB86A00385C93 /* MaterialType.swift */; };
+		99871A43214CB86A00385C93 /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1D214CB86A00385C93 /* ILLStatusType.swift */; };
+		99871A44214CB86A00385C93 /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1D214CB86A00385C93 /* ILLStatusType.swift */; };
+		99871A45214CB86A00385C93 /* ILLStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1D214CB86A00385C93 /* ILLStatusType.swift */; };
+		99871A46214CB86A00385C93 /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1E214CB86A00385C93 /* ParticipantType.swift */; };
+		99871A47214CB86A00385C93 /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1E214CB86A00385C93 /* ParticipantType.swift */; };
+		99871A48214CB86A00385C93 /* ParticipantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1E214CB86A00385C93 /* ParticipantType.swift */; };
+		99871A49214CB86A00385C93 /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1F214CB86A00385C93 /* SortOrderType.swift */; };
+		99871A4A214CB86A00385C93 /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1F214CB86A00385C93 /* SortOrderType.swift */; };
+		99871A4B214CB86A00385C93 /* SortOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A1F214CB86A00385C93 /* SortOrderType.swift */; };
+		99871A4C214CB86A00385C93 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A20214CB86A00385C93 /* LanguageType.swift */; };
+		99871A4D214CB86A00385C93 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A20214CB86A00385C93 /* LanguageType.swift */; };
+		99871A4E214CB86A00385C93 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A20214CB86A00385C93 /* LanguageType.swift */; };
+		99871A4F214CB86A00385C93 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A21214CB86A00385C93 /* API.swift */; };
+		99871A50214CB86A00385C93 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A21214CB86A00385C93 /* API.swift */; };
+		99871A51214CB86A00385C93 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A21214CB86A00385C93 /* API.swift */; };
+		99871A52214CB86A00385C93 /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A22214CB86A00385C93 /* ServiceStatusType.swift */; };
+		99871A53214CB86A00385C93 /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A22214CB86A00385C93 /* ServiceStatusType.swift */; };
+		99871A54214CB86A00385C93 /* ServiceStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A22214CB86A00385C93 /* ServiceStatusType.swift */; };
+		99871A55214CB86A00385C93 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A23214CB86A00385C93 /* RangeType.swift */; };
+		99871A56214CB86A00385C93 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A23214CB86A00385C93 /* RangeType.swift */; };
+		99871A57214CB86A00385C93 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A23214CB86A00385C93 /* RangeType.swift */; };
+		99871A58214CB86A00385C93 /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A25214CB86A00385C93 /* OpenSearchArticles.swift */; };
+		99871A59214CB86A00385C93 /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A25214CB86A00385C93 /* OpenSearchArticles.swift */; };
+		99871A5A214CB86A00385C93 /* OpenSearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A25214CB86A00385C93 /* OpenSearchArticles.swift */; };
+		99871A5B214CB86A00385C93 /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A26214CB86A00385C93 /* OpenSearchDissertations.swift */; };
+		99871A5C214CB86A00385C93 /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A26214CB86A00385C93 /* OpenSearchDissertations.swift */; };
+		99871A5D214CB86A00385C93 /* OpenSearchDissertations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A26214CB86A00385C93 /* OpenSearchDissertations.swift */; };
+		99871A5E214CB86A00385C93 /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A27214CB86A00385C93 /* OpenSearchBooks.swift */; };
+		99871A5F214CB86A00385C93 /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A27214CB86A00385C93 /* OpenSearchBooks.swift */; };
+		99871A60214CB86A00385C93 /* OpenSearchBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A27214CB86A00385C93 /* OpenSearchBooks.swift */; };
+		99871A61214CB86A00385C93 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A29214CB86A00385C93 /* Int+.swift */; };
+		99871A62214CB86A00385C93 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A29214CB86A00385C93 /* Int+.swift */; };
+		99871A63214CB86A00385C93 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A29214CB86A00385C93 /* Int+.swift */; };
+		99871A64214CB86A00385C93 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2A214CB86A00385C93 /* String+.swift */; };
+		99871A65214CB86A00385C93 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2A214CB86A00385C93 /* String+.swift */; };
+		99871A66214CB86A00385C93 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2A214CB86A00385C93 /* String+.swift */; };
+		99871A67214CB86A00385C93 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2B214CB86A00385C93 /* Operator+.swift */; };
+		99871A68214CB86A00385C93 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2B214CB86A00385C93 /* Operator+.swift */; };
+		99871A69214CB86A00385C93 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2B214CB86A00385C93 /* Operator+.swift */; };
+		99871A6A214CB86A00385C93 /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2D214CB86A00385C93 /* DissertationsModel.swift */; };
+		99871A6B214CB86A00385C93 /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2D214CB86A00385C93 /* DissertationsModel.swift */; };
+		99871A6C214CB86A00385C93 /* DissertationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2D214CB86A00385C93 /* DissertationsModel.swift */; };
+		99871A6D214CB86A00385C93 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2E214CB86A00385C93 /* BooksModel.swift */; };
+		99871A6E214CB86A00385C93 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2E214CB86A00385C93 /* BooksModel.swift */; };
+		99871A6F214CB86A00385C93 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2E214CB86A00385C93 /* BooksModel.swift */; };
+		99871A70214CB86A00385C93 /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2F214CB86A00385C93 /* OpenSearchPageable.swift */; };
+		99871A71214CB86A00385C93 /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2F214CB86A00385C93 /* OpenSearchPageable.swift */; };
+		99871A72214CB86A00385C93 /* OpenSearchPageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A2F214CB86A00385C93 /* OpenSearchPageable.swift */; };
+		99871A73214CB86A00385C93 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A30214CB86A00385C93 /* ArticlesModel.swift */; };
+		99871A74214CB86A00385C93 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A30214CB86A00385C93 /* ArticlesModel.swift */; };
+		99871A75214CB86A00385C93 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99871A30214CB86A00385C93 /* ArticlesModel.swift */; };
+		99871A78214CB8A400385C93 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99871A77214CB8A400385C93 /* Alamofire.framework */; };
 		999C52462134AFF600611308 /* CiNiiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C523D2134AFF500611308 /* CiNiiKit.framework */; };
 		999C52572134B14800611308 /* CiNiiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C51F1213431A000611308 /* CiNiiKitTests.swift */; };
 		999C5278213581DF00611308 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999C5275213581DF00611308 /* Alamofire.framework */; };
@@ -91,30 +115,32 @@
 /* Begin PBXFileReference section */
 		9949A2C4214BDC7200FE0508 /* CiNiiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CiNiiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CiNiiKit macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandring.swift; sourceTree = "<group>"; };
-		9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitBooks.swift; sourceTree = "<group>"; };
-		9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitDissertations.swift; sourceTree = "<group>"; };
-		9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
-		9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitArticles.swift; sourceTree = "<group>"; };
-		9949A2E6214BDDEA00FE0508 /* MaterialType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialType.swift; sourceTree = "<group>"; };
-		9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILLStatusType.swift; sourceTree = "<group>"; };
-		9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantType.swift; sourceTree = "<group>"; };
-		9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
-		9949A2EA214BDDEA00FE0508 /* LanguageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
-		9949A2EB214BDDEA00FE0508 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceStatusType.swift; sourceTree = "<group>"; };
-		9949A2ED214BDDEA00FE0508 /* RangeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeType.swift; sourceTree = "<group>"; };
-		9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchArticles.swift; sourceTree = "<group>"; };
-		9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchDissertations.swift; sourceTree = "<group>"; };
-		9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchBooks.swift; sourceTree = "<group>"; };
-		9949A2F3214BDDEA00FE0508 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
-		9949A2F4214BDDEA00FE0508 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
-		9949A2F5214BDDEA00FE0508 /* Operator+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
-		9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DissertationsModel.swift; sourceTree = "<group>"; };
-		9949A2F8214BDDEA00FE0508 /* BooksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
-		9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchPageable.swift; sourceTree = "<group>"; };
-		9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		9949A32B214BDE3600FE0508 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		99871A0C214CB7D200385C93 /* CiNiiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CiNiiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99871A15214CB86A00385C93 /* ErrorHandring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandring.swift; sourceTree = "<group>"; };
+		99871A17214CB86A00385C93 /* CiNiiKitBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitBooks.swift; sourceTree = "<group>"; };
+		99871A18214CB86A00385C93 /* CiNiiKitDissertations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitDissertations.swift; sourceTree = "<group>"; };
+		99871A19214CB86A00385C93 /* CiNiiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKit.swift; sourceTree = "<group>"; };
+		99871A1A214CB86A00385C93 /* CiNiiKitArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitArticles.swift; sourceTree = "<group>"; };
+		99871A1C214CB86A00385C93 /* MaterialType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialType.swift; sourceTree = "<group>"; };
+		99871A1D214CB86A00385C93 /* ILLStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILLStatusType.swift; sourceTree = "<group>"; };
+		99871A1E214CB86A00385C93 /* ParticipantType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantType.swift; sourceTree = "<group>"; };
+		99871A1F214CB86A00385C93 /* SortOrderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOrderType.swift; sourceTree = "<group>"; };
+		99871A20214CB86A00385C93 /* LanguageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
+		99871A21214CB86A00385C93 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		99871A22214CB86A00385C93 /* ServiceStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceStatusType.swift; sourceTree = "<group>"; };
+		99871A23214CB86A00385C93 /* RangeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeType.swift; sourceTree = "<group>"; };
+		99871A25214CB86A00385C93 /* OpenSearchArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchArticles.swift; sourceTree = "<group>"; };
+		99871A26214CB86A00385C93 /* OpenSearchDissertations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchDissertations.swift; sourceTree = "<group>"; };
+		99871A27214CB86A00385C93 /* OpenSearchBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchBooks.swift; sourceTree = "<group>"; };
+		99871A29214CB86A00385C93 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		99871A2A214CB86A00385C93 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		99871A2B214CB86A00385C93 /* Operator+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
+		99871A2D214CB86A00385C93 /* DissertationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DissertationsModel.swift; sourceTree = "<group>"; };
+		99871A2E214CB86A00385C93 /* BooksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
+		99871A2F214CB86A00385C93 /* OpenSearchPageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSearchPageable.swift; sourceTree = "<group>"; };
+		99871A30214CB86A00385C93 /* ArticlesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
+		99871A77214CB8A400385C93 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		999C51D62134313200611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999C51F1213431A000611308 /* CiNiiKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiNiiKitTests.swift; sourceTree = "<group>"; };
 		999C51F92134326400611308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
@@ -146,6 +172,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99871A08214CB7D200385C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99871A78214CB8A400385C93 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		999C52392134AFF500611308 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,71 +199,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9949A2DE214BDDEA00FE0508 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				9949A2DF214BDDEA00FE0508 /* ErrorHandring.swift */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
-		9949A2E0214BDDEA00FE0508 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				9949A2E1214BDDEA00FE0508 /* CiNiiKitBooks.swift */,
-				9949A2E2214BDDEA00FE0508 /* CiNiiKitDissertations.swift */,
-				9949A2E3214BDDEA00FE0508 /* CiNiiKit.swift */,
-				9949A2E4214BDDEA00FE0508 /* CiNiiKitArticles.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		9949A2E5214BDDEA00FE0508 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				9949A2E6214BDDEA00FE0508 /* MaterialType.swift */,
-				9949A2E7214BDDEA00FE0508 /* ILLStatusType.swift */,
-				9949A2E8214BDDEA00FE0508 /* ParticipantType.swift */,
-				9949A2E9214BDDEA00FE0508 /* SortOrderType.swift */,
-				9949A2EA214BDDEA00FE0508 /* LanguageType.swift */,
-				9949A2EB214BDDEA00FE0508 /* API.swift */,
-				9949A2EC214BDDEA00FE0508 /* ServiceStatusType.swift */,
-				9949A2ED214BDDEA00FE0508 /* RangeType.swift */,
-			);
-			path = Enum;
-			sourceTree = "<group>";
-		};
-		9949A2EE214BDDEA00FE0508 /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				9949A2EF214BDDEA00FE0508 /* OpenSearchArticles.swift */,
-				9949A2F0214BDDEA00FE0508 /* OpenSearchDissertations.swift */,
-				9949A2F1214BDDEA00FE0508 /* OpenSearchBooks.swift */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		9949A2F2214BDDEA00FE0508 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				9949A2F3214BDDEA00FE0508 /* Int+.swift */,
-				9949A2F4214BDDEA00FE0508 /* String+.swift */,
-				9949A2F5214BDDEA00FE0508 /* Operator+.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		9949A2F6214BDDEA00FE0508 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9949A2F7214BDDEA00FE0508 /* DissertationsModel.swift */,
-				9949A2F8214BDDEA00FE0508 /* BooksModel.swift */,
-				9949A2F9214BDDEA00FE0508 /* OpenSearchPageable.swift */,
-				9949A2FA214BDDEA00FE0508 /* ArticlesModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		9949A329214BDE0600FE0508 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,15 +214,88 @@
 			name = macOS;
 			sourceTree = "<group>";
 		};
+		99871A14214CB86A00385C93 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				99871A15214CB86A00385C93 /* ErrorHandring.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		99871A16214CB86A00385C93 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				99871A17214CB86A00385C93 /* CiNiiKitBooks.swift */,
+				99871A18214CB86A00385C93 /* CiNiiKitDissertations.swift */,
+				99871A19214CB86A00385C93 /* CiNiiKit.swift */,
+				99871A1A214CB86A00385C93 /* CiNiiKitArticles.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		99871A1B214CB86A00385C93 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				99871A1C214CB86A00385C93 /* MaterialType.swift */,
+				99871A1D214CB86A00385C93 /* ILLStatusType.swift */,
+				99871A1E214CB86A00385C93 /* ParticipantType.swift */,
+				99871A1F214CB86A00385C93 /* SortOrderType.swift */,
+				99871A20214CB86A00385C93 /* LanguageType.swift */,
+				99871A21214CB86A00385C93 /* API.swift */,
+				99871A22214CB86A00385C93 /* ServiceStatusType.swift */,
+				99871A23214CB86A00385C93 /* RangeType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		99871A24214CB86A00385C93 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				99871A25214CB86A00385C93 /* OpenSearchArticles.swift */,
+				99871A26214CB86A00385C93 /* OpenSearchDissertations.swift */,
+				99871A27214CB86A00385C93 /* OpenSearchBooks.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		99871A28214CB86A00385C93 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				99871A29214CB86A00385C93 /* Int+.swift */,
+				99871A2A214CB86A00385C93 /* String+.swift */,
+				99871A2B214CB86A00385C93 /* Operator+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		99871A2C214CB86A00385C93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99871A2D214CB86A00385C93 /* DissertationsModel.swift */,
+				99871A2E214CB86A00385C93 /* BooksModel.swift */,
+				99871A2F214CB86A00385C93 /* OpenSearchPageable.swift */,
+				99871A30214CB86A00385C93 /* ArticlesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99871A76214CB88A00385C93 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				99871A77214CB8A400385C93 /* Alamofire.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
 		999C51E02134318B00611308 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9949A2E0214BDDEA00FE0508 /* Core */,
-				9949A2EE214BDDEA00FE0508 /* Endpoints */,
-				9949A2E5214BDDEA00FE0508 /* Enum */,
-				9949A2DE214BDDEA00FE0508 /* Error */,
-				9949A2F2214BDDEA00FE0508 /* Extension */,
-				9949A2F6214BDDEA00FE0508 /* Model */,
+				99871A16214CB86A00385C93 /* Core */,
+				99871A24214CB86A00385C93 /* Endpoints */,
+				99871A1B214CB86A00385C93 /* Enum */,
+				99871A14214CB86A00385C93 /* Error */,
+				99871A28214CB86A00385C93 /* Extension */,
+				99871A2C214CB86A00385C93 /* Model */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -298,6 +340,7 @@
 		999C52732135819400611308 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99871A76214CB88A00385C93 /* watchOS */,
 				9949A329214BDE0600FE0508 /* macOS */,
 				999C5274213581C900611308 /* iOS */,
 			);
@@ -345,6 +388,7 @@
 				999C52452134AFF600611308 /* CiNiiKit iOSTests.xctest */,
 				9949A2C4214BDC7200FE0508 /* CiNiiKit.framework */,
 				9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */,
+				99871A0C214CB7D200385C93 /* CiNiiKit.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -365,6 +409,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		9949A2C1214BDC7200FE0508 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99871A09214CB7D200385C93 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -417,6 +468,24 @@
 			productName = "CiNiiKit macOSTests";
 			productReference = 9949A2CC214BDC7200FE0508 /* CiNiiKit macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99871A0B214CB7D200385C93 /* CiNiiKit watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99871A13214CB7D200385C93 /* Build configuration list for PBXNativeTarget "CiNiiKit watchOS" */;
+			buildPhases = (
+				99871A07214CB7D200385C93 /* Sources */,
+				99871A08214CB7D200385C93 /* Frameworks */,
+				99871A09214CB7D200385C93 /* Headers */,
+				99871A0A214CB7D200385C93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CiNiiKit watchOS";
+			productName = "CiNiiKit watchOS";
+			productReference = 99871A0C214CB7D200385C93 /* CiNiiKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		999C523C2134AFF500611308 /* CiNiiKit iOS */ = {
 			isa = PBXNativeTarget;
@@ -472,6 +541,10 @@
 						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Manual;
 					};
+					99871A0B214CB7D200385C93 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Manual;
+					};
 					999C523C2134AFF500611308 = {
 						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Manual;
@@ -499,6 +572,7 @@
 				999C52442134AFF500611308 /* CiNiiKit iOSTests */,
 				9949A2C3214BDC7200FE0508 /* CiNiiKit macOS */,
 				9949A2CB214BDC7200FE0508 /* CiNiiKit macOSTests */,
+				99871A0B214CB7D200385C93 /* CiNiiKit watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -518,6 +592,13 @@
 				9949A32F214BDEDB00FE0508 /* dissertations.json in Resources */,
 				9949A32E214BDEDB00FE0508 /* books.json in Resources */,
 				9949A32D214BDEDB00FE0508 /* articles.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99871A0A214CB7D200385C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,29 +657,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9949A31C214BDDEA00FE0508 /* Int+.swift in Sources */,
-				9949A310214BDDEA00FE0508 /* API.swift in Sources */,
-				9949A304214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */,
-				9949A324214BDDEA00FE0508 /* BooksModel.swift in Sources */,
-				9949A30A214BDDEA00FE0508 /* ParticipantType.swift in Sources */,
-				9949A322214BDDEA00FE0508 /* DissertationsModel.swift in Sources */,
-				9949A2FE214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */,
-				9949A316214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */,
-				9949A328214BDDEA00FE0508 /* ArticlesModel.swift in Sources */,
-				9949A30E214BDDEA00FE0508 /* LanguageType.swift in Sources */,
-				9949A31A214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */,
-				9949A30C214BDDEA00FE0508 /* SortOrderType.swift in Sources */,
-				9949A318214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */,
-				9949A320214BDDEA00FE0508 /* Operator+.swift in Sources */,
-				9949A31E214BDDEA00FE0508 /* String+.swift in Sources */,
-				9949A326214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */,
-				9949A308214BDDEA00FE0508 /* ILLStatusType.swift in Sources */,
-				9949A306214BDDEA00FE0508 /* MaterialType.swift in Sources */,
-				9949A302214BDDEA00FE0508 /* CiNiiKit.swift in Sources */,
-				9949A312214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */,
-				9949A300214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */,
-				9949A2FC214BDDEA00FE0508 /* ErrorHandring.swift in Sources */,
-				9949A314214BDDEA00FE0508 /* RangeType.swift in Sources */,
+				99871A62214CB86A00385C93 /* Int+.swift in Sources */,
+				99871A50214CB86A00385C93 /* API.swift in Sources */,
+				99871A3E214CB86A00385C93 /* CiNiiKitArticles.swift in Sources */,
+				99871A6E214CB86A00385C93 /* BooksModel.swift in Sources */,
+				99871A47214CB86A00385C93 /* ParticipantType.swift in Sources */,
+				99871A6B214CB86A00385C93 /* DissertationsModel.swift in Sources */,
+				99871A35214CB86A00385C93 /* CiNiiKitBooks.swift in Sources */,
+				99871A59214CB86A00385C93 /* OpenSearchArticles.swift in Sources */,
+				99871A74214CB86A00385C93 /* ArticlesModel.swift in Sources */,
+				99871A4D214CB86A00385C93 /* LanguageType.swift in Sources */,
+				99871A5F214CB86A00385C93 /* OpenSearchBooks.swift in Sources */,
+				99871A4A214CB86A00385C93 /* SortOrderType.swift in Sources */,
+				99871A5C214CB86A00385C93 /* OpenSearchDissertations.swift in Sources */,
+				99871A68214CB86A00385C93 /* Operator+.swift in Sources */,
+				99871A65214CB86A00385C93 /* String+.swift in Sources */,
+				99871A71214CB86A00385C93 /* OpenSearchPageable.swift in Sources */,
+				99871A44214CB86A00385C93 /* ILLStatusType.swift in Sources */,
+				99871A41214CB86A00385C93 /* MaterialType.swift in Sources */,
+				99871A3B214CB86A00385C93 /* CiNiiKit.swift in Sources */,
+				99871A53214CB86A00385C93 /* ServiceStatusType.swift in Sources */,
+				99871A38214CB86A00385C93 /* CiNiiKitDissertations.swift in Sources */,
+				99871A32214CB86A00385C93 /* ErrorHandring.swift in Sources */,
+				99871A56214CB86A00385C93 /* RangeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,33 +693,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99871A07214CB7D200385C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99871A63214CB86A00385C93 /* Int+.swift in Sources */,
+				99871A51214CB86A00385C93 /* API.swift in Sources */,
+				99871A3F214CB86A00385C93 /* CiNiiKitArticles.swift in Sources */,
+				99871A6F214CB86A00385C93 /* BooksModel.swift in Sources */,
+				99871A48214CB86A00385C93 /* ParticipantType.swift in Sources */,
+				99871A6C214CB86A00385C93 /* DissertationsModel.swift in Sources */,
+				99871A36214CB86A00385C93 /* CiNiiKitBooks.swift in Sources */,
+				99871A5A214CB86A00385C93 /* OpenSearchArticles.swift in Sources */,
+				99871A75214CB86A00385C93 /* ArticlesModel.swift in Sources */,
+				99871A4E214CB86A00385C93 /* LanguageType.swift in Sources */,
+				99871A60214CB86A00385C93 /* OpenSearchBooks.swift in Sources */,
+				99871A4B214CB86A00385C93 /* SortOrderType.swift in Sources */,
+				99871A5D214CB86A00385C93 /* OpenSearchDissertations.swift in Sources */,
+				99871A69214CB86A00385C93 /* Operator+.swift in Sources */,
+				99871A66214CB86A00385C93 /* String+.swift in Sources */,
+				99871A72214CB86A00385C93 /* OpenSearchPageable.swift in Sources */,
+				99871A45214CB86A00385C93 /* ILLStatusType.swift in Sources */,
+				99871A42214CB86A00385C93 /* MaterialType.swift in Sources */,
+				99871A3C214CB86A00385C93 /* CiNiiKit.swift in Sources */,
+				99871A54214CB86A00385C93 /* ServiceStatusType.swift in Sources */,
+				99871A39214CB86A00385C93 /* CiNiiKitDissertations.swift in Sources */,
+				99871A33214CB86A00385C93 /* ErrorHandring.swift in Sources */,
+				99871A57214CB86A00385C93 /* RangeType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		999C52382134AFF500611308 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9949A31B214BDDEA00FE0508 /* Int+.swift in Sources */,
-				9949A30F214BDDEA00FE0508 /* API.swift in Sources */,
-				9949A303214BDDEA00FE0508 /* CiNiiKitArticles.swift in Sources */,
-				9949A323214BDDEA00FE0508 /* BooksModel.swift in Sources */,
-				9949A309214BDDEA00FE0508 /* ParticipantType.swift in Sources */,
-				9949A321214BDDEA00FE0508 /* DissertationsModel.swift in Sources */,
-				9949A2FD214BDDEA00FE0508 /* CiNiiKitBooks.swift in Sources */,
-				9949A315214BDDEA00FE0508 /* OpenSearchArticles.swift in Sources */,
-				9949A327214BDDEA00FE0508 /* ArticlesModel.swift in Sources */,
-				9949A30D214BDDEA00FE0508 /* LanguageType.swift in Sources */,
-				9949A319214BDDEA00FE0508 /* OpenSearchBooks.swift in Sources */,
-				9949A30B214BDDEA00FE0508 /* SortOrderType.swift in Sources */,
-				9949A317214BDDEA00FE0508 /* OpenSearchDissertations.swift in Sources */,
-				9949A31F214BDDEA00FE0508 /* Operator+.swift in Sources */,
-				9949A31D214BDDEA00FE0508 /* String+.swift in Sources */,
-				9949A325214BDDEA00FE0508 /* OpenSearchPageable.swift in Sources */,
-				9949A307214BDDEA00FE0508 /* ILLStatusType.swift in Sources */,
-				9949A305214BDDEA00FE0508 /* MaterialType.swift in Sources */,
-				9949A301214BDDEA00FE0508 /* CiNiiKit.swift in Sources */,
-				9949A311214BDDEA00FE0508 /* ServiceStatusType.swift in Sources */,
-				9949A2FF214BDDEA00FE0508 /* CiNiiKitDissertations.swift in Sources */,
-				9949A2FB214BDDEA00FE0508 /* ErrorHandring.swift in Sources */,
-				9949A313214BDDEA00FE0508 /* RangeType.swift in Sources */,
+				99871A61214CB86A00385C93 /* Int+.swift in Sources */,
+				99871A4F214CB86A00385C93 /* API.swift in Sources */,
+				99871A3D214CB86A00385C93 /* CiNiiKitArticles.swift in Sources */,
+				99871A6D214CB86A00385C93 /* BooksModel.swift in Sources */,
+				99871A46214CB86A00385C93 /* ParticipantType.swift in Sources */,
+				99871A6A214CB86A00385C93 /* DissertationsModel.swift in Sources */,
+				99871A34214CB86A00385C93 /* CiNiiKitBooks.swift in Sources */,
+				99871A58214CB86A00385C93 /* OpenSearchArticles.swift in Sources */,
+				99871A73214CB86A00385C93 /* ArticlesModel.swift in Sources */,
+				99871A4C214CB86A00385C93 /* LanguageType.swift in Sources */,
+				99871A5E214CB86A00385C93 /* OpenSearchBooks.swift in Sources */,
+				99871A49214CB86A00385C93 /* SortOrderType.swift in Sources */,
+				99871A5B214CB86A00385C93 /* OpenSearchDissertations.swift in Sources */,
+				99871A67214CB86A00385C93 /* Operator+.swift in Sources */,
+				99871A64214CB86A00385C93 /* String+.swift in Sources */,
+				99871A70214CB86A00385C93 /* OpenSearchPageable.swift in Sources */,
+				99871A43214CB86A00385C93 /* ILLStatusType.swift in Sources */,
+				99871A40214CB86A00385C93 /* MaterialType.swift in Sources */,
+				99871A3A214CB86A00385C93 /* CiNiiKit.swift in Sources */,
+				99871A52214CB86A00385C93 /* ServiceStatusType.swift in Sources */,
+				99871A37214CB86A00385C93 /* CiNiiKitDissertations.swift in Sources */,
+				99871A31214CB86A00385C93 /* ErrorHandring.swift in Sources */,
+				99871A55214CB86A00385C93 /* RangeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,6 +1058,161 @@
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		99871A11214CB7D200385C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-watchOS";
+				PRODUCT_NAME = CiNiiKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		99871A12214CB7D200385C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ym.CiNiiKit-watchOS";
+				PRODUCT_NAME = CiNiiKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Release;
 		};
@@ -1300,6 +1566,15 @@
 			buildConfigurations = (
 				9949A2D7214BDC7200FE0508 /* Debug */,
 				9949A2D8214BDC7200FE0508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99871A13214CB7D200385C93 /* Build configuration list for PBXNativeTarget "CiNiiKit watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99871A11214CB7D200385C93 /* Debug */,
+				99871A12214CB7D200385C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
