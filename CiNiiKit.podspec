@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CiNiiKit"
-  s.version          = "0.1.4"
+  s.version          = "1.0.0"
   s.summary          = "CiNii API client written in Swift"
 
   s.description      = <<-DESC
@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
+  s.watchos.deployment_target = '4.0'
 
   s.requires_arc = true
 
